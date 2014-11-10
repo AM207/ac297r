@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AC297r</title><link>http://lxprior.github.io/classtmpl/</link><description></description><atom:link href="http://lxprior.github.io/classtmpl/feeds/rahul-dave.rss.xml" rel="self"></atom:link><lastBuildDate>Wed, 29 Oct 2014 17:58:45 +0100</lastBuildDate><item><title>Lab 1</title><link>http://lxprior.github.io/classtmpl/blog/lab-1.html</link><description>&lt;p&gt;Install &lt;a href="{filename}../posts/installpython.md"&gt;instructions for the Anaconda stack&lt;/a&gt;.&lt;/p&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Class</title><link>http://lxprior.github.io/classtmpl/</link><description></description><atom:link href="http://lxprior.github.io/classtmpl/feeds/rahul-dave.rss.xml" rel="self"></atom:link><lastBuildDate>Wed, 29 Oct 2014 17:58:45 +0100</lastBuildDate><item><title>Lab 1</title><link>http://lxprior.github.io/classtmpl/blog/lab-1.html</link><description>&lt;p&gt;Install &lt;a href="{filename}../posts/installpython.md"&gt;instructions for the Anaconda stack&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;A video of this lab will soon be available.&lt;/p&gt;
 &lt;p&gt;You can download this lab &lt;a href="{filename}/../../static/lab1.zip"&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;
