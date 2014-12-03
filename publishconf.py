@@ -24,3 +24,4 @@ CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
 #GOOGLE_ANALYTICS = ""
 start = SITEURL
 MENUITEMS = do_menuitems(start)
+EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
