@@ -4,28 +4,40 @@ Author: Pavlos Protopapas
 ### General Policy
 
 At the beginning of the class, you will be given the URL of the course website.
-All materials, lecture notes, lab notebooks, and examples will be put there.
- Homework deadlines and project report/poster dates will also be put on this website.
 
-Lectures are being videotaped. It is strongly recommended that you attend all the lectures, as they will be fun. Lecture notes and lab notebooks will be posted online, do not expect all the material talked about in class, as well as questions posed and their answers to be in these notes.  Finally, the course is heavily based on examples, and we will demonstrate a lot of the methods with these examples during class.
+It is strongly recommended that you attend all the tutorials, as they will be fun. You will learn and work hands-on on advanced topics during the tutorials. Tutorial notes and  notebooks will be posted online, but do not expect all the material talked about in class, as well as questions posed and their answers to be in these notes. We will demonstrate (and you will work hands-on) a lot of the methods with these examples during class. 
 
-Attending the labs will be helpful both in furthering your understanding and in doing your homework.
+There will be a piazza page for all discussions and announcements. Participation in these discussions counts 8% towards your grade. The Piazza discussion will revolve around tutorial subjects and elements of your project.
+
+Students are encouraged to talk about their projects, difficulties and all, on the forum. Students are encouraged even more to engage with students doing other projects: we promise it will make your experience more fun, and your knowledge base larger.
+
+All code and data (of reasonable size) used for the project must also be submitted. This may be in ipython notebooks, or separate files. If data is large, tell us where to find it. If its proprietary, talk to us ahead of time.
 
 
 ### Course Grade
 
 
-<p class="text-primary">
 Your course grade is calculated as:
 
 <ul>
-	<li>60% Homeworks </li>
-	<li>5% Participation </li>
-	<li>35% Final project </li>
+	<li>2% Teamwork </li>
+	<li>8% Participation </li>
+	<li>90% Final project </li>
 </ul>
 </p>
 
 There will be a piazza page for all discussions and announcements. Participation in these discussions, as well as coming to class (for non-extension students) counts 5% towards your grade.
+
+The dropbox for the project will close on the deadline for that piece of work. NO work will be accepted after the deadline. Do not submit in the last seconds before the dropbox closes.
+
+###Deliverables 
+
+1. Final report (group)
+2. Final presentation (group, one or more students may give the presentation)
+2. Self evaluation (individual)
+3. Peer evaluation (individual)
+4. Project website (group): Students will develop a web page which briefly describes their project and includes a demonstration video. 
+5. Project video (individual): Each student will create a three minute screencast with narration showing a demo of their work.  
 
 ### Originality and Plagiarization
 
@@ -36,17 +48,7 @@ You must acknowledge any source code that was not written by you by mentioning t
 You may use examples you find on the web as a starting point, provided its license allows you to re-use it. You must quote the source using proper citations (author, year, title, time accessed, URL) both in the source code and in any publicly visible material. 
 
 If you have any doubts about whether a library is ok to use in your work, please direct your question to one of the TFs.
- 
 
-### Homework Policy
-
-**There will be 10 problem sets during the semester. Problem sets are handed out weekly (on Thursday, after class) and are due the following Wednesday, at 11.59PM, unless otherwise announced.**
-
-{% include_md hw_policy.md %}
-
-### Project Policy
-
-{% include_md proj_policy.md %}
 
 ### Accommodations for students with disabilities:
 

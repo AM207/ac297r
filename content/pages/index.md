@@ -23,5 +23,6 @@ Template: index
 <p>By requiring students to complete a substantial and challenging collaborative project, the Capstone course will ensure that students are trained to conduct research and prepare students for the professional world. The projects will be selected to combine the statistical, computational, and engineering challenges and social issues involved in solving complex real-world problems.</p>
 
 <p>Students will be placed in groups of three to five and each group will work with the instructor, mentors and partners to identify a complex, open-ended real-world problem. They will understand and define the overall problem, and propose a solution. These solutions will be either in the form of a software package, a set of recommendations, or a research paper.</p>
+<p><a class="btn btn-default" href="{filename}/pages/about.md" role="button">More &raquo;</a></p>
 </div>
 </div>
