@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Home</title><link href="http://ac297r.org/" rel="alternate"></link><link href="http://ac297r.org/feeds/rahul-dave.atom.xml" rel="self"></link><id>http://ac297r.org/</id><updated>2014-12-03T10:48:52+01:00</updated><entry><title>Lab 1</title><link href="http://ac297r.org/blog/lab-1.html" rel="alternate"></link><updated>2014-12-03T10:48:52+01:00</updated><author><name>Rahul Dave</name></author><id>tag:ac297r.org,2014-12-03:blog/lab-1.html</id><summary type="html">&lt;p&gt;Install &lt;a href="{filename}../posts/installpython.md"&gt;instructions for the Anaconda stack&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;A video of this lab will soon be available.&lt;/p&gt;
-&lt;p&gt;You can download this lab &lt;a href="{filename}/../../static/lab1.zip"&gt;here&lt;/a&gt;.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Home</title><link href="http://ac297r.org/" rel="alternate"></link><link href="http://ac297r.org/feeds/rahul-dave.atom.xml" rel="self"></link><id>http://ac297r.org/</id><updated>2014-12-03T15:43:54+01:00</updated><entry><title>Tutorial 1</title><link href="http://ac297r.org/blog/tutorial-1.html" rel="alternate"></link><updated>2014-12-03T15:43:54+01:00</updated><author><name>Rahul Dave</name></author><id>tag:ac297r.org,2014-12-03:blog/tutorial-1.html</id><summary type="html">&lt;p&gt;Install &lt;a href="http://ac297r.org/blog/installing-python.html"&gt;instructions for the Anaconda stack&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;
 &lt;div class="prompt input_prompt"&gt;
@@ -15704,4 +15702,57 @@ AhkAAIBhBDIAAADDvgBvTNkFNqftLwAAAABJRU5ErkJggg==
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;/div&gt;&lt;/p&gt;</summary><category term="labs"></category></entry></feed>
+&lt;/div&gt;&lt;/p&gt;</summary><category term="tutorials"></category></entry><entry><title>Installing Python</title><link href="http://ac297r.org/blog/installing-python.html" rel="alternate"></link><updated>2014-12-03T15:43:22+01:00</updated><author><name>Rahul Dave</name></author><id>tag:ac297r.org,2014-12-03:blog/installing-python.html</id><summary type="html">&lt;p&gt;All the labs and homeworks in this course are Python-based. This page provides information about configuring Python on your machine.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Step 0&lt;/strong&gt; 
+The IPython notebook runs in the browser, and works best in Google Chrome. You probably want to use Chrome for assignments in this course&lt;/p&gt;
+&lt;h3&gt;Recommended Method: Anaconda&lt;/h3&gt;
+&lt;p&gt;The Anaconda Python distribution is an easily-installable bundle of Python and many of the libraries used throughout this class. It includes numpy/scipy/matplotlib/pandas/scikit-learn and other numerical libraries. Unless you have a good reason not to, we recommend that you use Anaconda.&lt;/p&gt;
+&lt;h4&gt;Mac/Linux users&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Download the &lt;a href="http://continuum.io/downloads"&gt;appropriate version&lt;/a&gt; of Anaconda&lt;/li&gt;
+&lt;li&gt;Follow the instructions on that page to run the installer&lt;/li&gt;
+&lt;li&gt;Test it out: open a terminal window, and type &lt;code&gt;python&lt;/code&gt;, you should see something like&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;Python&lt;/span&gt; &lt;span class="mf"&gt;2.7.5&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="n"&gt;Anaconda&lt;/span&gt; &lt;span class="mf"&gt;1.6.1&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x86_64&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;default&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Jun&lt;/span&gt; &lt;span class="mi"&gt;28&lt;/span&gt; &lt;span class="mi"&gt;2013&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;22&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;20&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;13&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; 
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;If &lt;code&gt;Anaconda&lt;/code&gt; doesn't appear on the first line, you are using a different version of Python. See the troubleshooting section below.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Test out the IPython notebook: open a Terminal window, and type &lt;code&gt;ipython notebook&lt;/code&gt;. A new browser window should pop up. &lt;/li&gt;
+&lt;li&gt;Click &lt;code&gt;New Notebook&lt;/code&gt; to create a new notebook file&lt;/li&gt;
+&lt;li&gt;Update IPython to the newest version by typing &lt;code&gt;conda update ipython&lt;/code&gt; at the command line&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4&gt;Windows Users&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Download the &lt;a href="http://continuum.io/downloads"&gt;appropriate version&lt;/a&gt; of Anaconda&lt;/li&gt;
+&lt;li&gt;Follow the instructions on that page to run the installer. This will create a directory at &lt;code&gt;C:\Anaconda&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Test it out: start the Anaconda launcher, which you can find in &lt;code&gt;C:\Anaconda&lt;/code&gt; or, in the Start menu. Start the IPython notebook. A new browser window should open. &lt;/li&gt;
+&lt;li&gt;Click &lt;code&gt;New Notebook&lt;/code&gt;, which should open a new page.&lt;/li&gt;
+&lt;li&gt;Update IPython to the newest version by opening a command prompt, and typing &lt;code&gt;conda update ipython&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Opening IPython Notebooks&lt;/h3&gt;
+&lt;p&gt;To view an IPython notebook, you must first start the IPython notebook server in the directory where the file lives. Simply navigate to this directory at the command prompt, and type &lt;code&gt;ipython notebook&lt;/code&gt;. This will open a browser window, listing all the &lt;code&gt;ipynb&lt;/code&gt; files in that directory.&lt;/p&gt;
+&lt;h3&gt;Troubleshooting&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem&lt;/strong&gt;
+When you start python, you don't see a line like &lt;code&gt;Python 2.7.5 |Anaconda 1.6.1 (x86_64)|&lt;/code&gt;. You are using a Mac or Linux computer&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Reason&lt;/strong&gt;
+You are most likely running a different version of Python, and need to modify your Path (the list of directories your computer looks through to find programs). &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;
+Find a file like &lt;code&gt;.bash_profile&lt;/code&gt;, &lt;code&gt;.bashrc&lt;/code&gt;, or &lt;code&gt;.profile&lt;/code&gt;. Open the file in a text editor, and add a line at this line at the end: &lt;code&gt;export PATH="$HOME/anaconda/bin:$PATH"&lt;/code&gt;. Close the file, open a new terminal window, type &lt;code&gt;source ~/.profile&lt;/code&gt; (or whatever file you just edited). Type &lt;code&gt;which python&lt;/code&gt; -- you should see a path that points to the anaconda directory. If so, running &lt;code&gt;python&lt;/code&gt; should load the proper version&lt;/p&gt;
+&lt;p&gt;If this doesn't work (typing &lt;code&gt;which python&lt;/code&gt; doesn't point to anaconda), you might be using a different shell. Type &lt;code&gt;echo $SHELL&lt;/code&gt;. If this isn't &lt;code&gt;bash&lt;/code&gt;, you need to edit a different startup file (for example, if if &lt;code&gt;echo $SHELL&lt;/code&gt; gives &lt;code&gt;$csh&lt;/code&gt;, you need to edit your &lt;code&gt;.cshrc&lt;/code&gt; file. The syntax for this file is slightly different: &lt;code&gt;set PATH = ($HOME/anaconda/bin $PATH)&lt;/code&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;Problem&lt;/strong&gt;
+You are running the right version of python (see above item), but are unable to import numpy. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Reason&lt;/strong&gt;
+You are probably loading a different copy of numpy that is incompatible with Anaconda&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;
+See the above item to find your &lt;code&gt;.bash_profile&lt;/code&gt;, &lt;code&gt;.profile&lt;/code&gt;, or &lt;code&gt;.bashrc&lt;/code&gt; file. Open it, and add the line &lt;code&gt;unset PYTHONPATH&lt;/code&gt; at the end. Close the file, open a new terminal window, type &lt;code&gt;source ~/.profile&lt;/code&gt; (or whatever file you just edited), and try again.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;Problem&lt;/strong&gt;
+Under Windows, you receive an error message similar to the following: "'pip' is not recognized as an internal or external command, operable program or batch file."&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Reason&lt;/strong&gt;
+The correct Anaconda paths might not be present in your PATH variable, or Anaconda might not have installed correctly.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;
+Ensure the Anaconda directories to your path environment variable ("\Anaconda" and "\Anaconda\Scripts").  See &lt;a href="http://superuser.com/questions/284342/what-are-path-and-other-environment-variables-and-how-can-i-set-or-use-them"&gt;this page&lt;/a&gt; for details.&lt;/p&gt;
+&lt;p&gt;If this does not correct the problem, reinstall Anaconda.&lt;/p&gt;</summary><category term="other"></category></entry></feed>
