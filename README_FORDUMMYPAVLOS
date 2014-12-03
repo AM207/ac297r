@@ -1,0 +1,13 @@
+pip install pelican==3.4
+pip install markdown==2.4
+
+make github
+
+export PYTHONPATH=`pwd`
+
+make html 
+make serve 
+
+localhost:8000 
+
+make homework 
