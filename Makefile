@@ -109,25 +109,15 @@ github: publish
 
 content_update: homework labs lectures other 
 
-
-homework:
-	@echo "==========HOMEWORK==========="
-	rsync  -P -rvz --include='*.md' --exclude='*' Homework/ content/posts/
-	rsync  -P -rvz  --include='*.ipynb' --exclude='*' Homework/ content/notebooks/
-
-labs:
+tutorials:
 	@echo "==========LABS==========="
-	rsync  -P -rvz --include='*.md' --exclude='*' Labs/ content/posts/
-	rsync  -P -rvz  --include='*.ipynb' --exclude='*' Labs/ content/notebooks/
+	rsync  -P -rvz --include='*.md' --exclude='*' Tutorials/ content/posts/
+	rsync  -P -rvz  --include='*.ipynb' --exclude='*' Tutorials/ content/notebooks/
 
-lectures:
-	@echo "==========LECTURES==========="
-	rsync  -P -rvz --include='*.md' --exclude='*' Lectures/ content/posts/
-	rsync  -P -rvz --include='*.ipynb' --exclude='*' Lectures/ content/notebooks/
 
 other:
 	@echo "==========OTHER==========="
 	rsync  -P -rvz --include='*.md'  --exclude='*' Other/ content/posts/
 	rsync  -P -rvz --include='*.ipynb'  --exclude='*' Other/ content/notebooks/
 
-.PHONY: html help clean regenerate serve devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload s3_upload cf_upload github content_update homework labs lectures other
+.PHONY: html help clean regenerate serve devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload s3_upload cf_upload github content_update tutorials other
