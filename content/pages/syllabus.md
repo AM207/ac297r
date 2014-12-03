@@ -108,10 +108,6 @@ The course will be broken down into the following  four phases:
 
 
 
->Project Presentation Video
-
-
-
 ### Course Grade
 
 Course grades for this course will be based on the overall performance of each phase. The grade will be  determined based on the novelty and robustness of the  final solution, how well it addressed the problem 
