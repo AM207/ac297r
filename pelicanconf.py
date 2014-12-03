@@ -52,6 +52,7 @@ def do_menuitems(start):
           ('Schedule', "%s/schedule.html" % start ),
           ('Syllabus', "%s/syllabus.html" % start ),
           ('Policies', "%s/policies.html" % start ),
+          ('Projects', "%s/pprojects.html" % start ),
           ('Resources', "%s/resources.html" % start ),
           ('Contact', "%s/contact.html" % start ),
           ]
