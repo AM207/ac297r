@@ -1,13 +1,21 @@
 pip install pelican==3.4
 pip install markdown==2.4
 
-make github
 
 export PYTHONPATH=`pwd`
 
-make html 
-make serve 
-
-localhost:8000 
+make your edits
 
 make homework 
+make labs
+make lectures
+make other
+
+git add .
+git commit -m "commit message" -a
+git push (you are pushing master)
+
+make html 
+make serve (to serve locally) on localhost:8000 
+
+make github (uses gh-import to push to gh-pages branch)
