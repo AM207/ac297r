@@ -70,7 +70,7 @@ PLUGINS = ['liquid_tags.img', 'liquid_tags.video',
 
 EXTRA_HEADER = open('support/notebook_header.html').read().decode('utf-8')
 
-STATIC_PATHS=['static', 'code', 'notebooks', 'files']
+STATIC_PATHS=['static', 'code', 'notebooks', 'files', 'extra/CNAME']
 
 #INDEX_SAVE_AS='index.html'
 ARTICLE_URL = 'blog/{slug}.html'
