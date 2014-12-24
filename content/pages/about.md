@@ -19,8 +19,8 @@ Students will go through the entire cycle of solving a problem in a team:
 
 A very important component of the capstone project will be the significant feedback provided by the instructors to the students. Students will be given explicit measures for evaluation, regular feedback on all aspects of the project and its implementation, as well as opportunity for self-assessment. This will begin with the data acquisition and data exploration and extend to the design and implementation phase of the project. Students will be required to give bi-weekly updates and to attend weekly face-to-face review sessions with the instructor and/or mentors. This continuous open dialogue will ensure the achievement of the learning outcomes.
 
-There will be a diverse choice of projects drawn from universities, private industry and research institutions such as Marine Biological Laboratory at Woods Hole, Lincoln Labs etc. 
+### Examples of Projects
 
-Add projects here (at least one or two examples): 
-
-COMING SOON
+* Predicting the number of travellers on the T from the MBTA's fare collection data
+* Predicting the spread of an epidemic from social media.
+* Correcting for the motion of a patient by matching between MRI images
