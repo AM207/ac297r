@@ -3,7 +3,14 @@ Author: Pavlos Protopapas
 
 #### Milestones
 
-Define the milestones. Give 2-3 days for rebuttal
+If you look at the [syllabus](/syllabus) you will see that there are 4 milestones: 
+
+* PHASE 1: Investigate/research (3 weeks)
+* PHASE 2: Data acquisition/experimental design and/or data preparation/exploration (3 weeks)
+* PHASE 3: Formulation of solution, prototype implementation (3 weeks)
+* PHASE 4: Implementation (4 weeks)
+
+You will be graded on each phase, via an interview with Pavlos and a TA. You will have 4-5 days to improve your work in that phase based on our feedback in case we do not find your work for that phase acceptable.
 
 #### Tutorial Schedule
 

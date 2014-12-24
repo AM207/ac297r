@@ -20,13 +20,17 @@ All code and data (of reasonable size) used for the project must also be submitt
 Your course grade is calculated as:
 
 <ul>
-	<li>2% Teamwork </li>
-	<li>8% Participation </li>
+	<li>5% Teamwork </li>
+	<li>5% Participation </li>
 	<li>90% Final project </li>
 </ul>
 </p>
 
-There will be a piazza page for all discussions and announcements. Participation in these discussions, as well as coming to class (for non-extension students) counts 5% towards your grade.
+There will be a piazza page for all discussions and announcements. Participation in these discussions, as well as coming to tutorial counts 5% towards your grade.
+
+Remember that you will be graded on all 4 phases of your project, as talked about in [syllabus](/syllabus). We'll make the exact separation of grade for these phases known soon.
+
+Note that there is 5% grade for teamwork. This depends on your own self-evaluation as well as the evaluation of your contribution by your teammates. 
 
 The dropbox for the project will close on the deadline for that piece of work. NO work will be accepted after the deadline. Do not submit in the last seconds before the dropbox closes.
 

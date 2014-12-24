@@ -42,7 +42,7 @@ The course will be broken down into the following  four phases:
 * Presentation on findings 
 * Presentation on problem statement
 
-####PHASE 2: Data acquisition/experimental design and/or data preparation
+####PHASE 2: Data acquisition/experimental design and/or data preparation/exploration
 
 
 >Topics and CSE learning outcome covered
