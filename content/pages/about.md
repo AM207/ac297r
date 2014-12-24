@@ -8,7 +8,7 @@ The CSE Capstone Project course is intended to integrate and apply the skills an
 
 By requiring students to complete a substantial and challenging collaborative project, the Capstone course will ensure that students are trained to conduct research and prepare students for the professional world. The projects will be selected to combine the statistical, computational, and engineering challenges and social issues involved in solving complex real-world problems.   
 
-Students will be placed in groups of three to five and each group will work with the instructor, mentors and partners to identify a complex, open-ended real-world problem. They will understand and define the overall problem, and propose a solution. These solutions will be either in the form of a software package, a set of recommendations, or a research paper. 
+Students will be placed in groups of three to four and each group will work with the instructor, mentors and partners to identify a complex, open-ended real-world problem. Our partners are from academia, government, and the e-commerce, medical and financial industries. They will understand and define the overall problem, and propose a solution. These solutions will be either in the form of a software package, a set of recommendations, or a research paper. 
 
 Students will go through the entire cycle of solving a problem in a team: 
 
