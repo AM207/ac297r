@@ -3,9 +3,7 @@ Author: Pavlos Protopapas
 
 ### General Policy
 
-At the beginning of the class, you will be given the URL of the course website.
-
-It is strongly recommended that you attend all the tutorials, as they will be fun. You will learn and work hands-on on advanced topics during the tutorials. Tutorial notes and  notebooks will be posted online, but do not expect all the material talked about in class, as well as questions posed and their answers to be in these notes. We will demonstrate (and you will work hands-on) a lot of the methods with these examples during class. 
+It is strongly recommended that you attend all the tutorials, as they will be fun. You will learn and work hands-on on advanced topics during the tutorials. Tutorial notes and notebooks will be posted online, but do not expect all the material talked about in class, as well as questions posed and their answers to be in these notes. 
 
 There will be a piazza page for all discussions and announcements. Participation in these discussions counts 8% towards your grade. The Piazza discussion will revolve around tutorial subjects and elements of your project.
 
@@ -19,16 +17,17 @@ All code and data (of reasonable size) used for the project must also be submitt
 
 Your course grade is calculated as:
 
-<ul>
-	<li>5% Teamwork </li>
-	<li>5% Participation </li>
-	<li>90% Final project </li>
-</ul>
-</p>
+* phase 1: 15
+* phase 2: 15
+* phase 3: 15
+* phase 4: 25
+* presentation+deliverables: presentation+paper/report/software-with-docs+site+video:20
+* participation: 5 (piazza discussions, attendance at tutorial)s
+* teamwork: 5 (as peer evaluated as well as evaluated by us)
 
-There will be a piazza page for all discussions and announcements. Participation in these discussions, as well as coming to tutorial counts 5% towards your grade.
+There will be a piazza page for all discussions and announcements. 
 
-Remember that you will be graded on all 4 phases of your project, as talked about in [syllabus](/syllabus). We'll make the exact separation of grade for these phases known soon.
+Remember that you will be graded on all the 4 phases of your project talked about in [syllabus](/syllabus). 
 
 Note that there is 5% grade for teamwork. This depends on your own self-evaluation as well as the evaluation of your contribution by your teammates. 
 
@@ -40,8 +39,10 @@ The dropbox for the project will close on the deadline for that piece of work. N
 2. Final presentation (group, one or more students may give the presentation)
 2. Self evaluation (individual)
 3. Peer evaluation (individual)
-4. Project website (group): Students will develop a web page which briefly describes their project and includes a demonstration video. 
-5. Project video (individual): Each student will create a three minute screencast with narration showing a demo of their work.  
+4. Project website (group): Students will develop a web page which briefly describes their project and includes a demonstration video (below). 
+5. Project video (group): Each group will create a three minute screencast with narration showing a demo of their work.  
+
+Deliverable should be in a github repository, with 2 branches: `master` for paper/software/report and `gh-pages` (see Github Pages for how to create this) for website/video.
 
 ### Originality and Plagiarization
 

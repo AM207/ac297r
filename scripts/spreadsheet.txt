@@ -1,17 +1,17 @@
-Produce projects page:
-----------------------
-
+#Produce projects page:
+#----------------------
+import sys
 import pandas as pd
-df=pd.read_csv("research project database IACS .xlsx - Sheet1.csv")
-df.head()
-df['TITLE']
-df[['TITLE','PROJECT PRECIS']]
-df[df.TITLE.notna()][['TITLE','PROJECT PRECIS']]
-df[df.TITLE.notnull()][['TITLE','PROJECT PRECIS']]
+df=pd.read_csv(sys.argv[1])
+#df.head()
+#df['TITLE']
+#df[['TITLE','PROJECT PRECIS']]
+#df[df.TITLE.notna()][['TITLE','PROJECT PRECIS']]
+#df[df.TITLE.notnull()][['TITLE','PROJECT PRECIS']]
 df2=df[df.TITLE.notnull()][['TITLE','PROJECT PRECIS']]
-df2.TEXT="###"+df2.TITLE+"\n\n"+df2['PROJECT PRECIS']+"\n"
-df2.TEXT
-"".join(df2.TEXT)
+df2.TEXT="\n###"+df2.TITLE+"\n\n"+df2['PROJECT PRECIS']+"\n"
+#df2.TEXT
+#"".join(df2.TEXT)
 val = "".join(df2.TEXT)
 open("out.txt","w").write(val)
-!cat out.txt
+#!cat out.txt

@@ -1,9 +1,3 @@
-Title: Projects
-Author: Pavlos Protopapas
-
->More Projects coming soon
-
-
 
 ###Predicting passenger patterns on the T
 

@@ -6,20 +6,24 @@ Author: Pavlos Protopapas
 
 You will be dealing with real-world problems, messy data sets, and the chance to work on an end-to-end solution to a problem using computational methods. 
 
-Professors and TFs will work with partners/collaborators from science, industry, government or the non-profit sector to select and prepare project goals and data. Projects will be selected to combine the statistical, computational, and engineering challenges and social issues involved in solving complex real-world problems.  Additional mentors for the project may be recruited to assist with particular projects. 
+Professors and TFs have worked with partners/collaborators from science, industry, government or the non-profit sector to select and prepare project goals and data. Projects will be selected to combine the statistical, computational, and engineering challenges and social issues involved in solving complex real-world problems.  Additional mentors for the project may be recruited to assist with particular projects. 
 
-Students will be placed in groups and each group will work with the instructor who together will identify a particular problem they would like to solve. Students will also work with the instructors and mentors or partners to understand the overall problem, define the problem, and propose a solution. These solutions will be either in the form of a software package, recommendations or a research papers. CSE-CP problems will be open-ended that primarily deal with real-world problems. Students will go through the whole cycle of solving a real-world problem in a project team: 
+Students will be placed in groups and each group will work with the instructor who together will identify a particular problem they would like to solve. Students will also work with the instructors and mentors or partners to understand the overall problem, define the problem, and propose a solution. These solutions will be either in the form of a *software package with documentation*, *recommendations report* or a *research paper*. 
+
+Students will go through the whole cycle of solving a real-world problem in a project team: 
 
 * acquiring, organizing and processing data
 * creating and outlining solutions
 * implementing those solutions
 * communicating and defending their work.
 
-Students will be setting their own deadlines, determining roles within the group and  managing group dynamics. Professors and TFs will guide students through the process and provide feedback. 
+Students will be setting their own deadlines, determining roles within the group and  managing group dynamics. Professors and TFs will guide students through the process and provide feedback. TF's will be available every week to guide and help students.
 
-A very important component of the capstone project will be the significant feedback provided to the students, which should be a learning tool in itself. Students will be given explicit measures for evaluation, regular feedback on all aspects of the project and its implementation, as well as opportunity for self-assessment. This will begin with the data acquisition and data exploration and extend to the design phase of the project. Students will receive significant input from the instructor and teaching fellows on all aspects beginning with the choice of project and a written proposal and plan of work. Students will be required to give bi-weekly updates and to attend weekly face-to-face review sessions with the instructor and/or mentors. This continuous open dialogue will ensure the achievement of the learning outcomes.
+A very important component of the capstone project will be the significant feedback provided to the students, which should be a learning tool in itself. Students will be given explicit measures for evaluation, regular feedback on all aspects of the project and its implementation, as well as opportunity for self-assessment. 
 
-The course will be broken down into the following  four phases:
+Students will be required to give scheduled updates and to attend weekly face-to-face review sessions with the instructor and/or mentors. This continuous open dialogue will ensure the achievement of the learning outcomes.
+
+The course will be broken down into the following four phases:
 
 
 ####PHASE 1: Investigate/research
@@ -41,6 +45,8 @@ The course will be broken down into the following  four phases:
 * Literature search and background 
 * Presentation on findings 
 * Presentation on problem statement
+* Interaction with partners
+
 
 ####PHASE 2: Data acquisition/experimental design and/or data preparation/exploration
 
@@ -102,8 +108,8 @@ The course will be broken down into the following  four phases:
 2. Final presentation (group, one or more students may give the presentation)
 2. Self evaluation (individual)
 3. Peer evaluation (individual)
-4. Project website (group): Students will develop a web page which briefly describes their project and includes a demonstration video. 
-5. Project video (individual): Each student will create a three minute screencast with narration showing a demo of their work.  
+4. Project website (group): Students will develop a web page which briefly describes their project and includes a demonstration video (below). 
+5. Project video (group): Each group will create a three minute screencast with narration showing a demo of their work.  
 
 
 
@@ -113,28 +119,42 @@ The course will be broken down into the following  four phases:
 Course grades for this course will be based on the overall performance of each phase. The grade will be  determined based on the novelty and robustness of the  final solution, how well it addressed the problem 
 statement, and how it was presented in the final presentation and report. 
 
-In addition grades will be given on the following 2 areas:
-1. Class Participation 
-2. Teamwork 
+Your course grade is calculated as:
+
+* phase 1: 15
+* phase 2: 15
+* phase 3: 15
+* phase 4: 25
+* presentation+deliverables: presentation+paper/report/software-with-docs+site+video:20
+* participation: 5 (piazza discussions, attendance at tutorial)s
+* teamwork: 5 (as peer evaluated as well as evaluated by us)
+
+There will be a piazza page for all discussions and announcements. tudents are encouraged to talk about their projects, difficulties and all, on the forum. Students are encouraged even more to engage with students doing other projects: we promise it will make your experience more fun, and your knowledge base larger.
 
 
-<ul>
-	<li>2% Teamwork </li>
-	<li>8% Participation </li>
-	<li>90% Final project </li>
-</ul>
-</p>
+Remember that you will be graded on all the 4 phases of your project talked about in [syllabus](/syllabus). 
 
-It is strongly recommended that you attend all the tutorials, as they will be fun. You will learn and work hands-on on advanced topics during the tutorials. Tutorial notes and  notebooks will be posted online, but do not expect all the material talked about in class, as well as questions posed and their answers to be in these notes. We will demonstrate (and you will work hands-on) a lot of the methods with these examples during class. 
+Note that there is 5% grade for teamwork. This depends on your own self-evaluation as well as the evaluation of your contribution by your teammates. 
 
-There will be a piazza page for all discussions and announcements. Participation in these discussions counts 8% towards your grade. The Piazza discussion will revolve around tutorial subjects and elements of your project.
-
-Students are encouraged to talk about their projects, difficulties and all, on the forum. Students are encouraged even more to engage with students doing other projects: we promise it will make your experience more fun, and your knowledge base larger.
+The dropbox for the project will close on the deadline for that piece of work. NO work will be accepted after the deadline. Do not submit in the last seconds before the dropbox closes.
 
 ### Tutorial Topics
 
+It is strongly recommended that you attend all the tutorials, as they will be fun. You will learn and work hands-on on advanced topics during the tutorials. Tutorial notes and notebooks will be posted online, but do not expect all the material talked about in class, as well as questions posed and their answers to be in these notes. 
+
 These are the topics which will be covered in the tutorials. The list below reflects a rough ordering of topics. The actual order will likely shift around a bit. The course will be taught using Python as the language of implementation. 
 
-COMING SOON
 
+1. Numpy/scipy/matplotlib/seaborn/pandas
+1. Exploratory statistics, visualization, and data analysis; publish on github.
+1. Machine Learning using scikit-learn
+1. Feature and Model Selection in Machine Learning
+1. Bayes Theorem and Cost, Naive Bayes, documents as data.
+1. Model Averaging and Ensembles
+1. Scientific Writing and presentation
+1. Running large scale models on AWS or a cluster: machine learning devops
+1. The bayesian paradigm
+1. Bayesian prediction and inference using pymc
+1. Bayesian Model selection, and moving to neural nets
+1. Deep Learning using Theano
 
