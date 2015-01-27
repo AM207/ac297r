@@ -1,6 +1,10 @@
 Title: Schedule
 Author: Pavlos Protopapas
 
+#### Where?
+
+Every Wednesday, starting 28th January 2015, 9-11 for 2 hours at 60 Oxford St, Classroom 330.
+
 #### Milestones
 
 If you look at the [syllabus](/syllabus) you will see that there are 4 milestones: 

@@ -16,6 +16,6 @@ Office hours (weekly)
 	Pavlos	TUE/WED				TBD	IACS B-155 Northwest Building 
 	TFs (rotating)	Wednesday	TBD	IACS B-166 Northwest Building
 
-Tutorial		
+Class		
 
-	See schedule.
+	Every Wednesday, starting 28th January 2015, 9-11 for 2 hours at 60 Oxford St, Classroom 330.

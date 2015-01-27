@@ -6,8 +6,8 @@ Template: index
 <div class="row">
 
     <div class="col-lg-12">
-      <h3>Tutorials</h3>
-      <p>The first tutorial, on the Python Scientific programming ecosystem, is scheduled for DAY...</p>
+      <h3>FIRST MEETING</h3>
+      <p>The first day of class, is <b>WEDNESDAY 28th January 2015, TOMORROW, at 9-11</b> for 2 hours <b>at 60 Oxford St, Classroom 330</b>.</p>
       <!--p><a class="btn btn-default" href="{filename}/posts/labem.md" role="button">More &raquo;</a></p-->
     </div><!-- /.col-lg-4 -->
 </div>
