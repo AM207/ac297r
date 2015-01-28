@@ -3,7 +3,8 @@ Author: Pavlos Protopapas
 
 #### Where?
 
-Every Wednesday, starting 28th January 2015, 9-11 for 2 hours at 60 Oxford St, Classroom 330.
+* Meetings will be arranged with Pavlos and TFs soon after the teams are formed.
+* Tutorials: Every Wednesday, starting 28th January 2015, 9-11 for 2 hours at 60 Oxford St, Classroom 330.
 
 #### Milestones
 
@@ -16,7 +17,7 @@ If you look at the [syllabus](/syllabus) you will see that there are 4 milestone
 
 You will be graded on each phase, **the eval meeting**, via an interview with Pavlos and a TA. You will have 4-5 days to improve your work in that phase based on our feedback in case we do not find your work for that phase acceptable. Then, the next week, you will have a **redo** meeting with Pavlos and your TA.
 
-Pavlos will be avaliable Tuesday and Wednesday each week. Some of these meetings are mandatory(**mid-phase** and **eval**, and **redo** if you have to). You will also have a 1.5 hour meeting with your primary TA every week. You are strongly urged to utilize the skills of your TA in this meeting. In addition, TA's will hold some open office hours.
+Pavlos will be avaliable Tuesday and Wednesday each week. Some of these meetings are mandatory(**mid-phase** and **eval**, and **redo** if you have to). You will also have a 1.5 hour meeting with your primary TF every week. You are strongly urged to utilize the skills of your TF in this meeting. In addition, TA's will hold some open office hours.
 
 #### More Detailed Schedule
 
@@ -43,4 +44,4 @@ This is the tentative list of topics, in order, subject to change:
 
 #### Meeting Schedule
 
-With Professor and TA in B155, IACS.
+To be determined, after teams are formed, with Professor and TF in B155, IACS.
