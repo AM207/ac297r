@@ -1,7 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Home</title><link href="http://ac297r.org/" rel="alternate"></link><link href="http://ac297r.org/feeds/misc.atom.xml" rel="self"></link><id>http://ac297r.org/</id><updated>2014-12-03T15:43:54+01:00</updated><entry><title>Tutorial 1</title><link href="http://ac297r.org/blog/tutorial-1.html" rel="alternate"></link><updated>2014-12-03T15:43:54+01:00</updated><author><name>Rahul Dave</name></author><id>tag:ac297r.org,2014-12-03:blog/tutorial-1.html</id><summary type="html">&lt;p&gt;Install &lt;a href="http://ac297r.org/blog/installing-python.html"&gt;instructions for the Anaconda stack&lt;/a&gt;.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Home</title><link href="http://ac297r.org/" rel="alternate"></link><link href="http://ac297r.org/feeds/misc.atom.xml" rel="self"></link><id>http://ac297r.org/</id><updated>2015-01-29T09:09:05+01:00</updated><entry><title>Installing Python</title><link href="http://ac297r.org/blog/installing-python.html" rel="alternate"></link><updated>2015-01-29T09:09:05+01:00</updated><author><name>Rahul Dave</name></author><id>tag:ac297r.org,2015-01-29:blog/installing-python.html</id><summary type="html">&lt;p&gt;All the labs and homeworks in this course are Python-based. This page provides information about configuring Python on your machine.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Step 0&lt;/strong&gt; 
+The IPython notebook runs in the browser, and works best in Google Chrome. You probably want to use Chrome for assignments in this course&lt;/p&gt;
+&lt;h3&gt;Recommended Method: Anaconda&lt;/h3&gt;
+&lt;p&gt;The Anaconda Python distribution is an easily-installable bundle of Python and many of the libraries used throughout this class. It includes numpy/scipy/matplotlib/pandas/scikit-learn and other numerical libraries. Unless you have a good reason not to, we recommend that you use Anaconda.&lt;/p&gt;
+&lt;h4&gt;Mac/Linux users&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Download the &lt;a href="http://continuum.io/downloads"&gt;appropriate version&lt;/a&gt; of Anaconda&lt;/li&gt;
+&lt;li&gt;Follow the instructions on that page to run the installer&lt;/li&gt;
+&lt;li&gt;Test it out: open a terminal window, and type &lt;code&gt;python&lt;/code&gt;, you should see something like&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;Python&lt;/span&gt; &lt;span class="mf"&gt;2.7.5&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="n"&gt;Anaconda&lt;/span&gt; &lt;span class="mf"&gt;1.6.1&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x86_64&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;default&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Jun&lt;/span&gt; &lt;span class="mi"&gt;28&lt;/span&gt; &lt;span class="mi"&gt;2013&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;22&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;20&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;13&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; 
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;If &lt;code&gt;Anaconda&lt;/code&gt; doesn't appear on the first line, you are using a different version of Python. See the troubleshooting section below.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Test out the IPython notebook: open a Terminal window, and type &lt;code&gt;ipython notebook&lt;/code&gt;. A new browser window should pop up. &lt;/li&gt;
+&lt;li&gt;Click &lt;code&gt;New Notebook&lt;/code&gt; to create a new notebook file&lt;/li&gt;
+&lt;li&gt;Update IPython to the newest version by typing &lt;code&gt;conda update ipython&lt;/code&gt; at the command line&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4&gt;Windows Users&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Download the &lt;a href="http://continuum.io/downloads"&gt;appropriate version&lt;/a&gt; of Anaconda&lt;/li&gt;
+&lt;li&gt;Follow the instructions on that page to run the installer. This will create a directory at &lt;code&gt;C:\Anaconda&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Test it out: start the Anaconda launcher, which you can find in &lt;code&gt;C:\Anaconda&lt;/code&gt; or, in the Start menu. Start the IPython notebook. A new browser window should open. &lt;/li&gt;
+&lt;li&gt;Click &lt;code&gt;New Notebook&lt;/code&gt;, which should open a new page.&lt;/li&gt;
+&lt;li&gt;Update IPython to the newest version by opening a command prompt, and typing &lt;code&gt;conda update ipython&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Opening IPython Notebooks&lt;/h3&gt;
+&lt;p&gt;To view an IPython notebook, you must first start the IPython notebook server in the directory where the file lives. Simply navigate to this directory at the command prompt, and type &lt;code&gt;ipython notebook&lt;/code&gt;. This will open a browser window, listing all the &lt;code&gt;ipynb&lt;/code&gt; files in that directory.&lt;/p&gt;
+&lt;h3&gt;Troubleshooting&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem&lt;/strong&gt;
+When you start python, you don't see a line like &lt;code&gt;Python 2.7.5 |Anaconda 1.6.1 (x86_64)|&lt;/code&gt;. You are using a Mac or Linux computer&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Reason&lt;/strong&gt;
+You are most likely running a different version of Python, and need to modify your Path (the list of directories your computer looks through to find programs). &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;
+Find a file like &lt;code&gt;.bash_profile&lt;/code&gt;, &lt;code&gt;.bashrc&lt;/code&gt;, or &lt;code&gt;.profile&lt;/code&gt;. Open the file in a text editor, and add a line at this line at the end: &lt;code&gt;export PATH="$HOME/anaconda/bin:$PATH"&lt;/code&gt;. Close the file, open a new terminal window, type &lt;code&gt;source ~/.profile&lt;/code&gt; (or whatever file you just edited). Type &lt;code&gt;which python&lt;/code&gt; -- you should see a path that points to the anaconda directory. If so, running &lt;code&gt;python&lt;/code&gt; should load the proper version&lt;/p&gt;
+&lt;p&gt;If this doesn't work (typing &lt;code&gt;which python&lt;/code&gt; doesn't point to anaconda), you might be using a different shell. Type &lt;code&gt;echo $SHELL&lt;/code&gt;. If this isn't &lt;code&gt;bash&lt;/code&gt;, you need to edit a different startup file (for example, if if &lt;code&gt;echo $SHELL&lt;/code&gt; gives &lt;code&gt;$csh&lt;/code&gt;, you need to edit your &lt;code&gt;.cshrc&lt;/code&gt; file. The syntax for this file is slightly different: &lt;code&gt;set PATH = ($HOME/anaconda/bin $PATH)&lt;/code&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;Problem&lt;/strong&gt;
+You are running the right version of python (see above item), but are unable to import numpy. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Reason&lt;/strong&gt;
+You are probably loading a different copy of numpy that is incompatible with Anaconda&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;
+See the above item to find your &lt;code&gt;.bash_profile&lt;/code&gt;, &lt;code&gt;.profile&lt;/code&gt;, or &lt;code&gt;.bashrc&lt;/code&gt; file. Open it, and add the line &lt;code&gt;unset PYTHONPATH&lt;/code&gt; at the end. Close the file, open a new terminal window, type &lt;code&gt;source ~/.profile&lt;/code&gt; (or whatever file you just edited), and try again.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;Problem&lt;/strong&gt;
+Under Windows, you receive an error message similar to the following: "'pip' is not recognized as an internal or external command, operable program or batch file."&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Reason&lt;/strong&gt;
+The correct Anaconda paths might not be present in your PATH variable, or Anaconda might not have installed correctly.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;
+Ensure the Anaconda directories to your path environment variable ("\Anaconda" and "\Anaconda\Scripts").  See &lt;a href="http://superuser.com/questions/284342/what-are-path-and-other-environment-variables-and-how-can-i-set-or-use-them"&gt;this page&lt;/a&gt; for details.&lt;/p&gt;
+&lt;p&gt;If this does not correct the problem, reinstall Anaconda.&lt;/p&gt;</summary><category term="other"></category></entry><entry><title>Tutorial 1</title><link href="http://ac297r.org/blog/tutorial-1.html" rel="alternate"></link><updated>2015-01-29T09:09:05+01:00</updated><author><name>Rahul Dave</name></author><id>tag:ac297r.org,2015-01-29:blog/tutorial-1.html</id><summary type="html">&lt;p&gt;Install &lt;a href="http://ac297r.org/blog/installing-python.html"&gt;instructions for the Anaconda stack&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
@@ -11,22 +64,21 @@
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h3 id="-1-preliminary-plotting-stuff-to-get-things-going"&gt;-1. Preliminary plotting stuff to get things going&lt;/h3&gt;
+&lt;h3 id="preliminary-plotting-stuff-to-get-things-going"&gt;-1. Preliminary plotting stuff to get things going&lt;/h3&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[1]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="k"&gt;matplotlib&lt;/span&gt; &lt;span class="n"&gt;inline&lt;/span&gt;
 &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;numpy&lt;/span&gt; &lt;span class="kn"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;np&lt;/span&gt;
 &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;scipy&lt;/span&gt; &lt;span class="kn"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;sp&lt;/span&gt;
@@ -39,34 +91,31 @@ In&amp;nbsp;[1]:
 
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h3 id="0-preliminaries-about-python"&gt;0. Preliminaries about Python&lt;/h3&gt;
+&lt;h3 id="preliminaries-about-python"&gt;0. Preliminaries about Python&lt;/h3&gt;
 &lt;p&gt;In working with python I always remember: a python is a duck.&lt;/p&gt;
 &lt;p&gt;What I mean is, python has a certain way of doing things. For example lets call one of these ways listiness. Listiness works on lists, dictionaries, files, and a general notion of something called an iterator.&lt;/p&gt;
 &lt;p&gt;But first, lets introduce the notion of a comprehension. Its a way of constructing a list&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[2]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;alist&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
 &lt;span class="n"&gt;asquaredlist&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;alist&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
 &lt;span class="n"&gt;asquaredlist&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -76,21 +125,21 @@ In&amp;nbsp;[2]:
 
 &lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[2]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
 
-&lt;div class="output_text output_subarea output_pyout"&gt;
 &lt;pre&gt;
 [1, 4, 9, 16, 25]
 &lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
@@ -99,17 +148,15 @@ In&amp;nbsp;[2]:
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[3]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="nb"&gt;enumerate&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;asquaredlist&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -119,21 +166,21 @@ In&amp;nbsp;[3]:
 
 &lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[3]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
 
-&lt;div class="output_text output_subarea output_pyout"&gt;
 &lt;pre&gt;
 &amp;lt;enumerate at 0x1090fe3c0&amp;gt;
 &lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
@@ -142,17 +189,15 @@ In&amp;nbsp;[3]:
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[4]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;the_tuple&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;the_tuple&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;enumerate&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;asquaredlist&lt;/span&gt;&lt;span class="p"&gt;)]&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -162,21 +207,21 @@ In&amp;nbsp;[4]:
 
 &lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[4]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
 
-&lt;div class="output_text output_subarea output_pyout"&gt;
 &lt;pre&gt;
 [(0, 1), (1, 4), (2, 9), (3, 16), (4, 25)]
 &lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
@@ -185,17 +230,15 @@ In&amp;nbsp;[4]:
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[5]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="nb"&gt;zip&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;alist&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;asquaredlist&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -205,21 +248,21 @@ In&amp;nbsp;[5]:
 
 &lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[5]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
 
-&lt;div class="output_text output_subarea output_pyout"&gt;
 &lt;pre&gt;
 [(1, 1), (2, 4), (3, 9), (4, 16), (5, 25)]
 &lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
@@ -228,18 +271,16 @@ In&amp;nbsp;[5]:
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[6]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;linelengths&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;line&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;line&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;open&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;data/olive.csv&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)]&lt;/span&gt;
 &lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="n"&gt;linelengths&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -248,7 +289,7 @@ In&amp;nbsp;[6]:
 
 
 &lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
-&lt;div class="output_subarea output_stream output_stdout output_text"&gt;
+&lt;div class="box-flex1 output_subarea output_stream output_stdout"&gt;
 &lt;pre&gt;
 [88, 49, 49, 48, 48, 49, 48, 48, 49, 49, 50, 50, 50, 50, 49, 49, 50, 49, 50, 49, 49, 50, 49, 50, 50, 50, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 46, 47, 47, 47, 47, 47, 47, 47, 46, 47, 47, 47, 47, 46, 46, 46, 47, 46, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 46, 47, 47, 47, 52, 51, 52, 51, 51, 52, 52, 52, 52, 52, 52, 52, 52, 52, 52, 52, 52, 52, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 52, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 52, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 52, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 52, 53, 53, 53, 53, 53, 52, 52, 53, 53, 53, 53, 53, 53, 53, 52, 52, 53, 53, 52, 53, 53, 52, 53, 53, 52, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 46, 47, 47, 47, 46, 45, 45, 45, 44, 45, 45, 45, 45, 44, 44, 45, 46, 46, 47, 47, 46, 47, 46, 46, 47, 46, 45, 45, 46, 44, 44, 44, 45, 45, 45, 45, 53, 53, 52, 53, 52, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 54, 53, 53, 53, 53, 53, 53, 55, 55, 54, 54, 54, 55, 55, 55, 54, 55, 54, 53, 54, 54, 54, 53, 54, 54, 55, 54, 54, 54, 54, 54, 55, 54, 54, 55, 54, 54, 54, 54, 55, 54, 54, 54, 55, 54, 54, 54, 54, 54, 54, 55, 54, 54, 55, 53, 54, 54, 53, 54, 53, 54, 53, 54, 53, 53, 54, 53, 54, 54, 54, 54, 54, 54, 54, 54, 55, 54, 54, 54, 55, 54, 54, 54, 54, 56, 54, 55, 54, 55, 54, 54, 55, 54, 53, 54, 53, 53, 54, 53, 54, 54, 53, 53, 53, 54, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 51, 50, 50, 50, 50, 50, 50, 50, 51, 50, 51, 52, 50, 51, 51, 51, 51, 50, 51, 50, 50, 50, 51, 50, 50, 51, 50, 51, 51, 50, 49, 50, 50, 50, 50, 50, 50, 51, 51, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 48, 51, 50, 50, 50, 51, 51, 51, 49, 49, 49, 50, 51, 51, 49, 48, 47, 47, 50, 51, 48, 50, 48, 51, 51, 49, 49, 50, 50, 49, 49, 49, 48, 50, 47, 49, 51, 48, 49, 49, 51, 49, 49, 49, 49, 51, 51, 51, 48, 50, 49]
 
@@ -260,7 +301,7 @@ In&amp;nbsp;[6]:
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
@@ -269,18 +310,16 @@ In&amp;nbsp;[6]:
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[7]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;adict&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;one&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;two&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;three&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;adict&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="p"&gt;[(&lt;/span&gt;&lt;span class="n"&gt;k&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;v&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;k&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;v&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;adict&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;items&lt;/span&gt;&lt;span class="p"&gt;()],&lt;/span&gt; &lt;span class="n"&gt;adict&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;values&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -289,7 +328,7 @@ In&amp;nbsp;[7]:
 
 
 &lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
-&lt;div class="output_subarea output_stream output_stdout output_text"&gt;
+&lt;div class="box-flex1 output_subarea output_stream output_stdout"&gt;
 &lt;pre&gt;
 [&amp;apos;three&amp;apos;, &amp;apos;two&amp;apos;, &amp;apos;one&amp;apos;] [(&amp;apos;three&amp;apos;, 3), (&amp;apos;two&amp;apos;, 2), (&amp;apos;one&amp;apos;, 1)] [3, 2, 1]
 
@@ -301,7 +340,7 @@ In&amp;nbsp;[7]:
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
@@ -310,20 +349,18 @@ In&amp;nbsp;[7]:
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[8]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;mylist&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;[]&lt;/span&gt;
 &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;xrange&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
     &lt;span class="n"&gt;mylist&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;append&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="n"&gt;mylist&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -333,21 +370,21 @@ In&amp;nbsp;[8]:
 
 &lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[8]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
 
-&lt;div class="output_text output_subarea output_pyout"&gt;
 &lt;pre&gt;
 [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 &lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
@@ -356,17 +393,15 @@ In&amp;nbsp;[8]:
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[9]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="n"&gt;k&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="n"&gt;v&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;k&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;v&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;zip&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;alist&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;asquaredlist&lt;/span&gt;&lt;span class="p"&gt;)}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -376,21 +411,21 @@ In&amp;nbsp;[9]:
 
 &lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[9]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
 
-&lt;div class="output_text output_subarea output_pyout"&gt;
 &lt;pre&gt;
 {1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
 &lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
@@ -399,18 +434,16 @@ In&amp;nbsp;[9]:
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[10]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;thelist&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;11&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="n"&gt;k&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="n"&gt;v&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;k&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;v&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;zip&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;thelist&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;thelist&lt;/span&gt;&lt;span class="p"&gt;])}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -420,9 +453,9 @@ In&amp;nbsp;[10]:
 
 &lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[10]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
 
-&lt;div class="output_text output_subarea output_pyout"&gt;
 &lt;pre&gt;
 {0: 0,
  1: 1,
@@ -436,33 +469,33 @@ In&amp;nbsp;[10]:
  9: 729,
  10: 1000}
 &lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h3 id="1-the-olive-oils-dataset"&gt;1. The Olive Oils dataset&lt;/h3&gt;
+&lt;h3 id="the-olive-oils-dataset"&gt;1. The Olive Oils dataset&lt;/h3&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;Some of the following text is taken from the rggobi book (&lt;a href="http://www.ggobi.org/book/"&gt;http://www.ggobi.org/book/&lt;/a&gt;). It is an excellent book on visualization and EDA for classification, and is available freely as a pdf from Hollis for those with a Harvard Id. Even though the book uses ggobi, a lot of the same analysis can be done in Mondrian or directly in Matplotlib/Pandas (albeit not interactively).&lt;/p&gt;
+&lt;p&gt;Some of the following text is taken from the rggobi book (http://www.ggobi.org/book/). It is an excellent book on visualization and EDA for classification, and is available freely as a pdf from Hollis for those with a Harvard Id. Even though the book uses ggobi, a lot of the same analysis can be done in Mondrian or directly in Matplotlib/Pandas (albeit not interactively).&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
@@ -474,36 +507,29 @@ In&amp;nbsp;[10]:
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;&amp;quot;Source: Forina, M., Armanino, C., Lanteri, S. &amp;amp; Tiscornia, E. (1983), Classification of Olive Oils from their Fatty Acid Composition, in Martens, H. and
-Russwurm Jr., H., eds, Food Research and Data Analysis, Applied Science
-Publishers, London, pp. 189–214. It was brought to our attention by Glover
-&amp;amp; Hopke (1992).&lt;/p&gt;
+&lt;p&gt;&amp;quot;Source: Forina, M., Armanino, C., Lanteri, S. &amp;amp; Tiscornia, E. (1983), Classification of Olive Oils from their Fatty Acid Composition, in Martens, H. and Russwurm Jr., H., eds, Food Research and Data Analysis, Applied Science Publishers, London, pp. 189–214. It was brought to our attention by Glover &amp;amp; Hopke (1992).&lt;/p&gt;
 &lt;p&gt;Number of rows: 572&lt;/p&gt;
 &lt;p&gt;Number of variables: 10&lt;/p&gt;
-&lt;p&gt;Description: This data consists of the percentage composition of fatty acids
-found in the lipid fraction of Italian olive oils. The data arises from a study
-to determine the authenticity of an olive oil.&amp;quot;&lt;/p&gt;
+Description: This data consists of the percentage composition of fatty acids found in the lipid fraction of Italian olive oils. The data arises from a study to determine the authenticity of an olive oil.&amp;quot;
 &lt;hr/&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[11]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;IPython.display&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;Image&lt;/span&gt;
 &lt;span class="n"&gt;Image&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;filename&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;data/Italy.png&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -513,9 +539,9 @@ In&amp;nbsp;[11]:
 
 &lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[11]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
 
-&lt;div class="output_png output_subarea output_pyout"&gt;
 &lt;img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATIAAAEwCAIAAAC7bGqZAAAYFmlDQ1BJQ0MgUHJvZmlsZQAAWAmt
 WWdYFM2y7pnZAMuSc8455yQ55xwFYck5LEHEhIoooCAoiIAoiCCSBJQkSBIQUQQDZoICkkRUUASU
 O/Dp951zz7n/7jzPzr5b/XZ1dVVNT1cvABw3SVFRYTAdAOERsWR7E30+Vzd3PvxbgANsgAnIAUGS
@@ -1073,61 +1099,58 @@ WzIUCECAFwKwJS+ZgA4QYARgS4YCAQjwQgC25CUT0AECjABsyVAgAAFeCMCWvGQCOkCAEYAtGQoE
 IMALAdiSl0xABwgwArAlQ4EABHghAFvykgnoAAFGALZkKBCAAC8EYEteMgEdIMAIwJYMBQIQ4IUA
 bMlLJqADBBgB2JKhQAACvBCALXnJBHSAACMAWzIUCECAFwKwJS+ZgA4QYARgS4YCAQjwQgC25CUT
 0AECjMAP28jyIvMM8+oAAAAASUVORK5CYII=
-"
-&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
+"&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;In working with pandas and matplotlib I dont always remember the syntax. A programmer is a good tool for converting Stack Overflow snippets into code. I almost always put what I am trying to do into google and go from there. &lt;/p&gt;
+&lt;p&gt;In working with pandas and matplotlib I dont always remember the syntax. A programmer is a good tool for converting Stack Overflow snippets into code. I almost always put what I am trying to do into google and go from there.&lt;/p&gt;
 &lt;p&gt;That said, I found the following links very useful in understanding the Pandas mode, how things work.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="http://blog.yhathq.com/posts/R-and-pandas-and-what-ive-learned-about-each.html"&gt;http://blog.yhathq.com/posts/R-and-pandas-and-what-ive-learned-about-each.html&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.bearrelroll.com/2013/05/python-pandas-tutorial/"&gt;http://www.bearrelroll.com/2013/05/python-pandas-tutorial/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://manishamde.github.io/blog/2013/03/07/pandas-and-python-top-10/"&gt;http://manishamde.github.io/blog/2013/03/07/pandas-and-python-top-10/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;http://blog.yhathq.com/posts/R-and-pandas-and-what-ive-learned-about-each.html&lt;/li&gt;
+&lt;li&gt;http://www.bearrelroll.com/2013/05/python-pandas-tutorial/&lt;/li&gt;
+&lt;li&gt;http://manishamde.github.io/blog/2013/03/07/pandas-and-python-top-10/&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h3 id="2-loading-and-cleaning"&gt;2. Loading and Cleaning&lt;/h3&gt;
+&lt;h3 id="loading-and-cleaning"&gt;2. Loading and Cleaning&lt;/h3&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;Let&amp;#39;s load the olive oil dataset into a pandas dataframe and have a look at the first 5 rows.&lt;/p&gt;
+&lt;p&gt;Let's load the olive oil dataset into a pandas dataframe and have a look at the first 5 rows.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[12]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;pd&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;read_csv&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;data/olive.csv&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1137,8 +1160,9 @@ In&amp;nbsp;[12]:
 
 &lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[12]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
-&lt;div class="output_html rendered_html output_subarea output_pyout"&gt;
+&lt;div class="output_html rendered_html"&gt;
 &lt;div style="max-height:1000px;max-width:1500px;overflow:auto;"&gt;
 &lt;table border="1" class="dataframe"&gt;
   &lt;thead&gt;
@@ -1234,34 +1258,33 @@ In&amp;nbsp;[12]:
 &lt;/div&gt;
 
 &lt;/div&gt;
-
-&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;Let&amp;#39;s rename that ugly first column. &lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Hint&lt;/em&gt;: A Google search for &amp;#39;python pandas dataframe rename&amp;#39; points you at this &lt;a href="http://pandas.pydata.org/pandas-docs/dev/generated/pandas.DataFrame.rename.html"&gt;documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Let's rename that ugly first column.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Hint&lt;/em&gt;: A Google search for 'python pandas dataframe rename' points you at this &lt;a href="http://pandas.pydata.org/pandas-docs/dev/generated/pandas.DataFrame.rename.html"&gt;documentation&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[13]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;columns&lt;/span&gt;
 &lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;rename&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;columns&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;columns&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]:&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;areastring&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;},&lt;/span&gt; &lt;span class="n"&gt;inplace&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="bp"&gt;True&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;columns&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1270,7 +1293,7 @@ In&amp;nbsp;[13]:
 
 
 &lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
-&lt;div class="output_subarea output_stream output_stdout output_text"&gt;
+&lt;div class="box-flex1 output_subarea output_stream output_stdout"&gt;
 &lt;pre&gt;
 Index([u&amp;apos;Unnamed: 0&amp;apos;, u&amp;apos;region&amp;apos;, u&amp;apos;area&amp;apos;, u&amp;apos;palmitic&amp;apos;, u&amp;apos;palmitoleic&amp;apos;, u&amp;apos;stearic&amp;apos;, u&amp;apos;oleic&amp;apos;, u&amp;apos;linoleic&amp;apos;, u&amp;apos;linolenic&amp;apos;, u&amp;apos;arachidic&amp;apos;, u&amp;apos;eicosenoic&amp;apos;], dtype=object)
 
@@ -1280,41 +1303,39 @@ Index([u&amp;apos;Unnamed: 0&amp;apos;, u&amp;apos;region&amp;apos;, u&amp;apos;
 
 &lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[13]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
 
-&lt;div class="output_text output_subarea output_pyout"&gt;
 &lt;pre&gt;
 Index([u&amp;apos;areastring&amp;apos;, u&amp;apos;region&amp;apos;, u&amp;apos;area&amp;apos;, u&amp;apos;palmitic&amp;apos;, u&amp;apos;palmitoleic&amp;apos;, u&amp;apos;stearic&amp;apos;, u&amp;apos;oleic&amp;apos;, u&amp;apos;linoleic&amp;apos;, u&amp;apos;linolenic&amp;apos;, u&amp;apos;arachidic&amp;apos;, u&amp;apos;eicosenoic&amp;apos;], dtype=object)
 &lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;Let&amp;#39;s explore. Which unique regions and areas are contained in the dataset?&lt;/p&gt;
+&lt;p&gt;Let's explore. Which unique regions and areas are contained in the dataset?&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[14]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;regions&lt;/span&gt;&lt;span class="se"&gt;\t&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;region&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;unique&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 &lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;areas&lt;/span&gt;&lt;span class="se"&gt;\t&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;area&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;unique&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1323,7 +1344,7 @@ In&amp;nbsp;[14]:
 
 
 &lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
-&lt;div class="output_subarea output_stream output_stdout output_text"&gt;
+&lt;div class="box-flex1 output_subarea output_stream output_stdout"&gt;
 &lt;pre&gt;
 regions	[1 2 3]
 areas	[1 2 3 4 5 6 9 7 8]
@@ -1336,27 +1357,25 @@ areas	[1 2 3 4 5 6 9 7 8]
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;Let&amp;#39;s create a &lt;em&gt;crosstab&lt;/em&gt;ulation or contingency table of the factors.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Hint&lt;/em&gt;: A Google search for &amp;#39;python pandas cross tabulation&amp;#39; points you at this &lt;a href="http://pandas.pydata.org/pandas-docs/stable/reshaping.html#cross-tabulations"&gt;documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Let's create a &lt;em&gt;crosstab&lt;/em&gt;ulation or contingency table of the factors.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Hint&lt;/em&gt;: A Google search for 'python pandas cross tabulation' points you at this &lt;a href="http://pandas.pydata.org/pandas-docs/stable/reshaping.html#cross-tabulations"&gt;documentation&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[15]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;pd&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;crosstab&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;area&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;region&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1366,8 +1385,9 @@ In&amp;nbsp;[15]:
 
 &lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[15]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
-&lt;div class="output_html rendered_html output_subarea output_pyout"&gt;
+&lt;div class="output_html rendered_html"&gt;
 &lt;div style="max-height:1000px;max-width:1500px;overflow:auto;"&gt;
 &lt;table border="1" class="dataframe"&gt;
   &lt;thead&gt;
@@ -1445,31 +1465,30 @@ In&amp;nbsp;[15]:
 &lt;/div&gt;
 
 &lt;/div&gt;
-
-&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;Do we need to clean the dataset before we can explore it a little more? Let&amp;#39;s have a look.&lt;/p&gt;
+&lt;p&gt;Do we need to clean the dataset before we can explore it a little more? Let's have a look.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[16]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1479,8 +1498,9 @@ In&amp;nbsp;[16]:
 
 &lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[16]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
-&lt;div class="output_html rendered_html output_subarea output_pyout"&gt;
+&lt;div class="output_html rendered_html"&gt;
 &lt;div style="max-height:1000px;max-width:1500px;overflow:auto;"&gt;
 &lt;table border="1" class="dataframe"&gt;
   &lt;thead&gt;
@@ -1576,32 +1596,31 @@ In&amp;nbsp;[16]:
 &lt;/div&gt;
 
 &lt;/div&gt;
-
-&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;Let&amp;#39;s get rid of the junk numbering in &lt;code&gt;df.areastring&lt;/code&gt;. For single column Pandas Series we use &lt;code&gt;map&lt;/code&gt;. Here&amp;#39;s the &lt;a href="http://pandas.pydata.org/pandas-docs/dev/generated/pandas.Series.map.html"&gt;documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Let's get rid of the junk numbering in &lt;code&gt;df.areastring&lt;/code&gt;. For single column Pandas Series we use &lt;code&gt;map&lt;/code&gt;. Here's the &lt;a href="http://pandas.pydata.org/pandas-docs/dev/generated/pandas.Series.map.html"&gt;documentation&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[17]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;areastring&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;areastring&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;map&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;lambda&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;split&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;.&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)[&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
 &lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1611,8 +1630,9 @@ In&amp;nbsp;[17]:
 
 &lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[17]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
-&lt;div class="output_html rendered_html output_subarea output_pyout"&gt;
+&lt;div class="output_html rendered_html"&gt;
 &lt;div style="max-height:1000px;max-width:1500px;overflow:auto;"&gt;
 &lt;table border="1" class="dataframe"&gt;
   &lt;thead&gt;
@@ -1708,12 +1728,13 @@ In&amp;nbsp;[17]:
 &lt;/div&gt;
 
 &lt;/div&gt;
-
-&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
@@ -1722,17 +1743,15 @@ In&amp;nbsp;[17]:
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[18]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="p"&gt;[[&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;palmitic&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;oleic&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1742,8 +1761,9 @@ In&amp;nbsp;[18]:
 
 &lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[18]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
-&lt;div class="output_html rendered_html output_subarea output_pyout"&gt;
+&lt;div class="output_html rendered_html"&gt;
 &lt;div style="max-height:1000px;max-width:1500px;overflow:auto;"&gt;
 &lt;table border="1" class="dataframe"&gt;
   &lt;thead&gt;
@@ -1785,12 +1805,13 @@ In&amp;nbsp;[18]:
 &lt;/div&gt;
 
 &lt;/div&gt;
-
-&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
@@ -1799,7 +1820,7 @@ In&amp;nbsp;[18]:
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
@@ -1808,17 +1829,15 @@ In&amp;nbsp;[18]:
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[19]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;palmitic&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1827,7 +1846,7 @@ In&amp;nbsp;[19]:
 
 
 &lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
-&lt;div class="output_subarea output_stream output_stdout output_text"&gt;
+&lt;div class="box-flex1 output_subarea output_stream output_stdout"&gt;
 &lt;pre&gt;
 0     1075
 1     1088
@@ -1870,27 +1889,25 @@ Name: palmitic, Length: 572, dtype: int64
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;Notice the difference in the syntax. In the first example where we used list indexing we got a new DataFrame. In the second example we got a series corresponding to the column. &lt;/p&gt;
+&lt;p&gt;Notice the difference in the syntax. In the first example where we used list indexing we got a new DataFrame. In the second example we got a series corresponding to the column.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[20]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;type of df[[&amp;#39;palmitic&amp;#39;]]:&lt;/span&gt;&lt;span class="se"&gt;\t&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;type&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="p"&gt;[[&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;palmitic&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]])&lt;/span&gt; 
 &lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;type of df[&amp;#39;palmitic&amp;#39;]:&lt;/span&gt;&lt;span class="se"&gt;\t\t&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;type&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;palmitic&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1899,7 +1916,7 @@ In&amp;nbsp;[20]:
 
 
 &lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
-&lt;div class="output_subarea output_stream output_stdout output_text"&gt;
+&lt;div class="box-flex1 output_subarea output_stream output_stdout"&gt;
 &lt;pre&gt;
 type of df[[&amp;apos;palmitic&amp;apos;]]:	&amp;lt;class &amp;apos;pandas.core.frame.DataFrame&amp;apos;&amp;gt;
 type of df[&amp;apos;palmitic&amp;apos;]:		&amp;lt;class &amp;apos;pandas.core.series.Series&amp;apos;&amp;gt;
@@ -1912,7 +1929,7 @@ type of df[&amp;apos;palmitic&amp;apos;]:		&amp;lt;class &amp;apos;pandas.core.s
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
@@ -1921,17 +1938,15 @@ type of df[&amp;apos;palmitic&amp;apos;]:		&amp;lt;class &amp;apos;pandas.core.s
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[21]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;palmitic&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1941,9 +1956,9 @@ In&amp;nbsp;[21]:
 
 &lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[21]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
 
-&lt;div class="output_text output_subarea output_pyout"&gt;
 &lt;pre&gt;
 0     1075
 1     1088
@@ -1978,15 +1993,15 @@ In&amp;nbsp;[21]:
 571     960
 Name: palmitic, Length: 572, dtype: int64
 &lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
@@ -1995,17 +2010,15 @@ Name: palmitic, Length: 572, dtype: int64
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[22]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;areastring&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;unique&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -2015,39 +2028,38 @@ In&amp;nbsp;[22]:
 
 &lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[22]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
 
-&lt;div class="output_text output_subarea output_pyout"&gt;
 &lt;pre&gt;
 array([&amp;apos;North-Apulia&amp;apos;, &amp;apos;Calabria&amp;apos;, &amp;apos;South-Apulia&amp;apos;, &amp;apos;Sicily&amp;apos;,
        &amp;apos;Inland-Sardinia&amp;apos;, &amp;apos;Coast-Sardinia&amp;apos;, &amp;apos;Umbria&amp;apos;, &amp;apos;East-Liguria&amp;apos;,
        &amp;apos;West-Liguria&amp;apos;], dtype=object)
 &lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;Create a new dataframe &lt;code&gt;dfsub&lt;/code&gt; by taking the list of acids and using pandas&amp;#39; &lt;code&gt;apply&lt;/code&gt; function to divide all values by 100.&lt;/p&gt;
-&lt;p&gt;If you&amp;#39;re not familiar with pandas&amp;#39; &lt;code&gt;apply&lt;/code&gt; function, a Google search for &amp;#39;python pandas dataframe apply&amp;#39; points you to the &lt;a href="http://pandas.pydata.org/pandas-docs/dev/generated/pandas.DataFrame.apply.html"&gt;documentation&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Create a new dataframe &lt;code&gt;dfsub&lt;/code&gt; by taking the list of acids and using pandas' &lt;code&gt;apply&lt;/code&gt; function to divide all values by 100.&lt;/p&gt;
+&lt;p&gt;If you're not familiar with pandas' &lt;code&gt;apply&lt;/code&gt; function, a Google search for 'python pandas dataframe apply' points you to the &lt;a href="http://pandas.pydata.org/pandas-docs/dev/generated/pandas.DataFrame.apply.html"&gt;documentation&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[23]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;acidlist&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;palmitic&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;palmitoleic&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;stearic&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;oleic&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;linoleic&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;linolenic&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;arachidic&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;eicosenoic&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
 
 &lt;span class="c"&gt;#your code here&lt;/span&gt;
@@ -2058,7 +2070,6 @@ In&amp;nbsp;[23]:
 
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;
 
 &lt;div class="output_wrapper"&gt;
 &lt;div class="output"&gt;
@@ -2066,8 +2077,9 @@ In&amp;nbsp;[23]:
 
 &lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[23]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
-&lt;div class="output_html rendered_html output_subarea output_pyout"&gt;
+&lt;div class="output_html rendered_html"&gt;
 &lt;div style="max-height:1000px;max-width:1500px;overflow:auto;"&gt;
 &lt;table border="1" class="dataframe"&gt;
   &lt;thead&gt;
@@ -2145,32 +2157,31 @@ In&amp;nbsp;[23]:
 &lt;/div&gt;
 
 &lt;/div&gt;
-
-&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;Notice that we can replace part of the dataframe by this new frame. Since we need the percentages, let&amp;#39;s do this. The &lt;code&gt;Oleic&lt;/code&gt; percentages should be in the 70s and 80s if you did this right.&lt;/p&gt;
+&lt;p&gt;Notice that we can replace part of the dataframe by this new frame. Since we need the percentages, let's do this. The &lt;code&gt;Oleic&lt;/code&gt; percentages should be in the 70s and 80s if you did this right.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[24]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;acidlist&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;dfsub&lt;/span&gt;
 &lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -2180,8 +2191,9 @@ In&amp;nbsp;[24]:
 
 &lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[24]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
-&lt;div class="output_html rendered_html output_subarea output_pyout"&gt;
+&lt;div class="output_html rendered_html"&gt;
 &lt;div style="max-height:1000px;max-width:1500px;overflow:auto;"&gt;
 &lt;table border="1" class="dataframe"&gt;
   &lt;thead&gt;
@@ -2277,22 +2289,21 @@ In&amp;nbsp;[24]:
 &lt;/div&gt;
 
 &lt;/div&gt;
-
-&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[25]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;palmitic&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mean&lt;/span&gt;&lt;span class="p"&gt;(),&lt;/span&gt; &lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;palmitic&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="p"&gt;(),&lt;/span&gt; &lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;palmitic&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;var&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -2302,31 +2313,29 @@ In&amp;nbsp;[25]:
 
 &lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[25]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
 
-&lt;div class="output_text output_subarea output_pyout"&gt;
 &lt;pre&gt;
 (12.317412587412583, 1.6859226405632937, 2.8423351499639087)
 &lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[26]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;palmitic&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="p"&gt;(),&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sqrt&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;palmitic&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;var&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -2336,31 +2345,29 @@ In&amp;nbsp;[26]:
 
 &lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[26]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
 
-&lt;div class="output_text output_subarea output_pyout"&gt;
 &lt;pre&gt;
 (1.6859226405632937, 1.6859226405632937)
 &lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[27]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;palmitic&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mean&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;palmitic&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;var&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;palmitic&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -2370,31 +2377,29 @@ In&amp;nbsp;[27]:
 
 &lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[27]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
 
-&lt;div class="output_text output_subarea output_pyout"&gt;
 &lt;pre&gt;
 (1.6844482872943494, 12.317412587412583, 2.837366032568867)
 &lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[28]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sqrt&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;var&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;palmitic&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -2404,31 +2409,29 @@ In&amp;nbsp;[28]:
 
 &lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[28]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
 
-&lt;div class="output_text output_subarea output_pyout"&gt;
 &lt;pre&gt;
 1.6844482872943494
 &lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[29]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;acidlist&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;corr&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -2438,8 +2441,9 @@ In&amp;nbsp;[29]:
 
 &lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[29]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
-&lt;div class="output_html rendered_html output_subarea output_pyout"&gt;
+&lt;div class="output_html rendered_html"&gt;
 &lt;div style="max-height:1000px;max-width:1500px;overflow:auto;"&gt;
 &lt;table border="1" class="dataframe"&gt;
   &lt;thead&gt;
@@ -2550,22 +2554,21 @@ In&amp;nbsp;[29]:
 &lt;/div&gt;
 
 &lt;/div&gt;
-
-&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[30]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;acidlist&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;cov&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -2575,8 +2578,9 @@ In&amp;nbsp;[30]:
 
 &lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[30]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
-&lt;div class="output_html rendered_html output_subarea output_pyout"&gt;
+&lt;div class="output_html rendered_html"&gt;
 &lt;div style="max-height:1000px;max-width:1500px;overflow:auto;"&gt;
 &lt;table border="1" class="dataframe"&gt;
   &lt;thead&gt;
@@ -2687,22 +2691,21 @@ In&amp;nbsp;[30]:
 &lt;/div&gt;
 
 &lt;/div&gt;
-
-&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[31]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;acidlist&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;median&lt;/span&gt;&lt;span class="p"&gt;(),&lt;/span&gt; &lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;acidlist&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mean&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -2712,9 +2715,9 @@ In&amp;nbsp;[31]:
 
 &lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[31]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
 
-&lt;div class="output_text output_subarea output_pyout"&gt;
 &lt;pre&gt;
 (palmitic       12.010
 palmitoleic     1.100
@@ -2735,24 +2738,24 @@ arachidic       0.580979
 eicosenoic      0.162815
 dtype: float64)
 &lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h3 id="3-quick-intro-to-numpy-and-matplotlib"&gt;3. Quick Intro to Numpy and Matplotlib&lt;/h3&gt;
+&lt;h3 id="quick-intro-to-numpy-and-matplotlib"&gt;3. Quick Intro to Numpy and Matplotlib&lt;/h3&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
@@ -2761,7 +2764,7 @@ dtype: float64)
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
@@ -2770,18 +2773,16 @@ dtype: float64)
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[32]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;v&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;array&lt;/span&gt;&lt;span class="p"&gt;([&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
 &lt;span class="n"&gt;v&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;shape&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;type&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;v&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -2791,31 +2792,29 @@ In&amp;nbsp;[32]:
 
 &lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[32]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
 
-&lt;div class="output_text output_subarea output_pyout"&gt;
 &lt;pre&gt;
 ((4,), numpy.ndarray)
 &lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[33]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;v&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -2825,31 +2824,29 @@ In&amp;nbsp;[33]:
 
 &lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[33]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
 
-&lt;div class="output_text output_subarea output_pyout"&gt;
 &lt;pre&gt;
 array([1, 2, 3, 4])
 &lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[34]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;v&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;T&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;v&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;T&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;shape&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -2859,32 +2856,30 @@ In&amp;nbsp;[34]:
 
 &lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[34]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
 
-&lt;div class="output_text output_subarea output_pyout"&gt;
 &lt;pre&gt;
 (array([1, 2, 3, 4]), (4,))
 &lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[35]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;v&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
     &lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -2893,7 +2888,7 @@ In&amp;nbsp;[35]:
 
 
 &lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
-&lt;div class="output_subarea output_stream output_stdout output_text"&gt;
+&lt;div class="box-flex1 output_subarea output_stream output_stdout"&gt;
 &lt;pre&gt;
 1
 2
@@ -2908,18 +2903,16 @@ In&amp;nbsp;[35]:
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[36]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;M&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;array&lt;/span&gt;&lt;span class="p"&gt;([[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;]])&lt;/span&gt;
 &lt;span class="n"&gt;M&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -2929,32 +2922,30 @@ In&amp;nbsp;[36]:
 
 &lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[36]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
 
-&lt;div class="output_text output_subarea output_pyout"&gt;
 &lt;pre&gt;
 array([[1, 2],
        [3, 4]])
 &lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[37]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;M&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;T&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -2964,32 +2955,30 @@ In&amp;nbsp;[37]:
 
 &lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[37]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
 
-&lt;div class="output_text output_subarea output_pyout"&gt;
 &lt;pre&gt;
 array([[1, 3],
        [2, 4]])
 &lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[38]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="nb"&gt;type&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;M&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="n"&gt;M&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;shape&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -2999,32 +2988,30 @@ In&amp;nbsp;[38]:
 
 &lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[38]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
 
-&lt;div class="output_text output_subarea output_pyout"&gt;
 &lt;pre&gt;
 (numpy.ndarray, (2, 2))
 &lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[39]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;M32&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;array&lt;/span&gt;&lt;span class="p"&gt;([[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;],[&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;],[&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;6&lt;/span&gt;&lt;span class="p"&gt;]])&lt;/span&gt;
 &lt;span class="n"&gt;M32&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -3034,33 +3021,31 @@ In&amp;nbsp;[39]:
 
 &lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[39]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
 
-&lt;div class="output_text output_subarea output_pyout"&gt;
 &lt;pre&gt;
 array([[1, 2],
        [3, 4],
        [5, 6]])
 &lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[40]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;M32&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;shape&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -3070,32 +3055,30 @@ In&amp;nbsp;[40]:
 
 &lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[40]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
 
-&lt;div class="output_text output_subarea output_pyout"&gt;
 &lt;pre&gt;
 (3, 2)
 &lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[41]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;M23&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;M32&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;T&lt;/span&gt;
 &lt;span class="n"&gt;M23&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -3105,32 +3088,30 @@ In&amp;nbsp;[41]:
 
 &lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[41]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
 
-&lt;div class="output_text output_subarea output_pyout"&gt;
 &lt;pre&gt;
 array([[1, 3, 5],
        [2, 4, 6]])
 &lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[42]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;M23&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;shape&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -3140,31 +3121,29 @@ In&amp;nbsp;[42]:
 
 &lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[42]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
 
-&lt;div class="output_text output_subarea output_pyout"&gt;
 &lt;pre&gt;
 (2, 3)
 &lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[43]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;palmitic&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;values&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -3174,9 +3153,9 @@ In&amp;nbsp;[43]:
 
 &lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[43]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
 
-&lt;div class="output_text output_subarea output_pyout"&gt;
 &lt;pre&gt;
 array([ 10.75,  10.88,   9.11,   9.66,  10.51,   9.11,   9.22,  11.  ,
         10.82,  10.37,  10.51,  10.36,  10.74,   8.75,   9.52,  11.55,
@@ -3251,25 +3230,23 @@ array([ 10.75,  10.88,   9.11,   9.66,  10.51,   9.11,   9.22,  11.  ,
         10.9 ,  11.  ,  10.9 ,  11.5 ,  11.1 ,  10.1 ,  10.7 ,  12.8 ,
         10.6 ,  10.1 ,   9.9 ,   9.6 ])
 &lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[44]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="p"&gt;[[&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;palmitic&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;palmitoleic&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;values&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="p"&gt;[[&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;palmitic&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;palmitoleic&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;values&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;shape&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -3279,9 +3256,9 @@ In&amp;nbsp;[44]:
 
 &lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[44]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
 
-&lt;div class="output_text output_subarea output_pyout"&gt;
 &lt;pre&gt;
 (array([[ 10.75,   0.75],
        [ 10.88,   0.73],
@@ -3292,25 +3269,23 @@ In&amp;nbsp;[44]:
        [  9.6 ,   0.8 ]]),
  (572, 2))
 &lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[45]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;zeros&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -3320,31 +3295,29 @@ In&amp;nbsp;[45]:
 
 &lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[45]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
 
-&lt;div class="output_text output_subarea output_pyout"&gt;
 &lt;pre&gt;
 array([ 0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.])
 &lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[46]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ones&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;reshape&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -3354,9 +3327,9 @@ In&amp;nbsp;[46]:
 
 &lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[46]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
 
-&lt;div class="output_text output_subarea output_pyout"&gt;
 &lt;pre&gt;
 array([[ 1.,  1.],
        [ 1.,  1.],
@@ -3364,26 +3337,24 @@ array([[ 1.,  1.],
        [ 1.,  1.],
        [ 1.,  1.]])
 &lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[47]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;myrandom&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;random&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;rand&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="n"&gt;myrandom&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -3392,7 +3363,7 @@ In&amp;nbsp;[47]:
 
 
 &lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
-&lt;div class="output_subarea output_stream output_stdout output_text"&gt;
+&lt;div class="box-flex1 output_subarea output_stream output_stdout"&gt;
 &lt;pre&gt;
 [[ 0.05230491  0.91185191  0.20743992]
  [ 0.74409837  0.44205873  0.47194589]
@@ -3408,17 +3379,15 @@ In&amp;nbsp;[47]:
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[48]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;myrandom&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="n"&gt;myrandom&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="n"&gt;myrandom&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;][&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -3428,33 +3397,31 @@ In&amp;nbsp;[48]:
 
 &lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[48]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
 
-&lt;div class="output_text output_subarea output_pyout"&gt;
 &lt;pre&gt;
 (array([ 0.05230491,  0.91185191,  0.20743992]),
  array([ 0.85845655,  0.76218189,  0.07040454]),
  0.052304912419592231)
 &lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[49]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;myrandom&lt;/span&gt;&lt;span class="p"&gt;[:,&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -3464,31 +3431,29 @@ In&amp;nbsp;[49]:
 
 &lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[49]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
 
-&lt;div class="output_text output_subarea output_pyout"&gt;
 &lt;pre&gt;
 array([ 0.05230491,  0.74409837,  0.42524805,  0.08106272,  0.85845655])
 &lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[50]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;myrandom&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,:]&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -3498,21 +3463,21 @@ In&amp;nbsp;[50]:
 
 &lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[50]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
 
-&lt;div class="output_text output_subarea output_pyout"&gt;
 &lt;pre&gt;
 array([ 0.05230491,  0.91185191,  0.20743992])
 &lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
@@ -3521,19 +3486,17 @@ array([ 0.05230491,  0.91185191,  0.20743992])
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[51]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;current_palette&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;sns&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;color_palette&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 &lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="n"&gt;current_palette&lt;/span&gt;
 &lt;span class="n"&gt;sns&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;palplot&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;current_palette&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -3542,7 +3505,7 @@ In&amp;nbsp;[51]:
 
 
 &lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
-&lt;div class="output_subarea output_stream output_stdout output_text"&gt;
+&lt;div class="box-flex1 output_subarea output_stream output_stdout"&gt;
 &lt;pre&gt;
 [(0.2980392156862745, 0.4470588235294118, 0.6901960784313725), (0.3333333333333333, 0.6588235294117647, 0.40784313725490196), (0.7686274509803922, 0.3058823529411765, 0.3215686274509804), (0.5058823529411764, 0.4470588235294118, 0.6980392156862745), (0.8, 0.7254901960784313, 0.4549019607843137), (0.39215686274509803, 0.7098039215686275, 0.803921568627451)]
 
@@ -3551,9 +3514,9 @@ In&amp;nbsp;[51]:
 &lt;/div&gt;
 
 &lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_display_data"&gt;
 
 
-&lt;div class="output_png output_subarea "&gt;
 &lt;img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAV0AAABGCAYAAABv7kdbAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAAj1JREFUeJzt2DFLVXEcxvHf9YYiYjpK18G7NDVJSzS1+iKac2yNQIRo
 EhoN3HojTRHubWJXRMGGSkURvBdOb8CkwfMcsM9n/S3P8Od74PSapmkKgIiprgcA/E9EFyBIdAGC
@@ -3566,23 +3529,21 @@ kOgCBIkuQJDoAgSJLkCQ6AIEiS5AkOgCBIkuQJDoAgSJLkCQ6AIEiS5AkOgCBIkuQJDoAgSJLkCQ
 AgSJLkCQ6AIEiS5AkOgCBIkuQFCvaZrmb8eLq3GNjs+Se2KGg4Xq9cd1cHrU9ZRWrCwu18x1U5ej
 UddTWjE3HNakP10n9/B9Lg0WqqpqfHXY8ZJ2zM4/qqqq/fNJx0vas7W7Vztrqzfebo0uAHfL7wWA
 INEFCBJdgCDRBQgSXYAg0QUI+gPWP1yvUOeqAgAAAABJRU5ErkJggg==
-"
-&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
+"&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[52]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;fig&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;figure&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 &lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;scatter&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;palmitic&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;linolenic&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;c&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;current_palette&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
 &lt;span class="n"&gt;axis&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;fig&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;gca&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="c"&gt;#get current axis&lt;/span&gt;
@@ -3594,7 +3555,6 @@ In&amp;nbsp;[52]:
 
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;
 
 &lt;div class="output_wrapper"&gt;
 &lt;div class="output"&gt;
@@ -3602,20 +3562,20 @@ In&amp;nbsp;[52]:
 
 &lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[52]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
 
-&lt;div class="output_text output_subarea output_pyout"&gt;
 &lt;pre&gt;
 &amp;lt;matplotlib.text.Text at 0x109157d90&amp;gt;
 &lt;/pre&gt;
-&lt;/div&gt;
 
+&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_display_data"&gt;
 
 
-&lt;div class="output_png output_subarea "&gt;
 &lt;img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfkAAAFtCAYAAAAEQROxAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAIABJREFUeJzs3Xd8FHX6wPHPbMlu2mbTQwqBUEIJHaQpiFQrcghiwYYU
 0dOfet55np4Fz35WFFEU7Ho2FAVOTlAgIXQIJbSQENJ72d1snfn9sbIhJAECIWX5vl8vXzK7U55n
@@ -4395,29 +4355,26 @@ O+d8hBAnJqfrhbjIJCcnc+utt1JYWMiwYcO47bbbGDVqFL179yYuLo6rr76aPXv2APVH6Eeuqx9x
 7JH70e3Ad0ngz3/+M1FRUf7He/fuzQMPPED//v1RVZXRo0dzxRVXnPd8hbiYSRc6IS4iS5cu5cUX
 X2TBggWBDkUI0QzkdL0QF5Fjj8iFEPomR/JCCCGETsmRvBBCCKFTUuSFEEIInZIiL4QQQuiUFHkh
 hBBCp6TICyGEEDolRV4IIYTQqf8PiLl7vRZic+gAAAAASUVORK5CYII=
-"
-&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
+"&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[53]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;hist&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;palmitic&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;xlabel&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Palmitic&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;title&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Histogram of Palmitic Acid content in Olive Oils Sample&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -4426,9 +4383,9 @@ In&amp;nbsp;[53]:
 
 
 &lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_display_data"&gt;
 
 
-&lt;div class="output_png output_subarea "&gt;
 &lt;img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAegAAAFtCAYAAADMLflnAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAIABJREFUeJzt3Xl4VPW9x/HPJJNIMBCW1iqkNUIUwZAFEhASEgJlq6KI
 0MpFKQgooCwiYGm4gltQEC8ugBe8LKIoIiBQlotUEkBAMSwRRZFKWEXBJUyALCS/+0duptkIAwbm
@@ -4616,17 +4573,16 @@ x48f1549eyRJL7zwgl5//fVKWgsA5SGggStEeVdkR0ZGKjIyUo0bN1ZCQoLCw8N18ODBEtNUdDV3
 8eeK/t+iRQtt3bpVY8eOdT9/zTXX6K233lKfPn0UERGhr776SmPHjr0EawmgCD83CQCAhdiDBgDA
 QgQ0AAAWIqABALAQAQ0AgIUIaAAALERAAwBgIQIaAAALEdAAAFjo/wAwwSsNrlKxTAAAAABJRU5E
 rkJggg==
-"
-&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
+"&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
@@ -4635,7 +4591,7 @@ rkJggg==
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
@@ -4644,13 +4600,12 @@ rkJggg==
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[54]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;fig&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;axes&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;subplots&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;figsize&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="n"&gt;nrows&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;ncols&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="n"&gt;axes&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;][&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;palmitic&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;linolenic&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="n"&gt;axes&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;][&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;palmitic&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;linolenic&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;.&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
@@ -4661,16 +4616,15 @@ In&amp;nbsp;[54]:
 
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;
 
 &lt;div class="output_wrapper"&gt;
 &lt;div class="output"&gt;
 
 
 &lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_display_data"&gt;
 
 
-&lt;div class="output_png output_subarea "&gt;
 &lt;img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAsgAAALICAYAAABiqwZ2AAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAIABJREFUeJzs3Xl8m2eZ6P2fdi+yZXnfdyd29jRbE6dJ0410S1tK14EX
 KAR6hoEB+r4MzHlhmJlzOJ1zhgIDpRQoLRRaoIWmTdOWpknT7Gn2xbGzON73RZYtL5K1nD8kPZZs
@@ -6518,17 +6472,16 @@ YMeOHQYn68321ltvYeHChQgLC4Pdbsebb75pWKYXX3wRbrcb69evD8xFfvXVV/H0009LtU/IXOf0
 krk+6iFzTdVL9locLJlrtx4y13u99B4nFCHbBGAiIiIiIgPxh0KIiIiIiDTYIBMRERERabBBJiIi
 IiLSYINMRERERKTBBpmIiIiISIMNMhERERGRBhtkIiIiIiKN/wfC06gqwhg/vwAAAABJRU5ErkJg
 gg==
-"
-&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
+"&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
@@ -6537,18 +6490,16 @@ gg==
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[55]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;new_palette&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;sns&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;color_palette&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Set3&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="n"&gt;sns&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;palplot&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;new_palette&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -6557,9 +6508,9 @@ In&amp;nbsp;[55]:
 
 
 &lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_display_data"&gt;
 
 
-&lt;div class="output_png output_subarea "&gt;
 &lt;img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAV0AAABGCAYAAABv7kdbAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAAi1JREFUeJzt2DFOVGEUhuEzMyQDZAIVCTFYaGllYqVboLaldi9swIaG
 1oWIhYmxsKEwJAZJqJyMZMC5XDeAVHO/v/B52tN81VucUd/3fQEQMW49AOB/IroAQaILECS6AEGi
@@ -6572,23 +6523,21 @@ gkQXIEh0AYJEFyBIdAGCRBcgSHQBgkQXIEh0AYJEFyBIdAGCRBcgSHQBgkQXIEh0AYJEFyBIdAGC
 RBcgSHQBgkZ93/f/Oi67VV0vb5J7YvY2t2s67qtq3nrKQHaqW41rsbhtPWQQs9m0Jt1d9VeXraes
 3Wj/SVVVXSy6xkuGsb+7VVVV0/l54yXDuT87rsnhyYO3R6MLwHp5LwAEiS5AkOgCBIkuQJDoAgSJ
 LkDQX3UUVuc85BAJAAAAAElFTkSuQmCC
-"
-&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
+"&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[56]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;xacids&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;oleic&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;linolenic&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;eicosenoic&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
 &lt;span class="n"&gt;yacids&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;stearic&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;arachidic&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
 
@@ -6606,16 +6555,15 @@ In&amp;nbsp;[56]:
 
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;
 
 &lt;div class="output_wrapper"&gt;
 &lt;div class="output"&gt;
 
 
 &lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_display_data"&gt;
 
 
-&lt;div class="output_png output_subarea "&gt;
 &lt;img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAskAAALJCAYAAABGNb7tAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAIABJREFUeJzs3Xd8lFW++PHPtCQzk2TSGySEkEoaJRAgtARC76IC4ooo
 q66717u67nV3X3dvcXd/u7rrNq+ruypVAUUSmrRQElpCCz0kQCCV9F6mz++P0YlDDyQQ4nn/xTPP
@@ -9814,72 +9762,56 @@ RODIkSNwc3PDBx98gHvuuQfu7u7YunUrAgMDUVJSguzsbISEhEBEcObMGaxatQo6nc76debodDrk
 5OSgu7sbISEh1m88SUtLQ2Njo/Xx7733HnJzc5Gfnw8fHx+cPn3a6c8dEdFi4ybTUsOPgCMiIiIi
 ssG3WxARERER2eAhmYiIiIjIBg/JREREREQ2eEgmIiIiIrLBQzIRERERkQ0ekomIiIiIbPCQTERE
 RERk4z+w7sCywuhUdgAAAABJRU5ErkJggg==
-"
-&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
+"&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h3 id="4-numpy-and-some-stats"&gt;4. Numpy, and some stats&lt;/h3&gt;
+&lt;h3 id="numpy-and-some-stats"&gt;4. Numpy, and some stats&lt;/h3&gt;
 &lt;p&gt;(From Shalizi). In the real world we only always deal with samples from populations. We assume that whatever it is that gave us our data is well-modeled by some random process. In effect, each time we make a measurement, we ask the process to spit out numbers according to some distribution; we sample the distribution. If we think of sampling as closing our eyes and picking a data point out of a box, we call the set of all data-points in the box the population. (That last isn’t as silly as it sounds; think of opinion polls.) In either case, we assume that the true distribution is the unknown one which lies behind our data. If we want to learn about that distribution from the data, then we need to know something about the kind of data it is likely to give us. That is to say, we need to know the sampling distribution, the distribution of data values given that the true distribution takes a certain functional form, with certain parameter values, and we sample from it in a specified way.&lt;/p&gt;
-&lt;p&gt;In the next two sections, $X_1, X_2 . . .X_n . . .$ are independent, identically-distributed
-(IID) random variables. X has the finite mean μ. The average of the first n of
-them is&lt;/p&gt;
-&lt;p&gt;$$ S_n \equiv \frac{1}{n} \sum_{i=1}^{n} X_i $$&lt;/p&gt;
+&lt;p&gt;In the next two sections, &lt;span class="math"&gt;\(X_1, X_2 . . .X_n . . .\)&lt;/span&gt; are independent, identically-distributed (IID) random variables. X has the finite mean μ. The average of the first n of them is&lt;/p&gt;
+&lt;p&gt;&lt;span class="math"&gt;\[ S_n \equiv \frac{1}{n} \sum_{i=1}^{n} X_i \]&lt;/span&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;h4 id="the-law-of-large-numbers"&gt;The Law of Large Numbers&lt;/h4&gt;
-&lt;p&gt;(From Shalizi)
-The means of IID sequences converge to the mean of the variable (if E|X| &amp;lt; $\infty$):&lt;/p&gt;
-&lt;p&gt;$$S_n \rightarrow \mu$$ &lt;/p&gt;
-&lt;p&gt;as &lt;/p&gt;
-&lt;p&gt;$$n \rightarrow \infty$$&lt;/p&gt;
+&lt;p&gt;(From Shalizi) The means of IID sequences converge to the mean of the variable (if E|X| &amp;lt; &lt;span class="math"&gt;\(\infty\)&lt;/span&gt;):&lt;/p&gt;
+&lt;p&gt;&lt;span class="math"&gt;\[S_n \rightarrow \mu\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;as&lt;/p&gt;
+&lt;p&gt;&lt;span class="math"&gt;\[n \rightarrow \infty\]&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;That is, the sample mean approaches the population mean.&lt;/p&gt;
 &lt;p&gt;The obvious application of the law of large numbers is to take our favorite event A from any probability distribution we like, with random variable Y , and then apply an indicator function I(A) to Y , a function which gives 1 when its input is in in A and 0 otherwise. Now we have a Bernoulli random variable with parameter p = P(A). So if we take a long sequence of random trials, then with probability one the frequency of successes will converge to the true probability .&lt;/p&gt;
-&lt;p&gt;If you simulate many samples of a population, then the laws of large numbers
-tell us the the empirical frequencies of your simulations will approach the actual
-sampling distribution. This is called “Monte Carlo simulation”, or even “the
-Monte Carlo method”. (Several other things are also called Monte Carlo, but
-they’re actually related.) By the same procedure, you can get the sampling
-distribution for an arbitrary statistic of your data.&lt;/p&gt;
+&lt;p&gt;If you simulate many samples of a population, then the laws of large numbers tell us the the empirical frequencies of your simulations will approach the actual sampling distribution. This is called “Monte Carlo simulation”, or even “the Monte Carlo method”. (Several other things are also called Monte Carlo, but they’re actually related.) By the same procedure, you can get the sampling distribution for an arbitrary statistic of your data.&lt;/p&gt;
 &lt;h4 id="central-limit-theorem"&gt;Central Limit Theorem&lt;/h4&gt;
-&lt;p&gt;(Again, Shalizi).
-Assume that $X$ has a finite population variance $\sigma^2$. Then as $n \rightarrow \infty$, the $S_n$ converge to a Gaussian random variable with mean $\mu$ and variance $\sigma^2$.&lt;/p&gt;
-&lt;p&gt;More prosaicly: the CLT tells us that, if only we can arrange to be dealing
-with IID sequences, in the long run we know what the distribution must be.
-Even better, it’s always the same distribution; still better, it’s one which is
-remarkably easy to deal with, and for which we have a huge amount of theory.
-Manipulate your problem so that the CLT applies, and, at least asymptotically,
-you’ve got it made.&lt;/p&gt;
+&lt;p&gt;(Again, Shalizi). Assume that &lt;span class="math"&gt;\(X\)&lt;/span&gt; has a finite population variance &lt;span class="math"&gt;\(\sigma^2\)&lt;/span&gt;. Then as &lt;span class="math"&gt;\(n \rightarrow \infty\)&lt;/span&gt;, the &lt;span class="math"&gt;\(S_n\)&lt;/span&gt; converge to a Gaussian random variable with mean &lt;span class="math"&gt;\(\mu\)&lt;/span&gt; and variance &lt;span class="math"&gt;\(\sigma^2\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;More prosaicly: the CLT tells us that, if only we can arrange to be dealing with IID sequences, in the long run we know what the distribution must be. Even better, it’s always the same distribution; still better, it’s one which is remarkably easy to deal with, and for which we have a huge amount of theory. Manipulate your problem so that the CLT applies, and, at least asymptotically, you’ve got it made.&lt;/p&gt;
 &lt;p&gt;It’s generally true that, whatever measure of variability we pick, its value in a sample will tend to be smaller than its population value. (We have already mentioned that this is true of the variance.) It’s not hard to see why this should be so; consider, as an extreme case, the limit where our sample consists of a single piece of data, and so there is no variation in the sample. More generally, picking out a subset from the population, which is what sampling does, is unlikely to give an exactly representative sample, and naturally the higher probability events will be the ones which tend to show up in the sample.&lt;/p&gt;
-&lt;h4 id="sampling-and-de-moivre-s-formula-"&gt;Sampling and De-Moivre&amp;#39;s formula:&lt;/h4&gt;
+&lt;h4 id="sampling-and-de-moivres-formula"&gt;Sampling and De-Moivre's formula:&lt;/h4&gt;
 &lt;p&gt;The standard deviation of the sampling distribution of the mean is given as:&lt;/p&gt;
-&lt;p&gt;$$\sigma_{sample} = \frac{\sigma}{\sqrt{N_{sample}}}$$&lt;/p&gt;
+&lt;p&gt;&lt;span class="math"&gt;\[\sigma_{sample} = \frac{\sigma}{\sqrt{N_{sample}}}\]&lt;/span&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[57]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;throw_a_coin&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;size&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
     &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;random&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;randint&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;size&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;size&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 
@@ -9897,7 +9829,6 @@ In&amp;nbsp;[57]:
 
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;
 
 &lt;div class="output_wrapper"&gt;
 &lt;div class="output"&gt;
@@ -9905,22 +9836,22 @@ In&amp;nbsp;[57]:
 
 &lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[57]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
 
-&lt;div class="output_text output_subarea output_pyout"&gt;
 &lt;pre&gt;
 array([ 0.8,  0.6,  0.2,  0.6,  0.4,  0.5,  0.8,  0.4,  0.7,  0.5,  0.6,
         0.6,  0.3,  0.3,  0.5,  0.3,  0.6,  0.4,  0.4,  0.4])
 &lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
@@ -9931,19 +9862,17 @@ array([ 0.8,  0.6,  0.2,  0.6,  0.4,  0.5,  0.8,  0.4,  0.7,  0.5,  0.6,
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[58]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;sampsize&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1000&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="n"&gt;mss&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;mean_std&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;make_throws&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;sampsize&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
 &lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;sampsize&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;e&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;e&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;mss&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -9953,20 +9882,20 @@ In&amp;nbsp;[58]:
 
 &lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[58]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
 
-&lt;div class="output_text output_subarea output_pyout"&gt;
 &lt;pre&gt;
 [&amp;lt;matplotlib.lines.Line2D at 0x1093b37d0&amp;gt;]
 &lt;/pre&gt;
-&lt;/div&gt;
 
+&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_display_data"&gt;
 
 
-&lt;div class="output_png output_subarea "&gt;
 &lt;img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAesAAAFVCAYAAADPM8ekAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAIABJREFUeJzt3Xl8VPW9//H3LJnsk0BCIGFfZBMiLhBJgDbWKhZRoaW9
 9rpbFLtoLVdrb3/dbK9F77W9rbbY1kq1t+KjVZsWt4qyaQJoWARkD7JDAgQmmSyznfP7Y8iQkDDM
@@ -10196,27 +10125,24 @@ pe+eLBaLnnzySc2ePZs67iTTpk3TihUrNGHCBBmGod/+9rcaNGgQddzJHnroId15552aPHmyfD6f
 fv7zn+vyyy+nnjuJxWKRpIi/H5KTk3Xffffp9ttv1+TJk5WcnKwXX3zx7NcxTXKDAwCQyBg4BgAg
 wRGsAQBIcARrAAASHMEaAIAER7AGACDBEawBAEhwBGsAABLc/wdfIiJaVxjF8AAAAABJRU5ErkJg
 gg==
-"
-&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
+"&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[59]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;sampsize&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;e&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;e&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;mss&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -10226,20 +10152,20 @@ In&amp;nbsp;[59]:
 
 &lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[59]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
 
-&lt;div class="output_text output_subarea output_pyout"&gt;
 &lt;pre&gt;
 [&amp;lt;matplotlib.lines.Line2D at 0x1093a0d90&amp;gt;]
 &lt;/pre&gt;
-&lt;/div&gt;
 
+&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_display_data"&gt;
 
 
-&lt;div class="output_png output_subarea "&gt;
 &lt;img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfAAAAFVCAYAAAAQfb27AAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAIABJREFUeJzsnXmYFNW5/7+9zcr0DMO+L7LKoiiKMoI2LkGJRjRE8SZq
 UBSvF43hmmiMWcgVR5O4JEYlRsGgP2I0OgZxI7IoM8LIIsi+r7Ivs8/0UvX7o/tUV1VXVVfPTM90
@@ -10672,17 +10598,16 @@ zNfWWsf/prKyUj6fTxUVFcHPwvfv36/S0lL5/X798ccfWrFihRwOh0pLS5Wenq5AIKDKykrFxsZG
 eXo7ORwOVVVVqbi4mIzD6Gv3U5g4cSI5h1FZWZmKioqUnp6u3t5e7d69W7NmzSLjMOq/B8hAzxFx
 cXEqKSlRYWGh0tPTFRcXp+PHj4c+hjGshQ4AgG34wBkAAAtR4AAAWIgCBwDAQhQ4AAAWosABALAQ
 BQ4AgIUocAAALPRv4zVHSL5uNJ8AAAAASUVORK5CYII=
-"
-&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
+"&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
@@ -10693,19 +10618,17 @@ BQ4AgIUocAAALPRv4zVHSL5uNJ8AAAAASUVORK5CYII=
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[60]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;numsamps&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1000&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="n"&gt;mss2&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;mean_std&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;make_throws&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;numsamps&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
 &lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;numsamps&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;e&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;e&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;mss2&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -10715,20 +10638,20 @@ In&amp;nbsp;[60]:
 
 &lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[60]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
 
-&lt;div class="output_text output_subarea output_pyout"&gt;
 &lt;pre&gt;
 [&amp;lt;matplotlib.lines.Line2D at 0x1093be690&amp;gt;]
 &lt;/pre&gt;
-&lt;/div&gt;
 
+&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_display_data"&gt;
 
 
-&lt;div class="output_png output_subarea "&gt;
 &lt;img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfAAAAFVCAYAAAAQfb27AAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAIABJREFUeJzs3XlgFOX9P/D37JGT7BLuAIJAwHihgBJNEA1awYq09Aut
 tsVaEEVrW7+g39r6+7b91lqvFqu10gPFoy1VqU2biraoQDQIEm4xCIT7vsLu5txj5vfH7jOZmZ3Z
@@ -11134,27 +11057,24 @@ T5w4odraWvl8Pq1YsUJbt26Vy+VSbW2tcnNzZVmWjh49qvj4+AjPPjq5XC41NTWpsrKSjENow4YN
 6unpUUZGhizL0smTJ7V06VJyDqG6ujrt3r1bubm5mpycVENDg9asWUPGIeRyuSTJ9jkiISFB1dXV
 Ki8vV25urhISEnThwoXAj2EMe6EDABBtuOAMAEAUosABAIhCFDgAAFGIAgcAIApR4AAARCEKHACA
 KESBAwAQhf4FPdMHXlhZYvQAAAAASUVORK5CYII=
-"
-&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
+"&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[61]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;numsamps&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;e&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;e&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;mss2&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -11164,20 +11084,20 @@ In&amp;nbsp;[61]:
 
 &lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[61]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
 
-&lt;div class="output_text output_subarea output_pyout"&gt;
 &lt;pre&gt;
 [&amp;lt;matplotlib.lines.Line2D at 0x10939d510&amp;gt;]
 &lt;/pre&gt;
-&lt;/div&gt;
 
+&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_display_data"&gt;
 
 
-&lt;div class="output_png output_subarea "&gt;
 &lt;img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfAAAAFVCAYAAAAQfb27AAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAIABJREFUeJzsnXmAFNW59p+q7unZYAaQHUQQGUABRdFBBsRxC5EbE4ze
 G7xxCQbFKJqIydX4Zbkm6uhN4pogakQlkXivURLUqCioMMPisIggmwiy78y+9FbfH92n+lR1VXX1
@@ -11613,41 +11533,38 @@ NptNlZWVysrKUiAQUE1NjRISEqI8vTXZbDZt27ZN5eXlZBxG+fn5OnfunDIyMhQIBLRjxw6NGjWK
 nMOoqqpKZWVlysrKUnd3t2prazV9+nQyDiObzSZJfT5GJCYmatWqVSotLVVWVpYSExN14MCBiUsF
 8QAAADdJREFU0PswhmuhAwBgNXzgDACABVHgAABYEAUOAIAFUeAAAFgQBQ4AgAVR4AAAWBAFDgCA
 Bf0PCA1urJbui44AAAAASUVORK5CYII=
-"
-&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
+"&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h3 id="5-pandas-data-munging-indexing-plotting"&gt;5. Pandas Data Munging, indexing, plotting&lt;/h3&gt;
+&lt;h3 id="pandas-data-munging-indexing-plotting"&gt;5. Pandas Data Munging, indexing, plotting&lt;/h3&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[61]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
@@ -11656,19 +11573,17 @@ In&amp;nbsp;[61]:
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[62]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;region_groupby&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;groupby&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;region&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="nb"&gt;type&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;region_groupby&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="n"&gt;region_groupby&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -11677,7 +11592,7 @@ In&amp;nbsp;[62]:
 
 
 &lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
-&lt;div class="output_subarea output_stream output_stdout output_text"&gt;
+&lt;div class="box-flex1 output_subarea output_stream output_stdout"&gt;
 &lt;pre&gt;
 &amp;lt;class &amp;apos;pandas.core.groupby.DataFrameGroupBy&amp;apos;&amp;gt;
 
@@ -11687,8 +11602,9 @@ In&amp;nbsp;[62]:
 
 &lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[62]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
-&lt;div class="output_html rendered_html output_subarea output_pyout"&gt;
+&lt;div class="output_html rendered_html"&gt;
 &lt;div style="max-height:1000px;max-width:1500px;overflow:auto;"&gt;
 &lt;table border="1" class="dataframe"&gt;
   &lt;thead&gt;
@@ -11943,12 +11859,13 @@ In&amp;nbsp;[62]:
 &lt;/div&gt;
 
 &lt;/div&gt;
-
-&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
@@ -11957,13 +11874,12 @@ In&amp;nbsp;[62]:
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[63]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;key&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;value&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;region_groupby&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
     &lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;( key, type(value) ) = (&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;key&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;,&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;type&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;value&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;)&amp;quot;&lt;/span&gt;
     &lt;span class="n"&gt;v&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;value&lt;/span&gt;
@@ -11973,14 +11889,13 @@ In&amp;nbsp;[63]:
 
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;
 
 &lt;div class="output_wrapper"&gt;
 &lt;div class="output"&gt;
 
 
 &lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
-&lt;div class="output_subarea output_stream output_stdout output_text"&gt;
+&lt;div class="box-flex1 output_subarea output_stream output_stdout"&gt;
 &lt;pre&gt;
 ( key, type(value) ) = ( 1 , &amp;lt;class &amp;apos;pandas.core.frame.DataFrame&amp;apos;&amp;gt; )
 ( key, type(value) ) = ( 2 , &amp;lt;class &amp;apos;pandas.core.frame.DataFrame&amp;apos;&amp;gt; )
@@ -11992,8 +11907,9 @@ In&amp;nbsp;[63]:
 
 &lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[63]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
-&lt;div class="output_html rendered_html output_subarea output_pyout"&gt;
+&lt;div class="output_html rendered_html"&gt;
 &lt;div style="max-height:1000px;max-width:1500px;overflow:auto;"&gt;
 &lt;table border="1" class="dataframe"&gt;
   &lt;thead&gt;
@@ -12089,12 +12005,13 @@ In&amp;nbsp;[63]:
 &lt;/div&gt;
 
 &lt;/div&gt;
-
-&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
@@ -12103,19 +12020,17 @@ In&amp;nbsp;[63]:
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[64]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;dfrd&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;region_groupby&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;describe&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 &lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="nb"&gt;type&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;dfrd&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="n"&gt;dfrd&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;20&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -12124,7 +12039,7 @@ In&amp;nbsp;[64]:
 
 
 &lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
-&lt;div class="output_subarea output_stream output_stdout output_text"&gt;
+&lt;div class="box-flex1 output_subarea output_stream output_stdout"&gt;
 &lt;pre&gt;
 &amp;lt;class &amp;apos;pandas.core.frame.DataFrame&amp;apos;&amp;gt;
 
@@ -12134,8 +12049,9 @@ In&amp;nbsp;[64]:
 
 &lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[64]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
-&lt;div class="output_html rendered_html output_subarea output_pyout"&gt;
+&lt;div class="output_html rendered_html"&gt;
 &lt;div style="max-height:1000px;max-width:1500px;overflow:auto;"&gt;
 &lt;table border="1" class="dataframe"&gt;
   &lt;thead&gt;
@@ -12438,12 +12354,13 @@ In&amp;nbsp;[64]:
 &lt;/div&gt;
 
 &lt;/div&gt;
-
-&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
@@ -12452,18 +12369,16 @@ In&amp;nbsp;[64]:
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[65]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;dfbystd&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;groupby&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;region&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 &lt;span class="n"&gt;dfbystd&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -12473,8 +12388,9 @@ In&amp;nbsp;[65]:
 
 &lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[65]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
-&lt;div class="output_html rendered_html output_subarea output_pyout"&gt;
+&lt;div class="output_html rendered_html"&gt;
 &lt;div style="max-height:1000px;max-width:1500px;overflow:auto;"&gt;
 &lt;table border="1" class="dataframe"&gt;
   &lt;thead&gt;
@@ -12546,12 +12462,13 @@ In&amp;nbsp;[65]:
 &lt;/div&gt;
 
 &lt;/div&gt;
-
-&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
@@ -12560,18 +12477,16 @@ In&amp;nbsp;[65]:
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[66]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;dfbymean&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;region_groupby&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;aggregate&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mean&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="n"&gt;dfbymean&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -12581,8 +12496,9 @@ In&amp;nbsp;[66]:
 
 &lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[66]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
-&lt;div class="output_html rendered_html output_subarea output_pyout"&gt;
+&lt;div class="output_html rendered_html"&gt;
 &lt;div style="max-height:1000px;max-width:1500px;overflow:auto;"&gt;
 &lt;table border="1" class="dataframe"&gt;
   &lt;thead&gt;
@@ -12654,12 +12570,13 @@ In&amp;nbsp;[66]:
 &lt;/div&gt;
 
 &lt;/div&gt;
-
-&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
@@ -12668,17 +12585,15 @@ In&amp;nbsp;[66]:
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[67]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;region_groupby&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;apply&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;lambda&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mean&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -12688,8 +12603,9 @@ In&amp;nbsp;[67]:
 
 &lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[67]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
-&lt;div class="output_html rendered_html output_subarea output_pyout"&gt;
+&lt;div class="output_html rendered_html"&gt;
 &lt;div style="max-height:1000px;max-width:1500px;overflow:auto;"&gt;
 &lt;table border="1" class="dataframe"&gt;
   &lt;thead&gt;
@@ -12766,27 +12682,27 @@ In&amp;nbsp;[67]:
 &lt;/div&gt;
 
 &lt;/div&gt;
-
-&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;Let&amp;#39;s rename the columns in &lt;code&gt;dfbymean&lt;/code&gt; and &lt;code&gt;dfbystd&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Let's rename the columns in &lt;code&gt;dfbymean&lt;/code&gt; and &lt;code&gt;dfbystd&lt;/code&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[68]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;renamedict_std&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="n"&gt;k&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="n"&gt;k&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;_std&amp;quot;&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;k&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;acidlist&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;span class="n"&gt;renamedict_mean&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="n"&gt;k&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="n"&gt;k&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;_mean&amp;quot;&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;k&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;acidlist&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;span class="n"&gt;dfbystd&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;rename&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;inplace&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="bp"&gt;True&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;columns&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;renamedict_std&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
@@ -12796,7 +12712,6 @@ In&amp;nbsp;[68]:
 
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;
 
 &lt;div class="output_wrapper"&gt;
 &lt;div class="output"&gt;
@@ -12804,8 +12719,9 @@ In&amp;nbsp;[68]:
 
 &lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[68]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
-&lt;div class="output_html rendered_html output_subarea output_pyout"&gt;
+&lt;div class="output_html rendered_html"&gt;
 &lt;div style="max-height:1000px;max-width:1500px;overflow:auto;"&gt;
 &lt;table border="1" class="dataframe"&gt;
   &lt;thead&gt;
@@ -12877,27 +12793,27 @@ In&amp;nbsp;[68]:
 &lt;/div&gt;
 
 &lt;/div&gt;
-
-&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;Pandas can do general merges. When we do that along an index, it&amp;#39;s called a &lt;code&gt;join&lt;/code&gt; (&lt;a href="http://pandas.pydata.org/pandas-docs/dev/generated/pandas.DataFrame.join.html"&gt;documentation&lt;/a&gt;). Here we make two sub-dataframes and join them on the common region index.&lt;/p&gt;
+&lt;p&gt;Pandas can do general merges. When we do that along an index, it's called a &lt;code&gt;join&lt;/code&gt; (&lt;a href="http://pandas.pydata.org/pandas-docs/dev/generated/pandas.DataFrame.join.html"&gt;documentation&lt;/a&gt;). Here we make two sub-dataframes and join them on the common region index.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[69]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;dfpalmiticmean&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;dfbymean&lt;/span&gt;&lt;span class="p"&gt;[[&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;palmitic_mean&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]]&lt;/span&gt; 
 &lt;span class="n"&gt;dfpalmiticstd&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;dfbystd&lt;/span&gt;&lt;span class="p"&gt;[[&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;palmitic_std&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]]&lt;/span&gt; 
 
@@ -12907,7 +12823,6 @@ In&amp;nbsp;[69]:
 
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;
 
 &lt;div class="output_wrapper"&gt;
 &lt;div class="output"&gt;
@@ -12915,8 +12830,9 @@ In&amp;nbsp;[69]:
 
 &lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[69]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
-&lt;div class="output_html rendered_html output_subarea output_pyout"&gt;
+&lt;div class="output_html rendered_html"&gt;
 &lt;div style="max-height:1000px;max-width:1500px;overflow:auto;"&gt;
 &lt;table border="1" class="dataframe"&gt;
   &lt;thead&gt;
@@ -12953,25 +12869,24 @@ In&amp;nbsp;[69]:
 &lt;/div&gt;
 
 &lt;/div&gt;
-
-&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[70]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;rkeys&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
 &lt;span class="n"&gt;rvals&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;South&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;Sardinia&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;North&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
 &lt;span class="n"&gt;rmap&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="n"&gt;e&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]:&lt;/span&gt;&lt;span class="n"&gt;e&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;e&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;zip&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;rkeys&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;rvals&lt;/span&gt;&lt;span class="p"&gt;)}&lt;/span&gt;
 &lt;span class="n"&gt;rmap&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -12981,42 +12896,40 @@ In&amp;nbsp;[70]:
 
 &lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[70]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
 
-&lt;div class="output_text output_subarea output_pyout"&gt;
 &lt;pre&gt;
 {1: &amp;apos;South&amp;apos;, 2: &amp;apos;Sardinia&amp;apos;, 3: &amp;apos;North&amp;apos;}
 &lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;Let&amp;#39;s get a dataframe with just the acids.&lt;/p&gt;
+&lt;p&gt;Let's get a dataframe with just the acids.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[71]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;mdf2&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;groupby&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;region&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;aggregate&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mean&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="n"&gt;mdf2&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;mdf2&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;acidlist&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
 &lt;span class="n"&gt;mdf2&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -13026,8 +12939,9 @@ In&amp;nbsp;[71]:
 
 &lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[71]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
-&lt;div class="output_html rendered_html output_subarea output_pyout"&gt;
+&lt;div class="output_html rendered_html"&gt;
 &lt;div style="max-height:1000px;max-width:1500px;overflow:auto;"&gt;
 &lt;table border="1" class="dataframe"&gt;
   &lt;thead&gt;
@@ -13094,33 +13008,32 @@ In&amp;nbsp;[71]:
 &lt;/div&gt;
 
 &lt;/div&gt;
-
-&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;Let&amp;#39;s make a bar plot of the relative mean percentages of the acids. In pandas this is as simple as:&lt;/p&gt;
+&lt;p&gt;Let's make a bar plot of the relative mean percentages of the acids. In pandas this is as simple as:&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[72]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;ax&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;mdf2&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;kind&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;barh&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;stacked&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="bp"&gt;True&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="n"&gt;ax&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;set_yticklabels&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;rvals&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="n"&gt;ax&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;set_xlim&lt;/span&gt;&lt;span class="p"&gt;([&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -13130,20 +13043,20 @@ In&amp;nbsp;[72]:
 
 &lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[72]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
 
-&lt;div class="output_text output_subarea output_pyout"&gt;
 &lt;pre&gt;
 (0, 100)
 &lt;/pre&gt;
-&lt;/div&gt;
 
+&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_display_data"&gt;
 
 
-&lt;div class="output_png output_subarea "&gt;
 &lt;img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAg4AAAFRCAYAAAAciyWGAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAIABJREFUeJzt3Xl0FGXa/vGr0gkSktCBAAmLIEJAJYjIIvuqbAICKgoq
 i7jCsAr+lBfEEUZBQVAWFURwewV3YdjEJTgviCIYQEBAJKxZIIFOk4Uk3fX7I0OPDJAUoTsdku/n
@@ -13362,27 +13275,24 @@ apSys7N100036Z577vFzlSWPYRiaNWuWHn30UebZS+6880798MMPat68udxutxYsWKDrrruOOfai
 CRMmaOjQoWrbtq1ycnL00ksvqUmTJsyxFxmGIUkX/XwwDEOjRo1S27Zt5Xa79eKLL6pMmTL5j2ea
 XOcCAACsKdVfVQAAgMtDcAAAAJYRHAAAgGUEBwAAYBnBAQAAWEZwAAAAlhEcAACAZQQHAABg2f8H
 mii+Y7Hc1DAAAAAASUVORK5CYII=
-"
-&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
+"&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[73]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;palmitic&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;hist&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -13392,20 +13302,20 @@ In&amp;nbsp;[73]:
 
 &lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[73]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
 
-&lt;div class="output_text output_subarea output_pyout"&gt;
 &lt;pre&gt;
 &amp;lt;matplotlib.axes.AxesSubplot at 0x1095c12d0&amp;gt;
 &lt;/pre&gt;
-&lt;/div&gt;
 
+&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_display_data"&gt;
 
 
-&lt;div class="output_png output_subarea "&gt;
 &lt;img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAegAAAFVCAYAAAAkBHynAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAFN1JREFUeJzt3X+s1nX9//HH4fwI9MCBaC6XK6bo+jDKaIIph8NOToRv
 H80Y/uGKlQEVOLFwujlaM9eORdNlhrloWcucrb4ua0iRm6BG0gSMuchF7HyymZJ86uIgPw6ccz5/
@@ -13502,17 +13412,16 @@ zJo1K4cPH84dd9zhtcI3cPR7584778ySJUvS3d2dKVOmZMGCBTWerDx1dXXp7e3NjTfemPe85z2Z
 P39+kmT27Nm57bbbajtcQY69P+rr63Mf9QZe///e4sWL8+1vfzvjx4/Pgw8+WOPJynN0V9/97nez
 YMGCjB49Om9729uyZs2agT/PubgBoDxOVAIABRJoACiQQANAgQQaAAok0ABQIIEGgAIJNAAU6H8A
 dMgpHMqDhbgAAAAASUVORK5CYII=
-"
-&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
+"&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
@@ -13521,18 +13430,16 @@ dMgpHMqDhbgAAAAASUVORK5CYII=
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[74]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;mask&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;eicosenoic&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="mf"&gt;0.05&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="n"&gt;mask&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -13542,9 +13449,9 @@ In&amp;nbsp;[74]:
 
 &lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[74]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
 
-&lt;div class="output_text output_subarea output_pyout"&gt;
 &lt;pre&gt;
 0     False
 1     False
@@ -13579,15 +13486,15 @@ In&amp;nbsp;[74]:
 571    True
 Name: eicosenoic, Length: 572, dtype: bool
 &lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
@@ -13596,17 +13503,15 @@ Name: eicosenoic, Length: 572, dtype: bool
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[75]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sum&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;mask&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mean&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;mask&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -13616,21 +13521,21 @@ In&amp;nbsp;[75]:
 
 &lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[75]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
 
-&lt;div class="output_text output_subarea output_pyout"&gt;
 &lt;pre&gt;
 (249, 0.43531468531468531)
 &lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
@@ -13639,18 +13544,16 @@ In&amp;nbsp;[75]:
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[76]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;loweico&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;eicosenoic&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="mf"&gt;0.02&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
 &lt;span class="n"&gt;pd&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;crosstab&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;loweico&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;area&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;loweico&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;region&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -13660,8 +13563,9 @@ In&amp;nbsp;[76]:
 
 &lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[76]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
-&lt;div class="output_html rendered_html output_subarea output_pyout"&gt;
+&lt;div class="output_html rendered_html"&gt;
 &lt;div style="max-height:1000px;max-width:1500px;overflow:auto;"&gt;
 &lt;table border="1" class="dataframe"&gt;
   &lt;thead&gt;
@@ -13708,23 +13612,22 @@ In&amp;nbsp;[76]:
 &lt;/div&gt;
 
 &lt;/div&gt;
-
-&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[77]:
 &lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
+&lt;div class="input_area box-flex1"&gt;
 &lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;pandas.tools.plotting&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;scatter_matrix&lt;/span&gt;
 &lt;span class="n"&gt;scatter_matrix&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="p"&gt;[[&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;linoleic&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;arachidic&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;eicosenoic&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]],&lt;/span&gt; &lt;span class="n"&gt;alpha&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mf"&gt;0.3&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;figsize&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="n"&gt;diagonal&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;kde&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -13733,9 +13636,9 @@ In&amp;nbsp;[77]:
 
 
 &lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_display_data"&gt;
 
 
-&lt;div class="output_png output_subarea "&gt;
 &lt;img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAmQAAAJkCAYAAAC/ET28AAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAIABJREFUeJzs3WmQXNd52P3/vbf3fZvpnn1fsO8EuAIUN4v0SkVybL+y
 UjHjJHJihipVKk6qUq7Kl6TqVcXlKilVUuxSxWYqeR3HskWJ+yqRFAkQGzEYYAazz/Q+ve/d9973
@@ -15693,66 +15596,12 @@ abfbWi6XOhwOOp1OWiwWb2sea3x2u51c1/22WQAAXlFDBuCj+L6vwWCgOI5l27Z6vZ7W6/VT+JlO
 pxqPx5rNZqpUKup2u0rTNJ/B1Gg0lGWZgiBQtVqV9Nw5+Xpdq9UUhqGazaZKpVL+zOPaKIrk+77q
 9bosy9J8Pv/rrQDwj1BDBgAAYBhHlgAAAIYRyAAAAAwjkAEAABhGIAMAADCMQAYAAGAYgQwAAMAw
 AhkAAIBhBDIAAADDvgBvTNkFNqftLwAAAABJRU5ErkJggg==
-"
-&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
+"&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;/div&gt;&lt;/p&gt;</summary><category term="tutorials"></category></entry><entry><title>Installing Python</title><link href="http://ac297r.org/blog/installing-python.html" rel="alternate"></link><updated>2014-12-03T15:43:22+01:00</updated><author><name>Rahul Dave</name></author><id>tag:ac297r.org,2014-12-03:blog/installing-python.html</id><summary type="html">&lt;p&gt;All the labs and homeworks in this course are Python-based. This page provides information about configuring Python on your machine.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Step 0&lt;/strong&gt; 
-The IPython notebook runs in the browser, and works best in Google Chrome. You probably want to use Chrome for assignments in this course&lt;/p&gt;
-&lt;h3&gt;Recommended Method: Anaconda&lt;/h3&gt;
-&lt;p&gt;The Anaconda Python distribution is an easily-installable bundle of Python and many of the libraries used throughout this class. It includes numpy/scipy/matplotlib/pandas/scikit-learn and other numerical libraries. Unless you have a good reason not to, we recommend that you use Anaconda.&lt;/p&gt;
-&lt;h4&gt;Mac/Linux users&lt;/h4&gt;
-&lt;ol&gt;
-&lt;li&gt;Download the &lt;a href="http://continuum.io/downloads"&gt;appropriate version&lt;/a&gt; of Anaconda&lt;/li&gt;
-&lt;li&gt;Follow the instructions on that page to run the installer&lt;/li&gt;
-&lt;li&gt;Test it out: open a terminal window, and type &lt;code&gt;python&lt;/code&gt;, you should see something like&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;Python&lt;/span&gt; &lt;span class="mf"&gt;2.7.5&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="n"&gt;Anaconda&lt;/span&gt; &lt;span class="mf"&gt;1.6.1&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x86_64&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;default&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Jun&lt;/span&gt; &lt;span class="mi"&gt;28&lt;/span&gt; &lt;span class="mi"&gt;2013&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;22&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;20&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;13&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; 
-&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
-
-&lt;p&gt;If &lt;code&gt;Anaconda&lt;/code&gt; doesn't appear on the first line, you are using a different version of Python. See the troubleshooting section below.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Test out the IPython notebook: open a Terminal window, and type &lt;code&gt;ipython notebook&lt;/code&gt;. A new browser window should pop up. &lt;/li&gt;
-&lt;li&gt;Click &lt;code&gt;New Notebook&lt;/code&gt; to create a new notebook file&lt;/li&gt;
-&lt;li&gt;Update IPython to the newest version by typing &lt;code&gt;conda update ipython&lt;/code&gt; at the command line&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h4&gt;Windows Users&lt;/h4&gt;
-&lt;ol&gt;
-&lt;li&gt;Download the &lt;a href="http://continuum.io/downloads"&gt;appropriate version&lt;/a&gt; of Anaconda&lt;/li&gt;
-&lt;li&gt;Follow the instructions on that page to run the installer. This will create a directory at &lt;code&gt;C:\Anaconda&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Test it out: start the Anaconda launcher, which you can find in &lt;code&gt;C:\Anaconda&lt;/code&gt; or, in the Start menu. Start the IPython notebook. A new browser window should open. &lt;/li&gt;
-&lt;li&gt;Click &lt;code&gt;New Notebook&lt;/code&gt;, which should open a new page.&lt;/li&gt;
-&lt;li&gt;Update IPython to the newest version by opening a command prompt, and typing &lt;code&gt;conda update ipython&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3&gt;Opening IPython Notebooks&lt;/h3&gt;
-&lt;p&gt;To view an IPython notebook, you must first start the IPython notebook server in the directory where the file lives. Simply navigate to this directory at the command prompt, and type &lt;code&gt;ipython notebook&lt;/code&gt;. This will open a browser window, listing all the &lt;code&gt;ipynb&lt;/code&gt; files in that directory.&lt;/p&gt;
-&lt;h3&gt;Troubleshooting&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Problem&lt;/strong&gt;
-When you start python, you don't see a line like &lt;code&gt;Python 2.7.5 |Anaconda 1.6.1 (x86_64)|&lt;/code&gt;. You are using a Mac or Linux computer&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Reason&lt;/strong&gt;
-You are most likely running a different version of Python, and need to modify your Path (the list of directories your computer looks through to find programs). &lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;
-Find a file like &lt;code&gt;.bash_profile&lt;/code&gt;, &lt;code&gt;.bashrc&lt;/code&gt;, or &lt;code&gt;.profile&lt;/code&gt;. Open the file in a text editor, and add a line at this line at the end: &lt;code&gt;export PATH="$HOME/anaconda/bin:$PATH"&lt;/code&gt;. Close the file, open a new terminal window, type &lt;code&gt;source ~/.profile&lt;/code&gt; (or whatever file you just edited). Type &lt;code&gt;which python&lt;/code&gt; -- you should see a path that points to the anaconda directory. If so, running &lt;code&gt;python&lt;/code&gt; should load the proper version&lt;/p&gt;
-&lt;p&gt;If this doesn't work (typing &lt;code&gt;which python&lt;/code&gt; doesn't point to anaconda), you might be using a different shell. Type &lt;code&gt;echo $SHELL&lt;/code&gt;. If this isn't &lt;code&gt;bash&lt;/code&gt;, you need to edit a different startup file (for example, if if &lt;code&gt;echo $SHELL&lt;/code&gt; gives &lt;code&gt;$csh&lt;/code&gt;, you need to edit your &lt;code&gt;.cshrc&lt;/code&gt; file. The syntax for this file is slightly different: &lt;code&gt;set PATH = ($HOME/anaconda/bin $PATH)&lt;/code&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;strong&gt;Problem&lt;/strong&gt;
-You are running the right version of python (see above item), but are unable to import numpy. &lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Reason&lt;/strong&gt;
-You are probably loading a different copy of numpy that is incompatible with Anaconda&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;
-See the above item to find your &lt;code&gt;.bash_profile&lt;/code&gt;, &lt;code&gt;.profile&lt;/code&gt;, or &lt;code&gt;.bashrc&lt;/code&gt; file. Open it, and add the line &lt;code&gt;unset PYTHONPATH&lt;/code&gt; at the end. Close the file, open a new terminal window, type &lt;code&gt;source ~/.profile&lt;/code&gt; (or whatever file you just edited), and try again.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;strong&gt;Problem&lt;/strong&gt;
-Under Windows, you receive an error message similar to the following: "'pip' is not recognized as an internal or external command, operable program or batch file."&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Reason&lt;/strong&gt;
-The correct Anaconda paths might not be present in your PATH variable, or Anaconda might not have installed correctly.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;
-Ensure the Anaconda directories to your path environment variable ("\Anaconda" and "\Anaconda\Scripts").  See &lt;a href="http://superuser.com/questions/284342/what-are-path-and-other-environment-variables-and-how-can-i-set-or-use-them"&gt;this page&lt;/a&gt; for details.&lt;/p&gt;
-&lt;p&gt;If this does not correct the problem, reinstall Anaconda.&lt;/p&gt;</summary><category term="other"></category></entry></feed>
+&lt;/div&gt;&lt;/p&gt;</summary><category term="tutorials"></category></entry></feed>

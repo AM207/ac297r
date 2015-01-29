@@ -13,17 +13,19 @@
 
             <meta property="og:type" content="article"/>
             <meta property="og:title" content="Lab 1"/>
-            <meta property="og:url" content="/blog/lab-1.html"/>
+            <meta property="og:url" content="http://lxprior.github.io/classtmpl/blog/lab-1.html"/>
             <meta property="og:description" content="The 1st lab is on python, pandas, and matplotlib."/>
 
     <!-- Bootstrap -->
-        <link rel="stylesheet" href="/theme/css/bootstrap.sandstone.min.css" type="text/css"/>
-    <link href="/theme/css/font-awesome.min.css" rel="stylesheet">
-    <link href="/theme/css/pygments.css" rel="stylesheet">
-    <link rel="stylesheet" href="/theme/css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="http://lxprior.github.io/classtmpl/theme/css/bootstrap.sandstone.min.css" type="text/css"/>
+    <link href="http://lxprior.github.io/classtmpl/theme/css/font-awesome.min.css" rel="stylesheet">
+    <link href="http://lxprior.github.io/classtmpl/theme/css/pygments.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://lxprior.github.io/classtmpl/theme/css/style.css" type="text/css"/>
     <!-- JavaScript plugins (requires jQuery) -->
     <script src="http://code.jquery.com/jquery.js"></script>
 
+        <link href="http://lxprior.github.io/classtmpl/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+              title="Class ATOM Feed"/>
     
         
 
@@ -106,18 +108,18 @@ init_mathjax();
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="/index.html" class="navbar-brand">Home</a>
+            <a href="http://lxprior.github.io/classtmpl/index.html" class="navbar-brand">Class</a>
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
-                    <li><a href="/schedule.html">Schedule</a></li>
-                    <li><a href="/syllabus.html">Syllabus</a></li>
-                    <li><a href="/policies.html">Policies</a></li>
-                    <li><a href="/resources.html">Resources</a></li>
-                    <li><a href="/contact.html">Contact</a></li>
+                    <li><a href="http://lxprior.github.io/classtmpl/schedule.html">Schedule</a></li>
+                    <li><a href="http://lxprior.github.io/classtmpl/syllabus.html">Syllabus</a></li>
+                    <li><a href="http://lxprior.github.io/classtmpl/policies.html">Policies</a></li>
+                    <li><a href="http://lxprior.github.io/classtmpl/resources.html">Resources</a></li>
+                    <li><a href="http://lxprior.github.io/classtmpl/contact.html">Contact</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="/archives.html"><i class="icon-th-list"></i>Archives</a></li>
+                <li><a href="http://lxprior.github.io/classtmpl/archives.html"><i class="icon-th-list"></i>Archives</a></li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -131,7 +133,7 @@ init_mathjax();
         <article>
             <header class="page-header">
                 <h2>
-                    <a href="/blog/lab-1.html"
+                    <a href="http://lxprior.github.io/classtmpl/blog/lab-1.html"
                        rel="bookmark"
                        title="Permalink to Lab 1">
                         Lab 1
@@ -144,22 +146,22 @@ init_mathjax();
 <footer class="post-info">
     <span class="label label-default">Date</span>
     <span class="published">
-        <i class="icon-calendar"></i>Wed 03 December 2014
+        <i class="icon-calendar"></i>Wed 29 October 2014
     </span>
 
     <!--span class="label label-default">Category</span>
-    <a href="/category/misc.html">misc</a-->
+    <a href="http://lxprior.github.io/classtmpl/category/misc.html">misc</a-->
 
 
 <span class="label label-default">Tags</span>
-	<a href="/tag/labs.html">labs</a>
+	<a href="http://lxprior.github.io/classtmpl/tag/labs.html">labs</a>
 </footer><!-- /.post-info -->                    </div>
                 </div>
-                <p>Install <a href="/blog/installing-python.html">instructions for the Anaconda stack</a>.</p>
+                <p>Install <a href="{filename}../posts/installpython.md">instructions for the Anaconda stack</a>.</p>
 <p>A video of this lab will soon be available.</p>
 <p>You can download this lab <a href="{filename}/../../static/lab1.zip">here</a>.</p>
 <p>
-<div class="cell border-box-sizing text_cell rendered">
+<div class="input">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -169,22 +171,21 @@ init_mathjax();
 </div>
 </div>
 
-<div class="cell border-box-sizing text_cell rendered">
+<div class="input">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="-1-preliminary-plotting-stuff-to-get-things-going">-1. Preliminary plotting stuff to get things going</h3>
+<h3 id="preliminary-plotting-stuff-to-get-things-going">-1. Preliminary plotting stuff to get things going</h3>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[1]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="o">%</span><span class="k">matplotlib</span> <span class="n">inline</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">scipy</span> <span class="kn">as</span> <span class="nn">sp</span>
@@ -197,34 +198,31 @@ In&nbsp;[1]:
 
 </div>
 </div>
-</div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
+<div class="input">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="0-preliminaries-about-python">0. Preliminaries about Python</h3>
+<h3 id="preliminaries-about-python">0. Preliminaries about Python</h3>
 <p>In working with python I always remember: a python is a duck.</p>
 <p>What I mean is, python has a certain way of doing things. For example lets call one of these ways listiness. Listiness works on lists, dictionaries, files, and a general notion of something called an iterator.</p>
 <p>But first, lets introduce the notion of a comprehension. Its a way of constructing a list</p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[2]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">alist</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span>
 <span class="n">asquaredlist</span><span class="o">=</span><span class="p">[</span><span class="n">i</span><span class="o">*</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">alist</span><span class="p">]</span>
 <span class="n">asquaredlist</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -234,21 +232,21 @@ In&nbsp;[2]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[2]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<div class="output_text output_subarea output_pyout">
 <pre>
 [1, 4, 9, 16, 25]
 </pre>
-</div>
-
-</div>
 
 </div>
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
+</div>
+
+</div>
+<div class="input">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -257,17 +255,15 @@ In&nbsp;[2]:
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[3]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="nb">enumerate</span><span class="p">(</span><span class="n">asquaredlist</span><span class="p">)</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -277,21 +273,21 @@ In&nbsp;[3]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[3]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<div class="output_text output_subarea output_pyout">
 <pre>
 &lt;enumerate at 0x1090fe3c0&gt;
 </pre>
-</div>
-
-</div>
 
 </div>
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
+</div>
+
+</div>
+<div class="input">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -300,17 +296,15 @@ In&nbsp;[3]:
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[4]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="p">[</span><span class="n">the_tuple</span> <span class="k">for</span> <span class="n">the_tuple</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">asquaredlist</span><span class="p">)]</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -320,21 +314,21 @@ In&nbsp;[4]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[4]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<div class="output_text output_subarea output_pyout">
 <pre>
 [(0, 1), (1, 4), (2, 9), (3, 16), (4, 25)]
 </pre>
-</div>
-
-</div>
 
 </div>
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
+</div>
+
+</div>
+<div class="input">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -343,17 +337,15 @@ In&nbsp;[4]:
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[5]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="nb">zip</span><span class="p">(</span><span class="n">alist</span><span class="p">,</span> <span class="n">asquaredlist</span><span class="p">)</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -363,21 +355,21 @@ In&nbsp;[5]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[5]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<div class="output_text output_subarea output_pyout">
 <pre>
 [(1, 1), (2, 4), (3, 9), (4, 16), (5, 25)]
 </pre>
-</div>
-
-</div>
 
 </div>
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
+</div>
+
+</div>
+<div class="input">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -386,18 +378,16 @@ In&nbsp;[5]:
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[6]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">linelengths</span><span class="o">=</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">line</span><span class="p">)</span> <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="nb">open</span><span class="p">(</span><span class="s">&quot;data/olive.csv&quot;</span><span class="p">)]</span>
 <span class="k">print</span> <span class="n">linelengths</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -406,7 +396,7 @@ In&nbsp;[6]:
 
 
 <div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
+<div class="box-flex1 output_subarea output_stream output_stdout">
 <pre>
 [88, 49, 49, 48, 48, 49, 48, 48, 49, 49, 50, 50, 50, 50, 49, 49, 50, 49, 50, 49, 49, 50, 49, 50, 50, 50, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 46, 47, 47, 47, 47, 47, 47, 47, 46, 47, 47, 47, 47, 46, 46, 46, 47, 46, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 46, 47, 47, 47, 52, 51, 52, 51, 51, 52, 52, 52, 52, 52, 52, 52, 52, 52, 52, 52, 52, 52, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 52, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 52, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 52, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 52, 53, 53, 53, 53, 53, 52, 52, 53, 53, 53, 53, 53, 53, 53, 52, 52, 53, 53, 52, 53, 53, 52, 53, 53, 52, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 46, 47, 47, 47, 46, 45, 45, 45, 44, 45, 45, 45, 45, 44, 44, 45, 46, 46, 47, 47, 46, 47, 46, 46, 47, 46, 45, 45, 46, 44, 44, 44, 45, 45, 45, 45, 53, 53, 52, 53, 52, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 54, 53, 53, 53, 53, 53, 53, 55, 55, 54, 54, 54, 55, 55, 55, 54, 55, 54, 53, 54, 54, 54, 53, 54, 54, 55, 54, 54, 54, 54, 54, 55, 54, 54, 55, 54, 54, 54, 54, 55, 54, 54, 54, 55, 54, 54, 54, 54, 54, 54, 55, 54, 54, 55, 53, 54, 54, 53, 54, 53, 54, 53, 54, 53, 53, 54, 53, 54, 54, 54, 54, 54, 54, 54, 54, 55, 54, 54, 54, 55, 54, 54, 54, 54, 56, 54, 55, 54, 55, 54, 54, 55, 54, 53, 54, 53, 53, 54, 53, 54, 54, 53, 53, 53, 54, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 51, 50, 50, 50, 50, 50, 50, 50, 51, 50, 51, 52, 50, 51, 51, 51, 51, 50, 51, 50, 50, 50, 51, 50, 50, 51, 50, 51, 51, 50, 49, 50, 50, 50, 50, 50, 50, 51, 51, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 48, 51, 50, 50, 50, 51, 51, 51, 49, 49, 49, 50, 51, 51, 49, 48, 47, 47, 50, 51, 48, 50, 48, 51, 51, 49, 49, 50, 50, 49, 49, 49, 48, 50, 47, 49, 51, 48, 49, 49, 51, 49, 49, 49, 49, 51, 51, 51, 48, 50, 49]
 
@@ -418,7 +408,7 @@ In&nbsp;[6]:
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
+<div class="input">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -427,18 +417,16 @@ In&nbsp;[6]:
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[7]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">adict</span><span class="o">=</span><span class="p">{</span><span class="s">&#39;one&#39;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span> <span class="s">&#39;two&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s">&#39;three&#39;</span><span class="p">:</span> <span class="mi">3</span><span class="p">}</span>
 <span class="k">print</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">adict</span><span class="p">],</span> <span class="p">[(</span><span class="n">k</span><span class="p">,</span><span class="n">v</span><span class="p">)</span> <span class="k">for</span> <span class="n">k</span><span class="p">,</span><span class="n">v</span> <span class="ow">in</span> <span class="n">adict</span><span class="o">.</span><span class="n">items</span><span class="p">()],</span> <span class="n">adict</span><span class="o">.</span><span class="n">values</span><span class="p">()</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -447,7 +435,7 @@ In&nbsp;[7]:
 
 
 <div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
+<div class="box-flex1 output_subarea output_stream output_stdout">
 <pre>
 [&apos;three&apos;, &apos;two&apos;, &apos;one&apos;] [(&apos;three&apos;, 3), (&apos;two&apos;, 2), (&apos;one&apos;, 1)] [3, 2, 1]
 
@@ -459,7 +447,7 @@ In&nbsp;[7]:
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
+<div class="input">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -468,20 +456,18 @@ In&nbsp;[7]:
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[8]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">mylist</span><span class="o">=</span><span class="p">[]</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">xrange</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
     <span class="n">mylist</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
 <span class="n">mylist</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -491,21 +477,21 @@ In&nbsp;[8]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[8]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<div class="output_text output_subarea output_pyout">
 <pre>
 [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 </pre>
-</div>
-
-</div>
 
 </div>
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
+</div>
+
+</div>
+<div class="input">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -514,17 +500,15 @@ In&nbsp;[8]:
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[9]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="p">{</span><span class="n">k</span><span class="p">:</span><span class="n">v</span> <span class="k">for</span> <span class="p">(</span><span class="n">k</span><span class="p">,</span><span class="n">v</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">alist</span><span class="p">,</span> <span class="n">asquaredlist</span><span class="p">)}</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -534,21 +518,21 @@ In&nbsp;[9]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[9]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<div class="output_text output_subarea output_pyout">
 <pre>
 {1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
 </pre>
-</div>
-
-</div>
 
 </div>
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
+</div>
+
+</div>
+<div class="input">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -557,18 +541,16 @@ In&nbsp;[9]:
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[10]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">thelist</span><span class="o">=</span><span class="nb">range</span><span class="p">(</span><span class="mi">11</span><span class="p">)</span>
 <span class="p">{</span><span class="n">k</span><span class="p">:</span><span class="n">v</span> <span class="k">for</span> <span class="p">(</span><span class="n">k</span><span class="p">,</span><span class="n">v</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">thelist</span><span class="p">,</span> <span class="p">[</span><span class="n">i</span><span class="o">*</span><span class="n">i</span><span class="o">*</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">thelist</span><span class="p">])}</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -578,9 +560,9 @@ In&nbsp;[10]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[10]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<div class="output_text output_subarea output_pyout">
 <pre>
 {0: 0,
  1: 1,
@@ -594,33 +576,33 @@ In&nbsp;[10]:
  9: 729,
  10: 1000}
 </pre>
-</div>
-
-</div>
 
 </div>
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
+</div>
+
+</div>
+<div class="input">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="1-the-olive-oils-dataset">1. The Olive Oils dataset</h3>
+<h3 id="the-olive-oils-dataset">1. The Olive Oils dataset</h3>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
+<div class="input">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Some of the following text is taken from the rggobi book (<a href="http://www.ggobi.org/book/">http://www.ggobi.org/book/</a>). It is an excellent book on visualization and EDA for classification, and is available freely as a pdf from Hollis for those with a Harvard Id. Even though the book uses ggobi, a lot of the same analysis can be done in Mondrian or directly in Matplotlib/Pandas (albeit not interactively).</p>
+<p>Some of the following text is taken from the rggobi book (http://www.ggobi.org/book/). It is an excellent book on visualization and EDA for classification, and is available freely as a pdf from Hollis for those with a Harvard Id. Even though the book uses ggobi, a lot of the same analysis can be done in Mondrian or directly in Matplotlib/Pandas (albeit not interactively).</p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
+<div class="input">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -632,36 +614,29 @@ In&nbsp;[10]:
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
+<div class="input">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>&quot;Source: Forina, M., Armanino, C., Lanteri, S. &amp; Tiscornia, E. (1983), Classification of Olive Oils from their Fatty Acid Composition, in Martens, H. and
-Russwurm Jr., H., eds, Food Research and Data Analysis, Applied Science
-Publishers, London, pp. 189–214. It was brought to our attention by Glover
-&amp; Hopke (1992).</p>
+<p>&quot;Source: Forina, M., Armanino, C., Lanteri, S. &amp; Tiscornia, E. (1983), Classification of Olive Oils from their Fatty Acid Composition, in Martens, H. and Russwurm Jr., H., eds, Food Research and Data Analysis, Applied Science Publishers, London, pp. 189–214. It was brought to our attention by Glover &amp; Hopke (1992).</p>
 <p>Number of rows: 572</p>
 <p>Number of variables: 10</p>
-<p>Description: This data consists of the percentage composition of fatty acids
-found in the lipid fraction of Italian olive oils. The data arises from a study
-to determine the authenticity of an olive oil.&quot;</p>
+Description: This data consists of the percentage composition of fatty acids found in the lipid fraction of Italian olive oils. The data arises from a study to determine the authenticity of an olive oil.&quot;
 <hr/>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[11]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Image</span>
 <span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s">&#39;data/Italy.png&#39;</span><span class="p">)</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -671,9 +646,9 @@ In&nbsp;[11]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[11]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<div class="output_png output_subarea output_pyout">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATIAAAEwCAIAAAC7bGqZAAAYFmlDQ1BJQ0MgUHJvZmlsZQAAWAmt
 WWdYFM2y7pnZAMuSc8455yQ55xwFYck5LEHEhIoooCAoiIAoiCCSBJQkSBIQUQQDZoICkkRUUASU
 O/Dp951zz7n/7jzPzr5b/XZ1dVVNT1cvABw3SVFRYTAdAOERsWR7E30+Vzd3PvxbgANsgAnIAUGS
@@ -1231,61 +1206,58 @@ WzIUCECAFwKwJS+ZgA4QYARgS4YCAQjwQgC25CUT0AECjABsyVAgAAFeCMCWvGQCOkCAEYAtGQoE
 IMALAdiSl0xABwgwArAlQ4EABHghAFvykgnoAAFGALZkKBCAAC8EYEteMgEdIMAIwJYMBQIQ4IUA
 bMlLJqADBBgB2JKhQAACvBCALXnJBHSAACMAWzIUCECAFwKwJS+ZgA4QYARgS4YCAQjwQgC25CUT
 0AECjMAP28jyIvMM8+oAAAAASUVORK5CYII=
-"
->
-</div>
-
-</div>
+">
 
 </div>
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
+</div>
+
+</div>
+<div class="input">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>In working with pandas and matplotlib I dont always remember the syntax. A programmer is a good tool for converting Stack Overflow snippets into code. I almost always put what I am trying to do into google and go from there. </p>
+<p>In working with pandas and matplotlib I dont always remember the syntax. A programmer is a good tool for converting Stack Overflow snippets into code. I almost always put what I am trying to do into google and go from there.</p>
 <p>That said, I found the following links very useful in understanding the Pandas mode, how things work.</p>
 <ul>
-<li><a href="http://blog.yhathq.com/posts/R-and-pandas-and-what-ive-learned-about-each.html">http://blog.yhathq.com/posts/R-and-pandas-and-what-ive-learned-about-each.html</a></li>
-<li><a href="http://www.bearrelroll.com/2013/05/python-pandas-tutorial/">http://www.bearrelroll.com/2013/05/python-pandas-tutorial/</a></li>
-<li><a href="http://manishamde.github.io/blog/2013/03/07/pandas-and-python-top-10/">http://manishamde.github.io/blog/2013/03/07/pandas-and-python-top-10/</a></li>
+<li>http://blog.yhathq.com/posts/R-and-pandas-and-what-ive-learned-about-each.html</li>
+<li>http://www.bearrelroll.com/2013/05/python-pandas-tutorial/</li>
+<li>http://manishamde.github.io/blog/2013/03/07/pandas-and-python-top-10/</li>
 </ul>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
+<div class="input">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="2-loading-and-cleaning">2. Loading and Cleaning</h3>
+<h3 id="loading-and-cleaning">2. Loading and Cleaning</h3>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
+<div class="input">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Let&#39;s load the olive oil dataset into a pandas dataframe and have a look at the first 5 rows.</p>
+<p>Let's load the olive oil dataset into a pandas dataframe and have a look at the first 5 rows.</p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[12]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">df</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s">&quot;data/olive.csv&quot;</span><span class="p">)</span>
 <span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -1295,8 +1267,9 @@ In&nbsp;[12]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[12]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
-<div class="output_html rendered_html output_subarea output_pyout">
+<div class="output_html rendered_html">
 <div style="max-height:1000px;max-width:1500px;overflow:auto;">
 <table border="1" class="dataframe">
   <thead>
@@ -1392,34 +1365,33 @@ In&nbsp;[12]:
 </div>
 
 </div>
-
-</div>
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
+</div>
+
+</div>
+<div class="input">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Let&#39;s rename that ugly first column. </p>
-<p><em>Hint</em>: A Google search for &#39;python pandas dataframe rename&#39; points you at this <a href="http://pandas.pydata.org/pandas-docs/dev/generated/pandas.DataFrame.rename.html">documentation</a>.</p>
+<p>Let's rename that ugly first column.</p>
+<p><em>Hint</em>: A Google search for 'python pandas dataframe rename' points you at this <a href="http://pandas.pydata.org/pandas-docs/dev/generated/pandas.DataFrame.rename.html">documentation</a>.</p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[13]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="k">print</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span>
 <span class="n">df</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="mi">0</span><span class="p">]:</span><span class="s">&#39;areastring&#39;</span><span class="p">},</span> <span class="n">inplace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
 <span class="n">df</span><span class="o">.</span><span class="n">columns</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -1428,7 +1400,7 @@ In&nbsp;[13]:
 
 
 <div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
+<div class="box-flex1 output_subarea output_stream output_stdout">
 <pre>
 Index([u&apos;Unnamed: 0&apos;, u&apos;region&apos;, u&apos;area&apos;, u&apos;palmitic&apos;, u&apos;palmitoleic&apos;, u&apos;stearic&apos;, u&apos;oleic&apos;, u&apos;linoleic&apos;, u&apos;linolenic&apos;, u&apos;arachidic&apos;, u&apos;eicosenoic&apos;], dtype=object)
 
@@ -1438,41 +1410,39 @@ Index([u&apos;Unnamed: 0&apos;, u&apos;region&apos;, u&apos;area&apos;, u&apos;p
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[13]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<div class="output_text output_subarea output_pyout">
 <pre>
 Index([u&apos;areastring&apos;, u&apos;region&apos;, u&apos;area&apos;, u&apos;palmitic&apos;, u&apos;palmitoleic&apos;, u&apos;stearic&apos;, u&apos;oleic&apos;, u&apos;linoleic&apos;, u&apos;linolenic&apos;, u&apos;arachidic&apos;, u&apos;eicosenoic&apos;], dtype=object)
 </pre>
-</div>
-
-</div>
 
 </div>
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
+</div>
+
+</div>
+<div class="input">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Let&#39;s explore. Which unique regions and areas are contained in the dataset?</p>
+<p>Let's explore. Which unique regions and areas are contained in the dataset?</p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[14]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="k">print</span> <span class="s">&#39;regions</span><span class="se">\t</span><span class="s">&#39;</span><span class="p">,</span> <span class="n">df</span><span class="o">.</span><span class="n">region</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
 <span class="k">print</span> <span class="s">&#39;areas</span><span class="se">\t</span><span class="s">&#39;</span><span class="p">,</span> <span class="n">df</span><span class="o">.</span><span class="n">area</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -1481,7 +1451,7 @@ In&nbsp;[14]:
 
 
 <div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
+<div class="box-flex1 output_subarea output_stream output_stdout">
 <pre>
 regions	[1 2 3]
 areas	[1 2 3 4 5 6 9 7 8]
@@ -1494,27 +1464,25 @@ areas	[1 2 3 4 5 6 9 7 8]
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
+<div class="input">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Let&#39;s create a <em>crosstab</em>ulation or contingency table of the factors.</p>
-<p><em>Hint</em>: A Google search for &#39;python pandas cross tabulation&#39; points you at this <a href="http://pandas.pydata.org/pandas-docs/stable/reshaping.html#cross-tabulations">documentation</a>.</p>
+<p>Let's create a <em>crosstab</em>ulation or contingency table of the factors.</p>
+<p><em>Hint</em>: A Google search for 'python pandas cross tabulation' points you at this <a href="http://pandas.pydata.org/pandas-docs/stable/reshaping.html#cross-tabulations">documentation</a>.</p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[15]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">pd</span><span class="o">.</span><span class="n">crosstab</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">area</span><span class="p">,</span> <span class="n">df</span><span class="o">.</span><span class="n">region</span><span class="p">)</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -1524,8 +1492,9 @@ In&nbsp;[15]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[15]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
-<div class="output_html rendered_html output_subarea output_pyout">
+<div class="output_html rendered_html">
 <div style="max-height:1000px;max-width:1500px;overflow:auto;">
 <table border="1" class="dataframe">
   <thead>
@@ -1603,31 +1572,30 @@ In&nbsp;[15]:
 </div>
 
 </div>
-
-</div>
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
+</div>
+
+</div>
+<div class="input">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Do we need to clean the dataset before we can explore it a little more? Let&#39;s have a look.</p>
+<p>Do we need to clean the dataset before we can explore it a little more? Let's have a look.</p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[16]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -1637,8 +1605,9 @@ In&nbsp;[16]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[16]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
-<div class="output_html rendered_html output_subarea output_pyout">
+<div class="output_html rendered_html">
 <div style="max-height:1000px;max-width:1500px;overflow:auto;">
 <table border="1" class="dataframe">
   <thead>
@@ -1734,32 +1703,31 @@ In&nbsp;[16]:
 </div>
 
 </div>
-
-</div>
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
+</div>
+
+</div>
+<div class="input">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Let&#39;s get rid of the junk numbering in <code>df.areastring</code>. For single column Pandas Series we use <code>map</code>. Here&#39;s the <a href="http://pandas.pydata.org/pandas-docs/dev/generated/pandas.Series.map.html">documentation</a>.</p>
+<p>Let's get rid of the junk numbering in <code>df.areastring</code>. For single column Pandas Series we use <code>map</code>. Here's the <a href="http://pandas.pydata.org/pandas-docs/dev/generated/pandas.Series.map.html">documentation</a>.</p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[17]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">df</span><span class="o">.</span><span class="n">areastring</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">areastring</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&#39;.&#39;</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
 <span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -1769,8 +1737,9 @@ In&nbsp;[17]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[17]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
-<div class="output_html rendered_html output_subarea output_pyout">
+<div class="output_html rendered_html">
 <div style="max-height:1000px;max-width:1500px;overflow:auto;">
 <table border="1" class="dataframe">
   <thead>
@@ -1866,12 +1835,13 @@ In&nbsp;[17]:
 </div>
 
 </div>
-
-</div>
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
+</div>
+
+</div>
+<div class="input">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -1880,17 +1850,15 @@ In&nbsp;[17]:
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[18]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">df</span><span class="p">[[</span><span class="s">&#39;palmitic&#39;</span><span class="p">,</span><span class="s">&#39;oleic&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -1900,8 +1868,9 @@ In&nbsp;[18]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[18]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
-<div class="output_html rendered_html output_subarea output_pyout">
+<div class="output_html rendered_html">
 <div style="max-height:1000px;max-width:1500px;overflow:auto;">
 <table border="1" class="dataframe">
   <thead>
@@ -1943,12 +1912,13 @@ In&nbsp;[18]:
 </div>
 
 </div>
-
-</div>
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
+</div>
+
+</div>
+<div class="input">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -1957,7 +1927,7 @@ In&nbsp;[18]:
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
+<div class="input">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -1966,17 +1936,15 @@ In&nbsp;[18]:
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[19]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="k">print</span> <span class="n">df</span><span class="p">[</span><span class="s">&#39;palmitic&#39;</span><span class="p">]</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -1985,7 +1953,7 @@ In&nbsp;[19]:
 
 
 <div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
+<div class="box-flex1 output_subarea output_stream output_stdout">
 <pre>
 0     1075
 1     1088
@@ -2028,27 +1996,25 @@ Name: palmitic, Length: 572, dtype: int64
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
+<div class="input">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Notice the difference in the syntax. In the first example where we used list indexing we got a new DataFrame. In the second example we got a series corresponding to the column. </p>
+<p>Notice the difference in the syntax. In the first example where we used list indexing we got a new DataFrame. In the second example we got a series corresponding to the column.</p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[20]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="k">print</span> <span class="s">&quot;type of df[[&#39;palmitic&#39;]]:</span><span class="se">\t</span><span class="s">&quot;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">df</span><span class="p">[[</span><span class="s">&#39;palmitic&#39;</span><span class="p">]])</span> 
 <span class="k">print</span> <span class="s">&quot;type of df[&#39;palmitic&#39;]:</span><span class="se">\t\t</span><span class="s">&quot;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s">&#39;palmitic&#39;</span><span class="p">])</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -2057,7 +2023,7 @@ In&nbsp;[20]:
 
 
 <div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
+<div class="box-flex1 output_subarea output_stream output_stdout">
 <pre>
 type of df[[&apos;palmitic&apos;]]:	&lt;class &apos;pandas.core.frame.DataFrame&apos;&gt;
 type of df[&apos;palmitic&apos;]:		&lt;class &apos;pandas.core.series.Series&apos;&gt;
@@ -2070,7 +2036,7 @@ type of df[&apos;palmitic&apos;]:		&lt;class &apos;pandas.core.series.Series&apo
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
+<div class="input">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -2079,17 +2045,15 @@ type of df[&apos;palmitic&apos;]:		&lt;class &apos;pandas.core.series.Series&apo
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[21]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">df</span><span class="o">.</span><span class="n">palmitic</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -2099,9 +2063,9 @@ In&nbsp;[21]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[21]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<div class="output_text output_subarea output_pyout">
 <pre>
 0     1075
 1     1088
@@ -2136,15 +2100,15 @@ In&nbsp;[21]:
 571     960
 Name: palmitic, Length: 572, dtype: int64
 </pre>
-</div>
-
-</div>
 
 </div>
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
+</div>
+
+</div>
+<div class="input">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -2153,17 +2117,15 @@ Name: palmitic, Length: 572, dtype: int64
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[22]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">df</span><span class="o">.</span><span class="n">areastring</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -2173,39 +2135,38 @@ In&nbsp;[22]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[22]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<div class="output_text output_subarea output_pyout">
 <pre>
 array([&apos;North-Apulia&apos;, &apos;Calabria&apos;, &apos;South-Apulia&apos;, &apos;Sicily&apos;,
        &apos;Inland-Sardinia&apos;, &apos;Coast-Sardinia&apos;, &apos;Umbria&apos;, &apos;East-Liguria&apos;,
        &apos;West-Liguria&apos;], dtype=object)
 </pre>
-</div>
-
-</div>
 
 </div>
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
+</div>
+
+</div>
+<div class="input">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Create a new dataframe <code>dfsub</code> by taking the list of acids and using pandas&#39; <code>apply</code> function to divide all values by 100.</p>
-<p>If you&#39;re not familiar with pandas&#39; <code>apply</code> function, a Google search for &#39;python pandas dataframe apply&#39; points you to the <a href="http://pandas.pydata.org/pandas-docs/dev/generated/pandas.DataFrame.apply.html">documentation</a></p>
+<p>Create a new dataframe <code>dfsub</code> by taking the list of acids and using pandas' <code>apply</code> function to divide all values by 100.</p>
+<p>If you're not familiar with pandas' <code>apply</code> function, a Google search for 'python pandas dataframe apply' points you to the <a href="http://pandas.pydata.org/pandas-docs/dev/generated/pandas.DataFrame.apply.html">documentation</a></p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[23]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">acidlist</span><span class="o">=</span><span class="p">[</span><span class="s">&#39;palmitic&#39;</span><span class="p">,</span> <span class="s">&#39;palmitoleic&#39;</span><span class="p">,</span> <span class="s">&#39;stearic&#39;</span><span class="p">,</span> <span class="s">&#39;oleic&#39;</span><span class="p">,</span> <span class="s">&#39;linoleic&#39;</span><span class="p">,</span> <span class="s">&#39;linolenic&#39;</span><span class="p">,</span> <span class="s">&#39;arachidic&#39;</span><span class="p">,</span> <span class="s">&#39;eicosenoic&#39;</span><span class="p">]</span>
 
 <span class="c">#your code here</span>
@@ -2216,7 +2177,6 @@ In&nbsp;[23]:
 
 </div>
 </div>
-</div>
 
 <div class="output_wrapper">
 <div class="output">
@@ -2224,8 +2184,9 @@ In&nbsp;[23]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[23]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
-<div class="output_html rendered_html output_subarea output_pyout">
+<div class="output_html rendered_html">
 <div style="max-height:1000px;max-width:1500px;overflow:auto;">
 <table border="1" class="dataframe">
   <thead>
@@ -2303,32 +2264,31 @@ In&nbsp;[23]:
 </div>
 
 </div>
-
-</div>
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
+</div>
+
+</div>
+<div class="input">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Notice that we can replace part of the dataframe by this new frame. Since we need the percentages, let&#39;s do this. The <code>Oleic</code> percentages should be in the 70s and 80s if you did this right.</p>
+<p>Notice that we can replace part of the dataframe by this new frame. Since we need the percentages, let's do this. The <code>Oleic</code> percentages should be in the 70s and 80s if you did this right.</p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[24]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">df</span><span class="p">[</span><span class="n">acidlist</span><span class="p">]</span><span class="o">=</span><span class="n">dfsub</span>
 <span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -2338,8 +2298,9 @@ In&nbsp;[24]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[24]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
-<div class="output_html rendered_html output_subarea output_pyout">
+<div class="output_html rendered_html">
 <div style="max-height:1000px;max-width:1500px;overflow:auto;">
 <table border="1" class="dataframe">
   <thead>
@@ -2435,22 +2396,21 @@ In&nbsp;[24]:
 </div>
 
 </div>
-
-</div>
 </div>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[25]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">df</span><span class="o">.</span><span class="n">palmitic</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span> <span class="n">df</span><span class="o">.</span><span class="n">palmitic</span><span class="o">.</span><span class="n">std</span><span class="p">(),</span> <span class="n">df</span><span class="o">.</span><span class="n">palmitic</span><span class="o">.</span><span class="n">var</span><span class="p">()</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -2460,31 +2420,29 @@ In&nbsp;[25]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[25]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<div class="output_text output_subarea output_pyout">
 <pre>
 (12.317412587412583, 1.6859226405632937, 2.8423351499639087)
 </pre>
-</div>
-
-</div>
 
 </div>
 </div>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[26]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">df</span><span class="o">.</span><span class="n">palmitic</span><span class="o">.</span><span class="n">std</span><span class="p">(),</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">palmitic</span><span class="o">.</span><span class="n">var</span><span class="p">())</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -2494,31 +2452,29 @@ In&nbsp;[26]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[26]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<div class="output_text output_subarea output_pyout">
 <pre>
 (1.6859226405632937, 1.6859226405632937)
 </pre>
-</div>
-
-</div>
 
 </div>
 </div>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[27]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">palmitic</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">palmitic</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">palmitic</span><span class="p">)</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -2528,31 +2484,29 @@ In&nbsp;[27]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[27]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<div class="output_text output_subarea output_pyout">
 <pre>
 (1.6844482872943494, 12.317412587412583, 2.837366032568867)
 </pre>
-</div>
-
-</div>
 
 </div>
 </div>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[28]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">palmitic</span><span class="p">))</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -2562,31 +2516,29 @@ In&nbsp;[28]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[28]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<div class="output_text output_subarea output_pyout">
 <pre>
 1.6844482872943494
 </pre>
-</div>
-
-</div>
 
 </div>
 </div>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[29]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">df</span><span class="p">[</span><span class="n">acidlist</span><span class="p">]</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -2596,8 +2548,9 @@ In&nbsp;[29]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[29]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
-<div class="output_html rendered_html output_subarea output_pyout">
+<div class="output_html rendered_html">
 <div style="max-height:1000px;max-width:1500px;overflow:auto;">
 <table border="1" class="dataframe">
   <thead>
@@ -2708,22 +2661,21 @@ In&nbsp;[29]:
 </div>
 
 </div>
-
-</div>
 </div>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[30]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">df</span><span class="p">[</span><span class="n">acidlist</span><span class="p">]</span><span class="o">.</span><span class="n">cov</span><span class="p">()</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -2733,8 +2685,9 @@ In&nbsp;[30]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[30]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
-<div class="output_html rendered_html output_subarea output_pyout">
+<div class="output_html rendered_html">
 <div style="max-height:1000px;max-width:1500px;overflow:auto;">
 <table border="1" class="dataframe">
   <thead>
@@ -2845,22 +2798,21 @@ In&nbsp;[30]:
 </div>
 
 </div>
-
-</div>
 </div>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[31]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">df</span><span class="p">[</span><span class="n">acidlist</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">(),</span> <span class="n">df</span><span class="p">[</span><span class="n">acidlist</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -2870,9 +2822,9 @@ In&nbsp;[31]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[31]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<div class="output_text output_subarea output_pyout">
 <pre>
 (palmitic       12.010
 palmitoleic     1.100
@@ -2893,24 +2845,24 @@ arachidic       0.580979
 eicosenoic      0.162815
 dtype: float64)
 </pre>
-</div>
-
-</div>
 
 </div>
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
+</div>
+
+</div>
+<div class="input">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="3-quick-intro-to-numpy-and-matplotlib">3. Quick Intro to Numpy and Matplotlib</h3>
+<h3 id="quick-intro-to-numpy-and-matplotlib">3. Quick Intro to Numpy and Matplotlib</h3>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
+<div class="input">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -2919,7 +2871,7 @@ dtype: float64)
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
+<div class="input">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -2928,18 +2880,16 @@ dtype: float64)
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[32]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">v</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">])</span>
 <span class="n">v</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -2949,31 +2899,29 @@ In&nbsp;[32]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[32]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<div class="output_text output_subarea output_pyout">
 <pre>
 ((4,), numpy.ndarray)
 </pre>
-</div>
-
-</div>
 
 </div>
 </div>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[33]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">v</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -2983,31 +2931,29 @@ In&nbsp;[33]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[33]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<div class="output_text output_subarea output_pyout">
 <pre>
 array([1, 2, 3, 4])
 </pre>
-</div>
-
-</div>
 
 </div>
 </div>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[34]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">v</span><span class="o">.</span><span class="n">T</span><span class="p">,</span> <span class="n">v</span><span class="o">.</span><span class="n">T</span><span class="o">.</span><span class="n">shape</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -3017,32 +2963,30 @@ In&nbsp;[34]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[34]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<div class="output_text output_subarea output_pyout">
 <pre>
 (array([1, 2, 3, 4]), (4,))
 </pre>
-</div>
-
-</div>
 
 </div>
 </div>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[35]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">v</span><span class="p">:</span>
     <span class="k">print</span> <span class="n">j</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -3051,7 +2995,7 @@ In&nbsp;[35]:
 
 
 <div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
+<div class="box-flex1 output_subarea output_stream output_stdout">
 <pre>
 1
 2
@@ -3066,18 +3010,16 @@ In&nbsp;[35]:
 </div>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[36]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">M</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]])</span>
 <span class="n">M</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -3087,32 +3029,30 @@ In&nbsp;[36]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[36]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<div class="output_text output_subarea output_pyout">
 <pre>
 array([[1, 2],
        [3, 4]])
 </pre>
-</div>
-
-</div>
 
 </div>
 </div>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[37]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">M</span><span class="o">.</span><span class="n">T</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -3122,32 +3062,30 @@ In&nbsp;[37]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[37]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<div class="output_text output_subarea output_pyout">
 <pre>
 array([[1, 3],
        [2, 4]])
 </pre>
-</div>
-
-</div>
 
 </div>
 </div>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[38]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="nb">type</span><span class="p">(</span><span class="n">M</span><span class="p">),</span> <span class="n">M</span><span class="o">.</span><span class="n">shape</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -3157,32 +3095,30 @@ In&nbsp;[38]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[38]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<div class="output_text output_subarea output_pyout">
 <pre>
 (numpy.ndarray, (2, 2))
 </pre>
-</div>
-
-</div>
 
 </div>
 </div>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[39]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">M32</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">],[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">],[</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">]])</span>
 <span class="n">M32</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -3192,33 +3128,31 @@ In&nbsp;[39]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[39]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<div class="output_text output_subarea output_pyout">
 <pre>
 array([[1, 2],
        [3, 4],
        [5, 6]])
 </pre>
-</div>
-
-</div>
 
 </div>
 </div>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[40]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">M32</span><span class="o">.</span><span class="n">shape</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -3228,32 +3162,30 @@ In&nbsp;[40]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[40]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<div class="output_text output_subarea output_pyout">
 <pre>
 (3, 2)
 </pre>
-</div>
-
-</div>
 
 </div>
 </div>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[41]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">M23</span><span class="o">=</span><span class="n">M32</span><span class="o">.</span><span class="n">T</span>
 <span class="n">M23</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -3263,32 +3195,30 @@ In&nbsp;[41]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[41]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<div class="output_text output_subarea output_pyout">
 <pre>
 array([[1, 3, 5],
        [2, 4, 6]])
 </pre>
-</div>
-
-</div>
 
 </div>
 </div>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[42]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">M23</span><span class="o">.</span><span class="n">shape</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -3298,31 +3228,29 @@ In&nbsp;[42]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[42]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<div class="output_text output_subarea output_pyout">
 <pre>
 (2, 3)
 </pre>
-</div>
-
-</div>
 
 </div>
 </div>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[43]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">df</span><span class="o">.</span><span class="n">palmitic</span><span class="o">.</span><span class="n">values</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -3332,9 +3260,9 @@ In&nbsp;[43]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[43]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<div class="output_text output_subarea output_pyout">
 <pre>
 array([ 10.75,  10.88,   9.11,   9.66,  10.51,   9.11,   9.22,  11.  ,
         10.82,  10.37,  10.51,  10.36,  10.74,   8.75,   9.52,  11.55,
@@ -3409,25 +3337,23 @@ array([ 10.75,  10.88,   9.11,   9.66,  10.51,   9.11,   9.22,  11.  ,
         10.9 ,  11.  ,  10.9 ,  11.5 ,  11.1 ,  10.1 ,  10.7 ,  12.8 ,
         10.6 ,  10.1 ,   9.9 ,   9.6 ])
 </pre>
-</div>
-
-</div>
 
 </div>
 </div>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[44]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">df</span><span class="p">[[</span><span class="s">&#39;palmitic&#39;</span><span class="p">,</span> <span class="s">&#39;palmitoleic&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="n">df</span><span class="p">[[</span><span class="s">&#39;palmitic&#39;</span><span class="p">,</span> <span class="s">&#39;palmitoleic&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">shape</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -3437,9 +3363,9 @@ In&nbsp;[44]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[44]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<div class="output_text output_subarea output_pyout">
 <pre>
 (array([[ 10.75,   0.75],
        [ 10.88,   0.73],
@@ -3450,25 +3376,23 @@ In&nbsp;[44]:
        [  9.6 ,   0.8 ]]),
  (572, 2))
 </pre>
-</div>
-
-</div>
 
 </div>
 </div>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[45]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -3478,31 +3402,29 @@ In&nbsp;[45]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[45]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<div class="output_text output_subarea output_pyout">
 <pre>
 array([ 0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.])
 </pre>
-</div>
-
-</div>
 
 </div>
 </div>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[46]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -3512,9 +3434,9 @@ In&nbsp;[46]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[46]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<div class="output_text output_subarea output_pyout">
 <pre>
 array([[ 1.,  1.],
        [ 1.,  1.],
@@ -3522,26 +3444,24 @@ array([[ 1.,  1.],
        [ 1.,  1.],
        [ 1.,  1.]])
 </pre>
-</div>
-
-</div>
 
 </div>
 </div>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[47]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">myrandom</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
 <span class="k">print</span> <span class="n">myrandom</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -3550,7 +3470,7 @@ In&nbsp;[47]:
 
 
 <div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
+<div class="box-flex1 output_subarea output_stream output_stdout">
 <pre>
 [[ 0.05230491  0.91185191  0.20743992]
  [ 0.74409837  0.44205873  0.47194589]
@@ -3566,17 +3486,15 @@ In&nbsp;[47]:
 </div>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[48]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">myrandom</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">myrandom</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">myrandom</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -3586,33 +3504,31 @@ In&nbsp;[48]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[48]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<div class="output_text output_subarea output_pyout">
 <pre>
 (array([ 0.05230491,  0.91185191,  0.20743992]),
  array([ 0.85845655,  0.76218189,  0.07040454]),
  0.052304912419592231)
 </pre>
-</div>
-
-</div>
 
 </div>
 </div>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[49]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">myrandom</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -3622,31 +3538,29 @@ In&nbsp;[49]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[49]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<div class="output_text output_subarea output_pyout">
 <pre>
 array([ 0.05230491,  0.74409837,  0.42524805,  0.08106272,  0.85845655])
 </pre>
-</div>
-
-</div>
 
 </div>
 </div>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[50]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">myrandom</span><span class="p">[</span><span class="mi">0</span><span class="p">,:]</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -3656,21 +3570,21 @@ In&nbsp;[50]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[50]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<div class="output_text output_subarea output_pyout">
 <pre>
 array([ 0.05230491,  0.91185191,  0.20743992])
 </pre>
-</div>
-
-</div>
 
 </div>
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
+</div>
+
+</div>
+<div class="input">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -3679,19 +3593,17 @@ array([ 0.05230491,  0.91185191,  0.20743992])
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[51]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">current_palette</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">color_palette</span><span class="p">()</span>
 <span class="k">print</span> <span class="n">current_palette</span>
 <span class="n">sns</span><span class="o">.</span><span class="n">palplot</span><span class="p">(</span><span class="n">current_palette</span><span class="p">)</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -3700,7 +3612,7 @@ In&nbsp;[51]:
 
 
 <div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
+<div class="box-flex1 output_subarea output_stream output_stdout">
 <pre>
 [(0.2980392156862745, 0.4470588235294118, 0.6901960784313725), (0.3333333333333333, 0.6588235294117647, 0.40784313725490196), (0.7686274509803922, 0.3058823529411765, 0.3215686274509804), (0.5058823529411764, 0.4470588235294118, 0.6980392156862745), (0.8, 0.7254901960784313, 0.4549019607843137), (0.39215686274509803, 0.7098039215686275, 0.803921568627451)]
 
@@ -3709,9 +3621,9 @@ In&nbsp;[51]:
 </div>
 
 <div class="output_area"><div class="prompt"></div>
+<div class="box-flex1 output_subarea output_display_data">
 
 
-<div class="output_png output_subarea ">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAV0AAABGCAYAAABv7kdbAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAAj1JREFUeJzt2DFLVXEcxvHf9YYiYjpK18G7NDVJSzS1+iKac2yNQIRo
 EhoN3HojTRHubWJXRMGGSkURvBdOb8CkwfMcsM9n/S3P8Od74PSapmkKgIiprgcA/E9EFyBIdAGC
@@ -3724,23 +3636,21 @@ kOgCBIkuQJDoAgSJLkCQ6AIEiS5AkOgCBIkuQJDoAgSJLkCQ6AIEiS5AkOgCBIkuQJDoAgSJLkCQ
 AgSJLkCQ6AIEiS5AkOgCBIkuQFCvaZrmb8eLq3GNjs+Se2KGg4Xq9cd1cHrU9ZRWrCwu18x1U5ej
 UddTWjE3HNakP10n9/B9Lg0WqqpqfHXY8ZJ2zM4/qqqq/fNJx0vas7W7Vztrqzfebo0uAHfL7wWA
 INEFCBJdgCDRBQgSXYAg0QUI+gPWP1yvUOeqAgAAAABJRU5ErkJggg==
-"
->
-</div>
-
-</div>
+">
 
 </div>
 </div>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[52]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">fig</span><span class="o">=</span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">palmitic</span><span class="p">,</span> <span class="n">df</span><span class="o">.</span><span class="n">linolenic</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="n">current_palette</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
 <span class="n">axis</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span> <span class="c">#get current axis</span>
@@ -3752,7 +3662,6 @@ In&nbsp;[52]:
 
 </div>
 </div>
-</div>
 
 <div class="output_wrapper">
 <div class="output">
@@ -3760,20 +3669,20 @@ In&nbsp;[52]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[52]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<div class="output_text output_subarea output_pyout">
 <pre>
 &lt;matplotlib.text.Text at 0x109157d90&gt;
 </pre>
-</div>
 
+</div>
 </div>
 
 <div class="output_area"><div class="prompt"></div>
+<div class="box-flex1 output_subarea output_display_data">
 
 
-<div class="output_png output_subarea ">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfkAAAFtCAYAAAAEQROxAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAIABJREFUeJzs3Xd8FHX6wPHPbMlu2mbTQwqBUEIJHaQpiFQrcghiwYYU
 0dOfet55np4Fz35WFFEU7Ho2FAVOTlAgIXQIJbSQENJ72d1snfn9sbIhJAECIWX5vl8vXzK7U55n
@@ -4553,29 +4462,26 @@ O+d8hBAnJqfrhbjIJCcnc+utt1JYWMiwYcO47bbbGDVqFL179yYuLo6rr76aPXv2APVH6Eeuqx9x
 7JH70e3Ad0ngz3/+M1FRUf7He/fuzQMPPED//v1RVZXRo0dzxRVXnPd8hbiYSRc6IS4iS5cu5cUX
 X2TBggWBDkUI0QzkdL0QF5Fjj8iFEPomR/JCCCGETsmRvBBCCKFTUuSFEEIInZIiL4QQQuiUFHkh
 hBBCp6TICyGEEDolRV4IIYTQqf8PiLl7vRZic+gAAAAASUVORK5CYII=
-"
->
-</div>
-
-</div>
+">
 
 </div>
 </div>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[53]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">palmitic</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">&quot;Palmitic&quot;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s">&quot;Histogram of Palmitic Acid content in Olive Oils Sample&quot;</span><span class="p">);</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -4584,9 +4490,9 @@ In&nbsp;[53]:
 
 
 <div class="output_area"><div class="prompt"></div>
+<div class="box-flex1 output_subarea output_display_data">
 
 
-<div class="output_png output_subarea ">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAegAAAFtCAYAAADMLflnAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAIABJREFUeJzt3Xl4VPW9x/HPJJNIMBCW1iqkNUIUwZAFEhASEgJlq6KI
 0MpFKQgooCwiYGm4gltQEC8ugBe8LKIoIiBQlotUEkBAMSwRRZFKWEXBJUyALCS/+0duptkIAwbm
@@ -4774,17 +4680,16 @@ x48f1549eyRJL7zwgl5//fVKWgsA5SGggStEeVdkR0ZGKjIyUo0bN1ZCQoLCw8N18ODBEtNUdDV3
 8eeK/t+iRQtt3bpVY8eOdT9/zTXX6K233lKfPn0UERGhr776SmPHjr0EawmgCD83CQCAhdiDBgDA
 QgQ0AAAWIqABALAQAQ0AgIUIaAAALERAAwBgIQIaAAALEdAAAFjo/wAwwSsNrlKxTAAAAABJRU5E
 rkJggg==
-"
->
-</div>
-
-</div>
+">
 
 </div>
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
+</div>
+
+</div>
+<div class="input">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -4793,7 +4698,7 @@ rkJggg==
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
+<div class="input">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -4802,13 +4707,12 @@ rkJggg==
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[54]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">fig</span><span class="p">,</span> <span class="n">axes</span><span class="o">=</span><span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">),</span> <span class="n">nrows</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">ncols</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
 <span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">palmitic</span><span class="p">,</span> <span class="n">df</span><span class="o">.</span><span class="n">linolenic</span><span class="p">)</span>
 <span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">palmitic</span><span class="p">,</span> <span class="n">df</span><span class="o">.</span><span class="n">linolenic</span><span class="p">,</span> <span class="s">&#39;.&#39;</span><span class="p">)</span>
@@ -4819,16 +4723,15 @@ In&nbsp;[54]:
 
 </div>
 </div>
-</div>
 
 <div class="output_wrapper">
 <div class="output">
 
 
 <div class="output_area"><div class="prompt"></div>
+<div class="box-flex1 output_subarea output_display_data">
 
 
-<div class="output_png output_subarea ">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAsgAAALICAYAAABiqwZ2AAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAIABJREFUeJzs3Xl8m2eZ6P2fdi+yZXnfdyd29jRbE6dJ0410S1tK14EX
 KAR6hoEB+r4MzHlhmJlzOJ1zhgIDpRQoLRRaoIWmTdOWpknT7Gn2xbGzON73RZYtL5K1nD8kPZZs
@@ -6676,17 +6579,16 @@ YMeOHQYn68321ltvYeHChQgLC4Pdbsebb75pWKYXX3wRbrcb69evD8xFfvXVV/H0009LtU/IXOf0
 krk+6iFzTdVL9locLJlrtx4y13u99B4nFCHbBGAiIiIiIgPxh0KIiIiIiDTYIBMRERERabBBJiIi
 IiLSYINMRERERKTBBpmIiIiISIMNMhERERGRBhtkIiIiIiKN/wfC06gqwhg/vwAAAABJRU5ErkJg
 gg==
-"
->
-</div>
-
-</div>
+">
 
 </div>
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
+</div>
+
+</div>
+<div class="input">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -6695,18 +6597,16 @@ gg==
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[55]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">new_palette</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">color_palette</span><span class="p">(</span><span class="s">&quot;Set3&quot;</span><span class="p">)</span>
 <span class="n">sns</span><span class="o">.</span><span class="n">palplot</span><span class="p">(</span><span class="n">new_palette</span><span class="p">)</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -6715,9 +6615,9 @@ In&nbsp;[55]:
 
 
 <div class="output_area"><div class="prompt"></div>
+<div class="box-flex1 output_subarea output_display_data">
 
 
-<div class="output_png output_subarea ">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAV0AAABGCAYAAABv7kdbAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAAi1JREFUeJzt2DFOVGEUhuEzMyQDZAIVCTFYaGllYqVboLaldi9swIaG
 1oWIhYmxsKEwJAZJqJyMZMC5XDeAVHO/v/B52tN81VucUd/3fQEQMW49AOB/IroAQaILECS6AEGi
@@ -6730,23 +6630,21 @@ gkQXIEh0AYJEFyBIdAGCRBcgSHQBgkQXIEh0AYJEFyBIdAGCRBcgSHQBgkQXIEh0AYJEFyBIdAGC
 RBcgSHQBgkZ93/f/Oi67VV0vb5J7YvY2t2s67qtq3nrKQHaqW41rsbhtPWQQs9m0Jt1d9VeXraes
 3Wj/SVVVXSy6xkuGsb+7VVVV0/l54yXDuT87rsnhyYO3R6MLwHp5LwAEiS5AkOgCBIkuQJDoAgSJ
 LkDQX3UUVuc85BAJAAAAAElFTkSuQmCC
-"
->
-</div>
-
-</div>
+">
 
 </div>
 </div>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[56]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">xacids</span><span class="o">=</span><span class="p">[</span><span class="s">&#39;oleic&#39;</span><span class="p">,</span><span class="s">&#39;linolenic&#39;</span><span class="p">,</span><span class="s">&#39;eicosenoic&#39;</span><span class="p">]</span>
 <span class="n">yacids</span><span class="o">=</span><span class="p">[</span><span class="s">&#39;stearic&#39;</span><span class="p">,</span><span class="s">&#39;arachidic&#39;</span><span class="p">]</span>
 
@@ -6764,16 +6662,15 @@ In&nbsp;[56]:
 
 </div>
 </div>
-</div>
 
 <div class="output_wrapper">
 <div class="output">
 
 
 <div class="output_area"><div class="prompt"></div>
+<div class="box-flex1 output_subarea output_display_data">
 
 
-<div class="output_png output_subarea ">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAskAAALJCAYAAABGNb7tAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAIABJREFUeJzs3Xd8lFW++PHPtCQzk2TSGySEkEoaJRAgtARC76IC4ooo
 q66717u67nV3X3dvcXd/u7rrNq+ruypVAUUSmrRQElpCCz0kQCCV9F6mz++P0YlDDyQQ4nn/xTPP
@@ -9972,72 +9869,56 @@ RODIkSNwc3PDBx98gHvuuQfu7u7YunUrAgMDUVJSguzsbISEhEBEcObMGaxatQo6nc76debodDrk
 5OSgu7sbISEh1m88SUtLQ2Njo/Xx7733HnJzc5Gfnw8fHx+cPn3a6c8dEdFi4ybTUsOPgCMiIiIi
 ssG3WxARERER2eAhmYiIiIjIBg/JREREREQ2eEgmIiIiIrLBQzIRERERkQ0ekomIiIiIbPCQTERE
 RERk4z+w7sCywuhUdgAAAABJRU5ErkJggg==
-"
->
-</div>
-
-</div>
+">
 
 </div>
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
+</div>
+
+</div>
+<div class="input">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="4-numpy-and-some-stats">4. Numpy, and some stats</h3>
+<h3 id="numpy-and-some-stats">4. Numpy, and some stats</h3>
 <p>(From Shalizi). In the real world we only always deal with samples from populations. We assume that whatever it is that gave us our data is well-modeled by some random process. In effect, each time we make a measurement, we ask the process to spit out numbers according to some distribution; we sample the distribution. If we think of sampling as closing our eyes and picking a data point out of a box, we call the set of all data-points in the box the population. (That last isn’t as silly as it sounds; think of opinion polls.) In either case, we assume that the true distribution is the unknown one which lies behind our data. If we want to learn about that distribution from the data, then we need to know something about the kind of data it is likely to give us. That is to say, we need to know the sampling distribution, the distribution of data values given that the true distribution takes a certain functional form, with certain parameter values, and we sample from it in a specified way.</p>
-<p>In the next two sections, $X_1, X_2 . . .X_n . . .$ are independent, identically-distributed
-(IID) random variables. X has the finite mean μ. The average of the first n of
-them is</p>
-<p>$$ S_n \equiv \frac{1}{n} \sum_{i=1}^{n} X_i $$</p>
+<p>In the next two sections, <span class="math">\(X_1, X_2 . . .X_n . . .\)</span> are independent, identically-distributed (IID) random variables. X has the finite mean μ. The average of the first n of them is</p>
+<p><span class="math">\[ S_n \equiv \frac{1}{n} \sum_{i=1}^{n} X_i \]</span></p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
+<div class="input">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h4 id="the-law-of-large-numbers">The Law of Large Numbers</h4>
-<p>(From Shalizi)
-The means of IID sequences converge to the mean of the variable (if E|X| &lt; $\infty$):</p>
-<p>$$S_n \rightarrow \mu$$ </p>
-<p>as </p>
-<p>$$n \rightarrow \infty$$</p>
+<p>(From Shalizi) The means of IID sequences converge to the mean of the variable (if E|X| &lt; <span class="math">\(\infty\)</span>):</p>
+<p><span class="math">\[S_n \rightarrow \mu\]</span></p>
+<p>as</p>
+<p><span class="math">\[n \rightarrow \infty\]</span></p>
 <p>That is, the sample mean approaches the population mean.</p>
 <p>The obvious application of the law of large numbers is to take our favorite event A from any probability distribution we like, with random variable Y , and then apply an indicator function I(A) to Y , a function which gives 1 when its input is in in A and 0 otherwise. Now we have a Bernoulli random variable with parameter p = P(A). So if we take a long sequence of random trials, then with probability one the frequency of successes will converge to the true probability .</p>
-<p>If you simulate many samples of a population, then the laws of large numbers
-tell us the the empirical frequencies of your simulations will approach the actual
-sampling distribution. This is called “Monte Carlo simulation”, or even “the
-Monte Carlo method”. (Several other things are also called Monte Carlo, but
-they’re actually related.) By the same procedure, you can get the sampling
-distribution for an arbitrary statistic of your data.</p>
+<p>If you simulate many samples of a population, then the laws of large numbers tell us the the empirical frequencies of your simulations will approach the actual sampling distribution. This is called “Monte Carlo simulation”, or even “the Monte Carlo method”. (Several other things are also called Monte Carlo, but they’re actually related.) By the same procedure, you can get the sampling distribution for an arbitrary statistic of your data.</p>
 <h4 id="central-limit-theorem">Central Limit Theorem</h4>
-<p>(Again, Shalizi).
-Assume that $X$ has a finite population variance $\sigma^2$. Then as $n \rightarrow \infty$, the $S_n$ converge to a Gaussian random variable with mean $\mu$ and variance $\sigma^2$.</p>
-<p>More prosaicly: the CLT tells us that, if only we can arrange to be dealing
-with IID sequences, in the long run we know what the distribution must be.
-Even better, it’s always the same distribution; still better, it’s one which is
-remarkably easy to deal with, and for which we have a huge amount of theory.
-Manipulate your problem so that the CLT applies, and, at least asymptotically,
-you’ve got it made.</p>
+<p>(Again, Shalizi). Assume that <span class="math">\(X\)</span> has a finite population variance <span class="math">\(\sigma^2\)</span>. Then as <span class="math">\(n \rightarrow \infty\)</span>, the <span class="math">\(S_n\)</span> converge to a Gaussian random variable with mean <span class="math">\(\mu\)</span> and variance <span class="math">\(\sigma^2\)</span>.</p>
+<p>More prosaicly: the CLT tells us that, if only we can arrange to be dealing with IID sequences, in the long run we know what the distribution must be. Even better, it’s always the same distribution; still better, it’s one which is remarkably easy to deal with, and for which we have a huge amount of theory. Manipulate your problem so that the CLT applies, and, at least asymptotically, you’ve got it made.</p>
 <p>It’s generally true that, whatever measure of variability we pick, its value in a sample will tend to be smaller than its population value. (We have already mentioned that this is true of the variance.) It’s not hard to see why this should be so; consider, as an extreme case, the limit where our sample consists of a single piece of data, and so there is no variation in the sample. More generally, picking out a subset from the population, which is what sampling does, is unlikely to give an exactly representative sample, and naturally the higher probability events will be the ones which tend to show up in the sample.</p>
-<h4 id="sampling-and-de-moivre-s-formula-">Sampling and De-Moivre&#39;s formula:</h4>
+<h4 id="sampling-and-de-moivres-formula">Sampling and De-Moivre's formula:</h4>
 <p>The standard deviation of the sampling distribution of the mean is given as:</p>
-<p>$$\sigma_{sample} = \frac{\sigma}{\sqrt{N_{sample}}}$$</p>
+<p><span class="math">\[\sigma_{sample} = \frac{\sigma}{\sqrt{N_{sample}}}\]</span></p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[57]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="k">def</span> <span class="nf">throw_a_coin</span><span class="p">(</span><span class="n">size</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="n">size</span><span class="p">)</span>
 
@@ -10055,7 +9936,6 @@ In&nbsp;[57]:
 
 </div>
 </div>
-</div>
 
 <div class="output_wrapper">
 <div class="output">
@@ -10063,22 +9943,22 @@ In&nbsp;[57]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[57]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<div class="output_text output_subarea output_pyout">
 <pre>
 array([ 0.8,  0.6,  0.2,  0.6,  0.4,  0.5,  0.8,  0.4,  0.7,  0.5,  0.6,
         0.6,  0.3,  0.3,  0.5,  0.3,  0.6,  0.4,  0.4,  0.4])
 </pre>
-</div>
-
-</div>
 
 </div>
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
+</div>
+
+</div>
+<div class="input">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -10089,19 +9969,17 @@ array([ 0.8,  0.6,  0.2,  0.6,  0.4,  0.5,  0.8,  0.4,  0.7,  0.5,  0.6,
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[58]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">sampsize</span><span class="o">=</span><span class="nb">range</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
 <span class="n">mss</span> <span class="o">=</span> <span class="p">[</span><span class="n">mean_std</span><span class="p">(</span><span class="n">make_throws</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span><span class="n">i</span><span class="p">))</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">sampsize</span><span class="p">]</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">sampsize</span><span class="p">,</span> <span class="p">[</span><span class="n">e</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">mss</span><span class="p">])</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -10111,20 +9989,20 @@ In&nbsp;[58]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[58]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<div class="output_text output_subarea output_pyout">
 <pre>
 [&lt;matplotlib.lines.Line2D at 0x1093b37d0&gt;]
 </pre>
-</div>
 
+</div>
 </div>
 
 <div class="output_area"><div class="prompt"></div>
+<div class="box-flex1 output_subarea output_display_data">
 
 
-<div class="output_png output_subarea ">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAesAAAFVCAYAAADPM8ekAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAIABJREFUeJzt3Xl8VPW9//H3LJnsk0BCIGFfZBMiLhBJgDbWKhZRoaW9
 9rpbFLtoLVdrb3/dbK9F77W9rbbY1kq1t+KjVZsWt4qyaQJoWARkD7JDAgQmmSyznfP7Y8iQkDDM
@@ -10354,27 +10232,24 @@ pe+eLBaLnnzySc2ePZs67iTTpk3TihUrNGHCBBmGod/+9rcaNGgQddzJHnroId15552aPHmyfD6f
 fv7zn+vyyy+nnjuJxWKRpIi/H5KTk3Xffffp9ttv1+TJk5WcnKwXX3zx7NcxTXKDAwCQyBg4BgAg
 wRGsAQBIcARrAAASHMEaAIAER7AGACDBEawBAEhwBGsAABLc/wdfIiJaVxjF8AAAAABJRU5ErkJg
 gg==
-"
->
-</div>
-
-</div>
+">
 
 </div>
 </div>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[59]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">sampsize</span><span class="p">,</span> <span class="p">[</span><span class="n">e</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">mss</span><span class="p">])</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -10384,20 +10259,20 @@ In&nbsp;[59]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[59]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<div class="output_text output_subarea output_pyout">
 <pre>
 [&lt;matplotlib.lines.Line2D at 0x1093a0d90&gt;]
 </pre>
-</div>
 
+</div>
 </div>
 
 <div class="output_area"><div class="prompt"></div>
+<div class="box-flex1 output_subarea output_display_data">
 
 
-<div class="output_png output_subarea ">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfAAAAFVCAYAAAAQfb27AAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAIABJREFUeJzsnXmYFNW5/7+9zcr0DMO+L7LKoiiKMoI2LkGJRjRE8SZq
 UBSvF43hmmiMWcgVR5O4JEYlRsGgP2I0OgZxI7IoM8LIIsi+r7Ivs8/0UvX7o/tUV1VXVVfPTM90
@@ -10830,17 +10705,16 @@ zNfWWsf/prKyUj6fTxUVFcHPwvfv36/S0lL5/X798ccfWrFihRwOh0pLS5Wenq5AIKDKykrFxsZG
 eXo7ORwOVVVVqbi4mIzD6Gv3U5g4cSI5h1FZWZmKioqUnp6u3t5e7d69W7NmzSLjMOq/B8hAzxFx
 cXEqKSlRYWGh0tPTFRcXp+PHj4c+hjGshQ4AgG34wBkAAAtR4AAAWIgCBwDAQhQ4AAAWosABALAQ
 BQ4AgIUocAAALPRv4zVHSL5uNJ8AAAAASUVORK5CYII=
-"
->
-</div>
-
-</div>
+">
 
 </div>
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
+</div>
+
+</div>
+<div class="input">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -10851,19 +10725,17 @@ BQ4AgIUocAAALPRv4zVHSL5uNJ8AAAAASUVORK5CYII=
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[60]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">numsamps</span><span class="o">=</span><span class="nb">range</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
 <span class="n">mss2</span><span class="o">=</span><span class="p">[</span><span class="n">mean_std</span><span class="p">(</span><span class="n">make_throws</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="mi">100</span><span class="p">))</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">numsamps</span><span class="p">]</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">numsamps</span><span class="p">,</span> <span class="p">[</span><span class="n">e</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">mss2</span><span class="p">])</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -10873,20 +10745,20 @@ In&nbsp;[60]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[60]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<div class="output_text output_subarea output_pyout">
 <pre>
 [&lt;matplotlib.lines.Line2D at 0x1093be690&gt;]
 </pre>
-</div>
 
+</div>
 </div>
 
 <div class="output_area"><div class="prompt"></div>
+<div class="box-flex1 output_subarea output_display_data">
 
 
-<div class="output_png output_subarea ">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfAAAAFVCAYAAAAQfb27AAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAIABJREFUeJzs3XlgFOX9P/D37JGT7BLuAIJAwHihgBJNEA1awYq09Aut
 tsVaEEVrW7+g39r6+7b91lqvFqu10gPFoy1VqU2biraoQDQIEm4xCIT7vsLu5txj5vfH7jOZmZ3Z
@@ -11292,27 +11164,24 @@ T5w4odraWvl8Pq1YsUJbt26Vy+VSbW2tcnNzZVmWjh49qvj4+AjPPjq5XC41NTWpsrKSjENow4YN
 6unpUUZGhizL0smTJ7V06VJyDqG6ujrt3r1bubm5mpycVENDg9asWUPGIeRyuSTJ9jkiISFB1dXV
 Ki8vV25urhISEnThwoXAj2EMe6EDABBtuOAMAEAUosABAIhCFDgAAFGIAgcAIApR4AAARCEKHACA
 KESBAwAQhf4FPdMHXlhZYvQAAAAASUVORK5CYII=
-"
->
-</div>
-
-</div>
+">
 
 </div>
 </div>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[61]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">numsamps</span><span class="p">,</span> <span class="p">[</span><span class="n">e</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">mss2</span><span class="p">])</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -11322,20 +11191,20 @@ In&nbsp;[61]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[61]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<div class="output_text output_subarea output_pyout">
 <pre>
 [&lt;matplotlib.lines.Line2D at 0x10939d510&gt;]
 </pre>
-</div>
 
+</div>
 </div>
 
 <div class="output_area"><div class="prompt"></div>
+<div class="box-flex1 output_subarea output_display_data">
 
 
-<div class="output_png output_subarea ">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfAAAAFVCAYAAAAQfb27AAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAIABJREFUeJzsnXmAFNW59p+q7unZYAaQHUQQGUABRdFBBsRxC5EbE4ze
 G7xxCQbFKJqIydX4Zbkm6uhN4pogakQlkXivURLUqCioMMPisIggmwiy78y+9FbfH92n+lR1VXX1
@@ -11771,41 +11640,38 @@ NptNlZWVysrKUiAQUE1NjRISEqI8vTXZbDZt27ZN5eXlZBxG+fn5OnfunDIyMhQIBLRjxw6NGjWK
 nMOoqqpKZWVlysrKUnd3t2prazV9+nQyDiObzSZJfT5GJCYmatWqVSotLVVWVpYSExN14MCBiUsF
 8QAAADdJREFU0PswhmuhAwBgNXzgDACABVHgAABYEAUOAIAFUeAAAFgQBQ4AgAVR4AAAWBAFDgCA
 Bf0PCA1urJbui44AAAAASUVORK5CYII=
-"
->
-</div>
-
-</div>
+">
 
 </div>
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
+</div>
+
+</div>
+<div class="input">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="5-pandas-data-munging-indexing-plotting">5. Pandas Data Munging, indexing, plotting</h3>
+<h3 id="pandas-data-munging-indexing-plotting">5. Pandas Data Munging, indexing, plotting</h3>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[61]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb">
 </pre></div>
 
 </div>
 </div>
-</div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
+<div class="input">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -11814,19 +11680,17 @@ In&nbsp;[61]:
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[62]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">region_groupby</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s">&#39;region&#39;</span><span class="p">)</span>
 <span class="k">print</span> <span class="nb">type</span><span class="p">(</span><span class="n">region_groupby</span><span class="p">)</span>
 <span class="n">region_groupby</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -11835,7 +11699,7 @@ In&nbsp;[62]:
 
 
 <div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
+<div class="box-flex1 output_subarea output_stream output_stdout">
 <pre>
 &lt;class &apos;pandas.core.groupby.DataFrameGroupBy&apos;&gt;
 
@@ -11845,8 +11709,9 @@ In&nbsp;[62]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[62]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
-<div class="output_html rendered_html output_subarea output_pyout">
+<div class="output_html rendered_html">
 <div style="max-height:1000px;max-width:1500px;overflow:auto;">
 <table border="1" class="dataframe">
   <thead>
@@ -12101,12 +11966,13 @@ In&nbsp;[62]:
 </div>
 
 </div>
-
-</div>
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
+</div>
+
+</div>
+<div class="input">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -12115,13 +11981,12 @@ In&nbsp;[62]:
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[63]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">region_groupby</span><span class="p">:</span>
     <span class="k">print</span> <span class="s">&quot;( key, type(value) ) = (&quot;</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="s">&quot;,&quot;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">value</span><span class="p">),</span> <span class="s">&quot;)&quot;</span>
     <span class="n">v</span><span class="o">=</span><span class="n">value</span>
@@ -12131,14 +11996,13 @@ In&nbsp;[63]:
 
 </div>
 </div>
-</div>
 
 <div class="output_wrapper">
 <div class="output">
 
 
 <div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
+<div class="box-flex1 output_subarea output_stream output_stdout">
 <pre>
 ( key, type(value) ) = ( 1 , &lt;class &apos;pandas.core.frame.DataFrame&apos;&gt; )
 ( key, type(value) ) = ( 2 , &lt;class &apos;pandas.core.frame.DataFrame&apos;&gt; )
@@ -12150,8 +12014,9 @@ In&nbsp;[63]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[63]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
-<div class="output_html rendered_html output_subarea output_pyout">
+<div class="output_html rendered_html">
 <div style="max-height:1000px;max-width:1500px;overflow:auto;">
 <table border="1" class="dataframe">
   <thead>
@@ -12247,12 +12112,13 @@ In&nbsp;[63]:
 </div>
 
 </div>
-
-</div>
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
+</div>
+
+</div>
+<div class="input">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -12261,19 +12127,17 @@ In&nbsp;[63]:
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[64]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">dfrd</span><span class="o">=</span><span class="n">region_groupby</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
 <span class="k">print</span> <span class="nb">type</span><span class="p">(</span><span class="n">dfrd</span><span class="p">)</span>
 <span class="n">dfrd</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -12282,7 +12146,7 @@ In&nbsp;[64]:
 
 
 <div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
+<div class="box-flex1 output_subarea output_stream output_stdout">
 <pre>
 &lt;class &apos;pandas.core.frame.DataFrame&apos;&gt;
 
@@ -12292,8 +12156,9 @@ In&nbsp;[64]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[64]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
-<div class="output_html rendered_html output_subarea output_pyout">
+<div class="output_html rendered_html">
 <div style="max-height:1000px;max-width:1500px;overflow:auto;">
 <table border="1" class="dataframe">
   <thead>
@@ -12596,12 +12461,13 @@ In&nbsp;[64]:
 </div>
 
 </div>
-
-</div>
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
+</div>
+
+</div>
+<div class="input">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -12610,18 +12476,16 @@ In&nbsp;[64]:
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[65]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">dfbystd</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s">&#39;region&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">std</span><span class="p">()</span>
 <span class="n">dfbystd</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -12631,8 +12495,9 @@ In&nbsp;[65]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[65]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
-<div class="output_html rendered_html output_subarea output_pyout">
+<div class="output_html rendered_html">
 <div style="max-height:1000px;max-width:1500px;overflow:auto;">
 <table border="1" class="dataframe">
   <thead>
@@ -12704,12 +12569,13 @@ In&nbsp;[65]:
 </div>
 
 </div>
-
-</div>
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
+</div>
+
+</div>
+<div class="input">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -12718,18 +12584,16 @@ In&nbsp;[65]:
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[66]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">dfbymean</span><span class="o">=</span><span class="n">region_groupby</span><span class="o">.</span><span class="n">aggregate</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">)</span>
 <span class="n">dfbymean</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -12739,8 +12603,9 @@ In&nbsp;[66]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[66]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
-<div class="output_html rendered_html output_subarea output_pyout">
+<div class="output_html rendered_html">
 <div style="max-height:1000px;max-width:1500px;overflow:auto;">
 <table border="1" class="dataframe">
   <thead>
@@ -12812,12 +12677,13 @@ In&nbsp;[66]:
 </div>
 
 </div>
-
-</div>
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
+</div>
+
+</div>
+<div class="input">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -12826,17 +12692,15 @@ In&nbsp;[66]:
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[67]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">region_groupby</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">f</span><span class="p">:</span> <span class="n">f</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -12846,8 +12710,9 @@ In&nbsp;[67]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[67]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
-<div class="output_html rendered_html output_subarea output_pyout">
+<div class="output_html rendered_html">
 <div style="max-height:1000px;max-width:1500px;overflow:auto;">
 <table border="1" class="dataframe">
   <thead>
@@ -12924,27 +12789,27 @@ In&nbsp;[67]:
 </div>
 
 </div>
-
-</div>
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
+</div>
+
+</div>
+<div class="input">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Let&#39;s rename the columns in <code>dfbymean</code> and <code>dfbystd</code>.</p>
+<p>Let's rename the columns in <code>dfbymean</code> and <code>dfbystd</code>.</p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[68]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">renamedict_std</span><span class="o">=</span><span class="p">{</span><span class="n">k</span><span class="p">:</span><span class="n">k</span><span class="o">+</span><span class="s">&quot;_std&quot;</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">acidlist</span><span class="p">}</span>
 <span class="n">renamedict_mean</span><span class="o">=</span><span class="p">{</span><span class="n">k</span><span class="p">:</span><span class="n">k</span><span class="o">+</span><span class="s">&quot;_mean&quot;</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">acidlist</span><span class="p">}</span>
 <span class="n">dfbystd</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">inplace</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">renamedict_std</span><span class="p">)</span>
@@ -12954,7 +12819,6 @@ In&nbsp;[68]:
 
 </div>
 </div>
-</div>
 
 <div class="output_wrapper">
 <div class="output">
@@ -12962,8 +12826,9 @@ In&nbsp;[68]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[68]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
-<div class="output_html rendered_html output_subarea output_pyout">
+<div class="output_html rendered_html">
 <div style="max-height:1000px;max-width:1500px;overflow:auto;">
 <table border="1" class="dataframe">
   <thead>
@@ -13035,27 +12900,27 @@ In&nbsp;[68]:
 </div>
 
 </div>
-
-</div>
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
+</div>
+
+</div>
+<div class="input">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Pandas can do general merges. When we do that along an index, it&#39;s called a <code>join</code> (<a href="http://pandas.pydata.org/pandas-docs/dev/generated/pandas.DataFrame.join.html">documentation</a>). Here we make two sub-dataframes and join them on the common region index.</p>
+<p>Pandas can do general merges. When we do that along an index, it's called a <code>join</code> (<a href="http://pandas.pydata.org/pandas-docs/dev/generated/pandas.DataFrame.join.html">documentation</a>). Here we make two sub-dataframes and join them on the common region index.</p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[69]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">dfpalmiticmean</span> <span class="o">=</span> <span class="n">dfbymean</span><span class="p">[[</span><span class="s">&#39;palmitic_mean&#39;</span><span class="p">]]</span> 
 <span class="n">dfpalmiticstd</span> <span class="o">=</span> <span class="n">dfbystd</span><span class="p">[[</span><span class="s">&#39;palmitic_std&#39;</span><span class="p">]]</span> 
 
@@ -13065,7 +12930,6 @@ In&nbsp;[69]:
 
 </div>
 </div>
-</div>
 
 <div class="output_wrapper">
 <div class="output">
@@ -13073,8 +12937,9 @@ In&nbsp;[69]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[69]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
-<div class="output_html rendered_html output_subarea output_pyout">
+<div class="output_html rendered_html">
 <div style="max-height:1000px;max-width:1500px;overflow:auto;">
 <table border="1" class="dataframe">
   <thead>
@@ -13111,25 +12976,24 @@ In&nbsp;[69]:
 </div>
 
 </div>
-
-</div>
 </div>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[70]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">rkeys</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
 <span class="n">rvals</span><span class="o">=</span><span class="p">[</span><span class="s">&#39;South&#39;</span><span class="p">,</span><span class="s">&#39;Sardinia&#39;</span><span class="p">,</span><span class="s">&#39;North&#39;</span><span class="p">]</span>
 <span class="n">rmap</span><span class="o">=</span><span class="p">{</span><span class="n">e</span><span class="p">[</span><span class="mi">0</span><span class="p">]:</span><span class="n">e</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">rkeys</span><span class="p">,</span><span class="n">rvals</span><span class="p">)}</span>
 <span class="n">rmap</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -13139,42 +13003,40 @@ In&nbsp;[70]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[70]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<div class="output_text output_subarea output_pyout">
 <pre>
 {1: &apos;South&apos;, 2: &apos;Sardinia&apos;, 3: &apos;North&apos;}
 </pre>
-</div>
-
-</div>
 
 </div>
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
+</div>
+
+</div>
+<div class="input">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Let&#39;s get a dataframe with just the acids.</p>
+<p>Let's get a dataframe with just the acids.</p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[71]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">mdf2</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s">&#39;region&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">aggregate</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">)</span>
 <span class="n">mdf2</span><span class="o">=</span><span class="n">mdf2</span><span class="p">[</span><span class="n">acidlist</span><span class="p">]</span>
 <span class="n">mdf2</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -13184,8 +13046,9 @@ In&nbsp;[71]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[71]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
-<div class="output_html rendered_html output_subarea output_pyout">
+<div class="output_html rendered_html">
 <div style="max-height:1000px;max-width:1500px;overflow:auto;">
 <table border="1" class="dataframe">
   <thead>
@@ -13252,33 +13115,32 @@ In&nbsp;[71]:
 </div>
 
 </div>
-
-</div>
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
+</div>
+
+</div>
+<div class="input">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Let&#39;s make a bar plot of the relative mean percentages of the acids. In pandas this is as simple as:</p>
+<p>Let's make a bar plot of the relative mean percentages of the acids. In pandas this is as simple as:</p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[72]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">ax</span><span class="o">=</span><span class="n">mdf2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s">&#39;barh&#39;</span><span class="p">,</span> <span class="n">stacked</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_yticklabels</span><span class="p">(</span><span class="n">rvals</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">100</span><span class="p">])</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -13288,20 +13150,20 @@ In&nbsp;[72]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[72]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<div class="output_text output_subarea output_pyout">
 <pre>
 (0, 100)
 </pre>
-</div>
 
+</div>
 </div>
 
 <div class="output_area"><div class="prompt"></div>
+<div class="box-flex1 output_subarea output_display_data">
 
 
-<div class="output_png output_subarea ">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAg4AAAFRCAYAAAAciyWGAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAIABJREFUeJzt3Xl0FGXa/vGr0gkSktCBAAmLIEJAJYjIIvuqbAICKgoq
 i7jCsAr+lBfEEUZBQVAWFURwewV3YdjEJTgviCIYQEBAJKxZIIFOk4Uk3fX7I0OPDJAUoTsdku/n
@@ -13520,27 +13382,24 @@ apSys7N100036Z577vFzlSWPYRiaNWuWHn30UebZS+6880798MMPat68udxutxYsWKDrrruOOfai
 CRMmaOjQoWrbtq1ycnL00ksvqUmTJsyxFxmGIUkX/XwwDEOjRo1S27Zt5Xa79eKLL6pMmTL5j2ea
 XOcCAACsKdVfVQAAgMtDcAAAAJYRHAAAgGUEBwAAYBnBAQAAWEZwAAAAlhEcAACAZQQHAABg2f8H
 mii+Y7Hc1DAAAAAASUVORK5CYII=
-"
->
-</div>
-
-</div>
+">
 
 </div>
 </div>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[73]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">df</span><span class="o">.</span><span class="n">palmitic</span><span class="o">.</span><span class="n">hist</span><span class="p">()</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -13550,20 +13409,20 @@ In&nbsp;[73]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[73]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<div class="output_text output_subarea output_pyout">
 <pre>
 &lt;matplotlib.axes.AxesSubplot at 0x1095c12d0&gt;
 </pre>
-</div>
 
+</div>
 </div>
 
 <div class="output_area"><div class="prompt"></div>
+<div class="box-flex1 output_subarea output_display_data">
 
 
-<div class="output_png output_subarea ">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAegAAAFVCAYAAAAkBHynAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAFN1JREFUeJzt3X+s1nX9//HH4fwI9MCBaC6XK6bo+jDKaIIph8NOToRv
 H80Y/uGKlQEVOLFwujlaM9eORdNlhrloWcucrb4ua0iRm6BG0gSMuchF7HyymZJ86uIgPw6ccz5/
@@ -13660,17 +13519,16 @@ zJo1K4cPH84dd9zhtcI3cPR7584778ySJUvS3d2dKVOmZMGCBTWerDx1dXXp7e3NjTfemPe85z2Z
 P39+kmT27Nm57bbbajtcQY69P+rr63Mf9QZe///e4sWL8+1vfzvjx4/Pgw8+WOPJynN0V9/97nez
 YMGCjB49Om9729uyZs2agT/PubgBoDxOVAIABRJoACiQQANAgQQaAAok0ABQIIEGgAIJNAAU6H8A
 dMgpHMqDhbgAAAAASUVORK5CYII=
-"
->
-</div>
-
-</div>
+">
 
 </div>
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
+</div>
+
+</div>
+<div class="input">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -13679,18 +13537,16 @@ dMgpHMqDhbgAAAAASUVORK5CYII=
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[74]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">mask</span><span class="o">=</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">eicosenoic</span> <span class="o">&lt;</span> <span class="mf">0.05</span><span class="p">)</span>
 <span class="n">mask</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -13700,9 +13556,9 @@ In&nbsp;[74]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[74]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<div class="output_text output_subarea output_pyout">
 <pre>
 0     False
 1     False
@@ -13737,15 +13593,15 @@ In&nbsp;[74]:
 571    True
 Name: eicosenoic, Length: 572, dtype: bool
 </pre>
-</div>
-
-</div>
 
 </div>
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
+</div>
+
+</div>
+<div class="input">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -13754,17 +13610,15 @@ Name: eicosenoic, Length: 572, dtype: bool
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[75]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">mask</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">mask</span><span class="p">)</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -13774,21 +13628,21 @@ In&nbsp;[75]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[75]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<div class="output_text output_subarea output_pyout">
 <pre>
 (249, 0.43531468531468531)
 </pre>
-</div>
-
-</div>
 
 </div>
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
+</div>
+
+</div>
+<div class="input">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -13797,18 +13651,16 @@ In&nbsp;[75]:
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[76]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">loweico</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">eicosenoic</span> <span class="o">&lt;</span> <span class="mf">0.02</span><span class="p">]</span>
 <span class="n">pd</span><span class="o">.</span><span class="n">crosstab</span><span class="p">(</span><span class="n">loweico</span><span class="o">.</span><span class="n">area</span><span class="p">,</span> <span class="n">loweico</span><span class="o">.</span><span class="n">region</span><span class="p">)</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -13818,8 +13670,9 @@ In&nbsp;[76]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[76]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
-<div class="output_html rendered_html output_subarea output_pyout">
+<div class="output_html rendered_html">
 <div style="max-height:1000px;max-width:1500px;overflow:auto;">
 <table border="1" class="dataframe">
   <thead>
@@ -13866,23 +13719,22 @@ In&nbsp;[76]:
 </div>
 
 </div>
-
-</div>
 </div>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[77]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="kn">from</span> <span class="nn">pandas.tools.plotting</span> <span class="kn">import</span> <span class="n">scatter_matrix</span>
 <span class="n">scatter_matrix</span><span class="p">(</span><span class="n">df</span><span class="p">[[</span><span class="s">&#39;linoleic&#39;</span><span class="p">,</span><span class="s">&#39;arachidic&#39;</span><span class="p">,</span><span class="s">&#39;eicosenoic&#39;</span><span class="p">]],</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span> <span class="n">diagonal</span><span class="o">=</span><span class="s">&#39;kde&#39;</span><span class="p">);</span>
 </pre></div>
 
-</div>
 </div>
 </div>
 
@@ -13891,9 +13743,9 @@ In&nbsp;[77]:
 
 
 <div class="output_area"><div class="prompt"></div>
+<div class="box-flex1 output_subarea output_display_data">
 
 
-<div class="output_png output_subarea ">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAmQAAAJkCAYAAAC/ET28AAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAIABJREFUeJzs3WmQXNd52P3/vbf3fZvpnn1fsO8EuAIUN4v0SkVybL+y
 UjHjJHJihipVKk6qUq7Kl6TqVcXlKilVUuxSxWYqeR3HskWJ+yqRFAkQGzEYYAazz/Q+ve/d9973
@@ -15851,10 +15703,9 @@ abfbWi6XOhwOOp1OWiwWb2sea3x2u51c1/22WQAAXlFDBuCj+L6vwWCgOI5l27Z6vZ7W6/VT+JlO
 pxqPx5rNZqpUKup2u0rTNJ/B1Gg0lGWZgiBQtVqV9Nw5+Xpdq9UUhqGazaZKpVL+zOPaKIrk+77q
 9bosy9J8Pv/rrQDwj1BDBgAAYBhHlgAAAIYRyAAAAAwjkAEAABhGIAMAADCMQAYAAGAYgQwAAMAw
 AhkAAIBhBDIAAADDvgBvTNkFNqftLwAAAABJRU5ErkJggg==
-"
->
-</div>
+">
 
+</div>
 </div>
 
 </div>
@@ -15875,28 +15726,32 @@ AhkAAIBhBDIAAADDvgBvTNkFNqftLwAAAABJRU5ErkJggg==
 
                 <li class="list-group-item"><h4><i class="icon-home icon-large"></i>Class Material</h4></li>
                     <li class="list-group-item">
-                       <a href="/tag/labs.html">
+                       <a href="http://lxprior.github.io/classtmpl/tag/homeworks.html">
+                           <i class="icon-folder-open icon-large"></i>homeworks
+                       </a>
+                   </li>
+                    <li class="list-group-item">
+                       <a href="http://lxprior.github.io/classtmpl/tag/labs.html">
                            <i class="icon-folder-open icon-large"></i>labs
                        </a>
                    </li>
                     <li class="list-group-item">
-                       <a href="/tag/other.html">
-                           <i class="icon-folder-open icon-large"></i>other
+                       <a href="http://lxprior.github.io/classtmpl/tag/lectures.html">
+                           <i class="icon-folder-open icon-large"></i>lectures
                        </a>
                    </li>
 
-            <!--li class="list-group-item"><a href="/tags.html"><h4><i class="icon-tags icon-large"></i>Tags</h4></a></li-->
+            <!--li class="list-group-item"><a href="http://lxprior.github.io/classtmpl/tags.html"><h4><i class="icon-tags icon-large"></i>Tags</h4></a></li-->
             <li class="list-group-item"><h4><i class="icon-external-link icon-large"></i>Class Links</h4></li>
-                <li class="list-group-item"><a href=" http://piazza.com/harvard/spring2015/ac297r"><i class="icon-external-link"></i>Piazza</a></li>
+                <li class="list-group-item"><a href="https://piazza.com/harvard/spring2014/am207/home"><i class="icon-external-link"></i>Piazza</a></li>
+                <li class="list-group-item"><a href="http://cm.dce.harvard.edu/2014/02/24104/publicationListing.shtml"><i class="icon-external-link"></i>Videos</a></li>
+                <li class="list-group-item"><a href="http://isites.harvard.edu/icb/icb.do?keyword=k102129&login=yes"><i class="icon-external-link"></i>ISite</a></li>
             <li class="list-group-item"><h4><i class="icon-external-link icon-large"></i>Other Links</h4></li>
                 <li class="list-group-item"><a href="http://docs.scipy.org/doc/numpy/reference/"><i class="icon-external-link"></i>Numpy</a></li>
                 <li class="list-group-item"><a href="http://docs.scipy.org/doc/scipy/reference/"><i class="icon-external-link"></i>Scipy</a></li>
                 <li class="list-group-item"><a href="http://pandas.pydata.org/pandas-docs/dev/"><i class="icon-external-link"></i>Pandas</a></li>
                 <li class="list-group-item"><a href="http://matplotlib.org/api/index.html"><i class="icon-external-link"></i>Matplotlib</a></li>
                 <li class="list-group-item"><a href="https://github.com/pymc-devs/pymc"><i class="icon-external-link"></i>PyMC3</a></li>
-                <li class="list-group-item"><a href="http://mc-stan.org/"><i class="icon-external-link"></i>Stan</a></li>
-                <li class="list-group-item"><a href="http://deeplearning.net/software/theano/"><i class="icon-external-link"></i>Theano</a></li>
-                <li class="list-group-item"><a href="http://caffe.berkeleyvision.org/"><i class="icon-external-link"></i>Caffe</a></li>
                 <li class="list-group-item"><a href="http://iacs.seas.harvard.edu"><i class="icon-external-link"></i>IACS</a></li>
         </ul>
     </section>
@@ -15905,9 +15760,9 @@ AhkAAIBhBDIAAADDvgBvTNkFNqftLwAAAABJRU5ErkJggg==
 </div>
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="/theme/js/bootstrap.min.js"></script>
+<script src="http://lxprior.github.io/classtmpl/theme/js/bootstrap.min.js"></script>
 
 <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
-<script src="/theme/js/respond.min.js"></script>
+<script src="http://lxprior.github.io/classtmpl/theme/js/respond.min.js"></script>
 </body>
 </html>
