@@ -6,7 +6,7 @@ You can contact the instructor Pavlos Protopapas: `pavlos at seas.harvard.edu`, 
 The TF's (minions) for this course are:
 
 * Rahul Dave
-* Thouis Ray Jones
+* Ray (Thouis) Jones
 * Robert Adolf
 
 You can contact us at [`ac297r at gmail.com`](mailto:ac297r@gmail.com).
