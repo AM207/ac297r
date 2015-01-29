@@ -13,19 +13,17 @@
 
             <meta property="og:type" content="article"/>
             <meta property="og:title" content="Lecture 1"/>
-            <meta property="og:url" content="http://lxprior.github.io/classtmpl/blog/lecture-1.html"/>
+            <meta property="og:url" content="/blog/lecture-1.html"/>
             <meta property="og:description" content="The 1st lecture is an overview of probability."/>
 
     <!-- Bootstrap -->
-        <link rel="stylesheet" href="http://lxprior.github.io/classtmpl/theme/css/bootstrap.sandstone.min.css" type="text/css"/>
-    <link href="http://lxprior.github.io/classtmpl/theme/css/font-awesome.min.css" rel="stylesheet">
-    <link href="http://lxprior.github.io/classtmpl/theme/css/pygments.css" rel="stylesheet">
-    <link rel="stylesheet" href="http://lxprior.github.io/classtmpl/theme/css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="/theme/css/bootstrap.sandstone.min.css" type="text/css"/>
+    <link href="/theme/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/theme/css/pygments.css" rel="stylesheet">
+    <link rel="stylesheet" href="/theme/css/style.css" type="text/css"/>
     <!-- JavaScript plugins (requires jQuery) -->
     <script src="http://code.jquery.com/jquery.js"></script>
 
-        <link href="http://lxprior.github.io/classtmpl/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
-              title="Class ATOM Feed"/>
     
         
 
@@ -108,18 +106,18 @@ init_mathjax();
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="http://lxprior.github.io/classtmpl/index.html" class="navbar-brand">Class</a>
+            <a href="/index.html" class="navbar-brand">Home</a>
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
-                    <li><a href="http://lxprior.github.io/classtmpl/schedule.html">Schedule</a></li>
-                    <li><a href="http://lxprior.github.io/classtmpl/syllabus.html">Syllabus</a></li>
-                    <li><a href="http://lxprior.github.io/classtmpl/policies.html">Policies</a></li>
-                    <li><a href="http://lxprior.github.io/classtmpl/resources.html">Resources</a></li>
-                    <li><a href="http://lxprior.github.io/classtmpl/contact.html">Contact</a></li>
+                    <li><a href="/schedule.html">Schedule</a></li>
+                    <li><a href="/syllabus.html">Syllabus</a></li>
+                    <li><a href="/policies.html">Policies</a></li>
+                    <li><a href="/resources.html">Resources</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="http://lxprior.github.io/classtmpl/archives.html"><i class="icon-th-list"></i>Archives</a></li>
+                <li><a href="/archives.html"><i class="icon-th-list"></i>Archives</a></li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -133,7 +131,7 @@ init_mathjax();
         <article>
             <header class="page-header">
                 <h2>
-                    <a href="http://lxprior.github.io/classtmpl/blog/lecture-1.html"
+                    <a href="/blog/lecture-1.html"
                        rel="bookmark"
                        title="Permalink to Lecture 1">
                         Lecture 1
@@ -146,15 +144,15 @@ init_mathjax();
 <footer class="post-info">
     <span class="label label-default">Date</span>
     <span class="published">
-        <i class="icon-calendar"></i>Wed 29 October 2014
+        <i class="icon-calendar"></i>Wed 03 December 2014
     </span>
 
     <!--span class="label label-default">Category</span>
-    <a href="http://lxprior.github.io/classtmpl/category/misc.html">misc</a-->
+    <a href="/category/misc.html">misc</a-->
 
 
 <span class="label label-default">Tags</span>
-	<a href="http://lxprior.github.io/classtmpl/tag/lectures.html">lectures</a>
+	<a href="/tag/lectures.html">lectures</a>
 </footer><!-- /.post-info -->                    </div>
                 </div>
                 <p>A video of this lecture is available <a href="http://cm.dce.harvard.edu/2014/02/24104/L02/screen_H264LargeTalkingHead-16x9.shtml">here</a>.</p>
@@ -167,115 +165,119 @@ init_mathjax();
                 </iframe>
             </div></p>
 <p>
-<div class="input">
+<div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="short-review-of-probability-theory-distributions-etc">Short review of probability theory, distributions etc</h1>
-<p>Probabilities are numbers that tell us how often things happen (frequentist) or our believe (Bayesian) in a different outcome or notion and this is of course a very disputed topic discussed in many books, papers etc [RD: ADD REFERENCES]. In this course we take a very simple approach and we use whatever is convinient at the time, or whatever is better to demonstrate the methodologies we are learning.</p>
+<p>Probabilities are numbers that tell us how often things happen (frequentist) or our believe (Bayesian) in a different outcome or notion and this is of course a very disputed topic discussed in many books, papers etc [RD: ADD REFERENCES]. In this course we take a very simple approach and we use whatever is convinient at the time, or whatever is better to demonstrate the methodologies we are learning. </p>
 <p>There are a few basic rules that form the basis for all probabilistic methodology. In this lecture, we just brieﬂy review these rules. For an in depth introduction into probability theory, you can consult a number of books and online material [RD: ADD REFERENCES].</p>
-<p>If <span class="math">\(X\)</span> and <span class="math">\(Y\)</span> are two events and <span class="math">\(p(X)\)</span> is the probability of the event <span class="math">\(X\)</span> to happen. X ̄ is the complement of X, the event which is all the occurrences which are not in X. X+Y is the union of X and Y; X,Y is the intersection of X and Y. (Both X+Y and X,Y are also events.)</p>
-<h3 id="the-very-fundamental-rules-of-probability-my-grandma-knows-these">The very fundamental rules of probability (my grandma knows these):</h3>
-<ol style="list-style-type: decimal">
+<p>If $X$ and $Y$ are two events and $p(X)$ is the probability of the event $X$ to happen. X ̄ is the complement of X, the event which is all the occurrences which are not in X. X+Y is the union of X and Y; X,Y is the intersection of X and Y. (Both X+Y and X,Y are also events.)</p>
+<h3 id="the-very-fundamental-rules-of-probability-my-grandma-knows-these-">The very fundamental rules of probability (my grandma knows these):</h3>
+<ol>
 <li>p(X) = 1 X has to happen</li>
 <li>p(X) = 0 X will certainly not happen</li>
 <li>0 ≤ p(AX) ≤ 1 X has probability range from low to high</li>
-<li>p(X)+p(X ̄)=1 X must either happen or not-happen</li>
+<li>p(X)+p(X ̄)=1  X must either happen or not-happen</li>
 <li>p(X+Y)=p(X)+p(Y)−p(X,Y) X can happen and Y can happen but we must subtract the cases that are happening together so we do not overcount.</li>
 </ol>
 </div>
 </div>
 </div>
-<div class="input">
+<div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>For two random variates <span class="math">\(x,y\)</span> the <span class="math">\(p(x,y)\)</span> is called the joint distribution, and <span class="math">\(p(x|y)\)</span> the conditional distribution.</p>
-<h3 id="sum-rule-marginal-distribution">Sum rule (marginal distribution)</h3>
+<p>For two random variates $x,y$ the $p(x,y)$ is called the joint distribution, and $p(x|y)$ the conditional distribution. </p>
+<h3 id="sum-rule-marginal-distribution-">Sum rule (marginal distribution)</h3>
 <p>We can write the marginal probability of x as a sum over the joint distribution of x and y where we sum over all possibilities of y,</p>
-<p><span class="math">\[p(x) = \sum_y p(x,y) \]</span></p>
+<p>$$p(x) = \sum_y p(x,y) $$</p>
 <p>for continuous random variables this becomes:</p>
-<p><span class="math">\[ p(x) = \int_y p(x,y) \, dy \]</span></p>
+<p>$$ p(x) = \int_y p(x,y) \, dy $$</p>
 </div>
 </div>
 </div>
-<div class="input">
+<div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="product-rule">Product rule</h3>
 <p>We can rewrite a joint distribution as a product of a conditional and marginal probability,</p>
-<p><span class="math">\[ p(x,y) = p(x|y) p(y) \]</span></p>
+<p>$$ p(x,y) = p(x|y) p(y) $$</p>
 </div>
 </div>
 </div>
-<div class="input">
+<div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="chain-rule">Chain rule</h3>
-<p>The product rule is applied repeatedly to give expressions for the joint probability involving more than two variables. For example, the joint distribution over three variables can be factorized into a product of conditional probabilities:</p>
-<p><span class="math">\[ p(x,y,z) = p(x|y,z) \, p(y,z) = p(x |y,z) \, p(y|z) p(z) \]</span></p>
+<p>The product rule is applied repeatedly to give expressions for the joint
+probability involving more than two variables. For example, the joint distribution over three
+variables can be factorized into a product of conditional probabilities:</p>
+<p>$$ p(x,y,z) = p(x|y,z) \, p(y,z) = p(x |y,z) \, p(y|z) p(z) $$</p>
 </div>
 </div>
 </div>
-<div class="input">
+<div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="bayes-rule">Bayes rule</h3>
 <p>Given the product rule one can derive the Bayes rule, which plays a central role in a lot of the things we will be talking:</p>
-<p><span class="math">\[ p(y|x) = \frac{p(x|y) \, p(y) }{p(x)} = \frac{p(x|y) \, p(y) }{\sum_y&#39; p(x,y&#39;)} = \frac{p(x|y) \, p(y) }{\sum_y&#39; p(x|y&#39;)p(y&#39;)}\]</span></p>
-<p>Importantly, we rarely need to explicitly evaluate the denominator <span class="math">\(p(x)\)</span>. Instead, we can just evaluate the conditional probability up to a constant of proportionality:</p>
-<p><span class="math">\[ p(y|x) \propto p(x|y) \, p(y) \]</span></p>
+<p>$$ p(y|x) = \frac{p(x|y) \, p(y) }{p(x)} = \frac{p(x|y) \, p(y) }{\sum_y' p(x,y')} = \frac{p(x|y) \, p(y) }{\sum_y' p(x|y')p(y')}$$</p>
+<p>Importantly, we rarely need to explicitly evaluate the denominator $p(x)$. Instead, we can just evaluate the conditional probability up to a
+constant of proportionality:</p>
+<p>$$ p(y|x) \propto p(x|y) \, p(y) $$</p>
 </div>
 </div>
 </div>
-<div class="input">
+<div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="independence">Independence</h3>
 <p>Two variables are said to be independent if their joint distribution factorizes into a product of two marginal probabilities:</p>
-<p><span class="math">\[ p(x,y) = p(x) \, p(y) \]</span></p>
+<p>$$ p(x,y) = p(x) \, p(y) $$ </p>
 </div>
 </div>
 </div>
-<div class="input">
+<div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Note that if two variables are uncorrelated, that does not mean they are statistically independent. There are many ways to measure statistical association between variables and correlation is just one of them. However, if two variables are independent, this will ensure there is no correlation between them. Another consequence of independence is that if <span class="math">\(x\)</span> and <span class="math">\(y\)</span> are independent, the conditional probability of <span class="math">\(x\)</span> given <span class="math">\(y\)</span> is just the probability of <span class="math">\(x\)</span>:</p>
-<p><span class="math">\[ p(x|y) = p(x) \]</span></p>
+<p>Note that if two variables are uncorrelated, that does not mean they are statistically independent. There are many ways to measure statistical association between variables and correlation is just one of them. However, if two variables are independent, this will ensure there is no correlation between them. Another consequence of independence is that if $x$ and $y$ are independent, the conditional probability of $x$ given $y$ is just the probability of $x$:</p>
+<p>$$ p(x|y) = p(x) $$</p>
 </div>
 </div>
 </div>
-<div class="input">
+<div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>In other words, by conditioning on a particular <span class="math">\(y\)</span>, we have learned nothing about <span class="math">\(x\)</span> because of independence. Two variables <span class="math">\(x\)</span> and <span class="math">\(y\)</span> and said to be conditionally independent of <span class="math">\(z\)</span> if the following holds:</p>
-<p><span class="math">\[ p(x,y|z) = p(x|z) p(y|z) \]</span></p>
-<p>Therefore, if we learn about z, x and y become independent. Another way to write that <span class="math">\(x\)</span> and <span class="math">\(y\)</span> are conditionally independent of <span class="math">\(z\)</span> is</p>
-<p><span class="math">\[ p(x| z, y) = p(x|z) \]</span></p>
-<p>In other words, if we condition on <span class="math">\(z\)</span>, and now also learn about <span class="math">\(y\)</span>, this is not going to change the probability of <span class="math">\(x\)</span>. It is important to realize that conditional independence between <span class="math">\(x\)</span> and <span class="math">\(y\)</span> does not imply independence between <span class="math">\(x\)</span> and <span class="math">\(y\)</span>.</p>
+<p>In other words, by conditioning on a particular $y$, we have learned nothing about $x$ because of independence. Two variables $x$ and $y$ and said to be conditionally independent of $z$ if the following holds:</p>
+<p>$$ p(x,y|z) = p(x|z) p(y|z) $$</p>
+<p>Therefore, if we learn about z, x and y become independent. Another way to write that $x$ and $y$ are conditionally independent of $z$ is </p>
+<p>$$ p(x| z, y) = p(x|z) $$</p>
+<p>In other words, if we condition on $z$, and now also learn about $y$, this is not going to change the probability of $x$. It is important to realize that conditional independence between $x$ and $y$ does not imply independence between $x$ and $y$. </p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell">
+<div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[32]:
 </div>
-<div class="input_area box-flex1">
+<div class="inner_cell">
+    <div class="input_area">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="o">%</span><span class="k">matplotlib</span> <span class="n">inline</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">matplotlib</span>
@@ -310,19 +312,21 @@ In&nbsp;[32]:
 
 </div>
 </div>
+</div>
 
 </div>
-<div class="input">
+<div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="distributions">Distributions</h2>
-<p>Probability distribution (aka probability measure) is a function that takes an event and gives its probability. Sometimes this is not well defined in the whole probability space but we will not worry about this for now. There are two classes of statistical distributions, discete and continous.</p>
+<p>Probability distribution (aka probability measure) is a function that takes an event and gives its probability. Sometimes this is not well defined in the whole probability space but we will not worry about this for now.
+There are two classes of statistical distributions, discete and continous.</p>
 </div>
 </div>
 </div>
-<div class="input">
+<div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -331,45 +335,49 @@ In&nbsp;[32]:
 </div>
 </div>
 </div>
-<div class="input">
+<div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="bernoulli-distribution">Bernoulli distribution</h3>
-<p>The probability for a yes/no outcome of an expiriment, the Bernoulli probability, is given by the Bernoulli distribution. Bernoulli distribution is the mother of all distributions. Every exeriment, can be always expressed it in terms of success/failure. If you do not know which distributon to use, you can think of any problem as a yes/no problem and starting from there you work your to all other distributions.</p>
-<p>For a given probability <span class="math">\(p\)</span> of a success/failure (or yes/no), the we expect the value k=1, <span class="math">\(p n\)</span> times out of <span class="math">\(n\)</span>, meanwhile it takes k=0 in all the other cases. For example if <span class="math">\(p=0.6\)</span> and draw 10 numbers we expect 6 to be 1 and 4 to be zero. Therefore the probability of getting <span class="math">\(k=1\)</span> is <span class="math">\(p\)</span> and <span class="math">\(k=0\)</span> is <span class="math">\(1-p\)</span>.</p>
-<p><span class="math">\[ f(k;p) = \begin{cases} p &amp; \text{if }k=1, \\[6pt]
-1-p &amp; \text {if }k=0.\end{cases} \]</span></p>
+<p>The probability for a yes/no outcome of an expiriment, the Bernoulli probability, is given by the Bernoulli distribution. Bernoulli distribution is the mother of all distributions. Every exeriment, can be always expressed it in terms of success/failure. If you do not know which distributon to use, you can think of any problem as a yes/no problem and starting from there you work your to all other distributions.  </p>
+<p>For a given probability $p$ of a success/failure (or yes/no), the we expect the value k=1, $p n$ times out of $n$, meanwhile it takes k=0 in all the other cases. For example if $p=0.6$ and draw 10 numbers we expect 6 to be 1 and 4 to be zero. Therefore the probability of getting $k=1$ is $p$ and $k=0$ is $1-p$. </p>
+<p>$$ f(k;p) = \begin{cases} p &amp; \text{if }k=1, \\[6pt]
+1-p &amp; \text {if }k=0.\end{cases} $$</p>
 <p>This can be expressed also as:</p>
-<p><span class="math">\[ f(k;p) = p^k (1-p)^{1-k}\!\quad \text{for }k\in\{0,1\}.\]</span></p>
-<p>The mean of random variables drawn from such distribution is <span class="math">\(E[X] = p\)</span> and the variance is <span class="math">\(Var[X]=p(1-p)\)</span></p>
+<p>$$ f(k;p) = p^k (1-p)^{1-k}\!\quad \text{for }k\in\{0,1\}.$$</p>
+<p>The mean of random variables drawn from such distribution is $E[X] = p$ and the variance is $Var[X]=p(1-p)$</p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell">
+<div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[156]:
 </div>
-<div class="input_area box-flex1">
+<div class="inner_cell">
+    <div class="input_area">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">a</span><span class="o">=</span><span class="n">bernoulli</span><span class="o">.</span><span class="n">rvs</span><span class="p">(</span><span class="mf">0.6</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>   <span class="c"># rvs returns a random number drawn from this distribution </span>
 </pre></div>
 
 </div>
 </div>
+</div>
 
 </div>
-<div class="cell border-box-sizing code_cell">
+<div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[157]:
 </div>
-<div class="input_area box-flex1">
+<div class="inner_cell">
+    <div class="input_area">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="k">print</span> <span class="n">a</span>
 <span class="k">print</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
 </pre></div>
 
+</div>
 </div>
 </div>
 
@@ -378,7 +386,7 @@ In&nbsp;[157]:
 
 
 <div class="output_area"><div class="prompt"></div>
-<div class="box-flex1 output_subarea output_stream output_stdout">
+<div class="output_subarea output_stream output_stdout output_text">
 <pre>
 [0 0 1 1 1 1 0 1 1 0 0 0 1 1 1 1 1 0 0 1 1 1 1 1 1 0 0 1 1 0 0 0 0 1 1 0 0
  1 0 1 0 0 1 1 1 0 1 0 0 1 0 1 0 1 1 1 1 1 1 1 0 1 0 1 0 1 1 0 0 0 1 1 1 1
@@ -393,12 +401,13 @@ In&nbsp;[157]:
 </div>
 
 </div>
-<div class="cell border-box-sizing code_cell">
+<div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[158]:
 </div>
-<div class="input_area box-flex1">
+<div class="inner_cell">
+    <div class="input_area">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="c"># the .pmf function returns the probability given a value of p </span>
 <span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
 
@@ -420,15 +429,16 @@ In&nbsp;[158]:
 
 </div>
 </div>
+</div>
 
 <div class="output_wrapper">
 <div class="output">
 
 
 <div class="output_area"><div class="prompt"></div>
-<div class="box-flex1 output_subarea output_display_data">
 
 
+<div class="output_png output_subarea ">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAs0AAAIICAYAAACVatOGAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAIABJREFUeJzt3X2Y1XWd//HXDDepMBgD1Nbi3SJZGwIpoYYpbCYS5UU3
 i+11RW52WbZql2ZrdrOG5qq51u5mbZa1pWl3Y0kWpkUJPyHFuxJUZDMtwGAEcW0m7gTm90frJKF+
@@ -613,31 +623,34 @@ XyPUOrtLPbK31Cu7S2+p2Wh+vvdrhFpnd6lH9pZ6ZXfpLTUbzc/3fo1Q6+wu9cjeUq/sLr2lZqP5
 L9+vcerUqVWeqL75gxG9x+72HHvbe+xtz7K7vcfu9iy7+/xqNppnzZqVFStWpKWlJatWrcq73vWu
 ao9Ul+6+++6sXbs2P/3pT6s9Sp9hd7vP3vY+e9sz7G7vs7s9w+6WeZ9mAAAoqNkzzQAAUCtEMwAA
 FIhmAAAoEM0AAFAgmgEAoEA0AwBAgWgGAIAC0QwAAAX/H4/SJXi+pbzQAAAAAElFTkSuQmCC
-">
+"
+>
+</div>
+
+</div>
 
 </div>
 </div>
 
 </div>
-</div>
-
-</div>
-<div class="input">
+<div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h4 id="example-bernoulli-distribution">Example Bernoulli Distribution</h4>
-<p>Suppose in AM207 last year the class got C or better with probability 0.75. Let the random variable X be the probability that someone gets a grade higher the C.</p>
+<p>Suppose in AM207 last year the class got C or better with probability 0.75. Let the random 
+variable X be the probability that someone gets a grade higher the C. </p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell">
+<div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[159]:
 </div>
-<div class="input_area box-flex1">
+<div class="inner_cell">
+    <div class="input_area">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">stgrades</span><span class="o">=</span><span class="n">bernoulli</span><span class="o">.</span><span class="n">rvs</span><span class="p">(</span><span class="mf">0.75</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">stgrades</span><span class="p">)</span>
 <span class="k">print</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">stgrades</span><span class="p">)</span>
@@ -646,13 +659,14 @@ In&nbsp;[159]:
 
 </div>
 </div>
+</div>
 
 <div class="output_wrapper">
 <div class="output">
 
 
 <div class="output_area"><div class="prompt"></div>
-<div class="box-flex1 output_subarea output_stream output_stdout">
+<div class="output_subarea output_stream output_stdout output_text">
 <pre>
 0.79
 0.407308237088
@@ -662,9 +676,9 @@ In&nbsp;[159]:
 </div>
 
 <div class="output_area"><div class="prompt"></div>
-<div class="box-flex1 output_subarea output_display_data">
 
 
+<div class="output_png output_subarea ">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXAAAAEACAYAAACqOy3+AAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAEqxJREFUeJzt3W1sk/X+x/FPJ/tP/3aoW/GBlnnIBBfvWhSn5miscg71
 JmjRQcIsUTTqeKbn5BhMTK2SsBCM5zzycA6eA97g0EulQaoPTBBvCJuisoJSDYrW4ugZCTe7kPXv
@@ -751,43 +765,45 @@ zzxTHR0d2rNnTzXHrCjHceQ4jvr7+zV58uSSuzmq94E7jqNIJKIrr7xSW7duVSgU0pIlS/Taa6/p
 XXTRRVWctPwK7cWnn36q1atXa9q0aZKkuXPnVnna8iq0F8uWLVNNTY3q6up03nnn6c4776z2uGW1
 efNm3Xzzzerq6tLEiRO1ePHiEXWTC3kAwFBj9zAQAMY4Ag4AhiLgAGAoAg4AhiLgAGAoAg4AhiLg
 AGAoAg4Ahvp/yFsFDsOdKCoAAAAASUVORK5CYII=
-">
+"
+>
+</div>
+
+</div>
 
 </div>
 </div>
 
 </div>
-</div>
-
-</div>
-<div class="input">
+<div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="binomial-distribution">Binomial distribution</h2>
-<p>Bionomial is the distribution of the number of successes in a sequence of <span class="math">\(n\)</span> independent yes/no experiments, each of which yields success with probability <span class="math">\(p\)</span>. The Binomial distribution is an extension of the Bernoulli when <span class="math">\(n&gt;1\)</span> or the Bernoulli is the a special case of the Binomial when <span class="math">\(n=1\)</span>.</p>
+<p>Bionomial is the distribution of the number of successes in a sequence of $n$ independent yes/no experiments, each of which yields success with probability $p$. The Binomial distribution is an extension of the Bernoulli when $n&gt;1$ or the Bernoulli is the a special case of the Binomial when $n=1$.   </p>
 </div>
 </div>
 </div>
-<div class="input">
+<div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><span class="math">\[P(X = k; n, p) = {n\choose k}p^k(1-p)^{n-k} \]</span></p>
+<p>$$P(X = k; n, p) = {n\choose k}p^k(1-p)^{n-k} $$</p>
 <p>where</p>
-<p><span class="math">\[{n\choose k}=\frac{n!}{k!(n-k)!}\]</span></p>
-<p>The expected value <span class="math">\(E[X]=np\)</span> and the variance is <span class="math">\(Var[X]=np(1-p)\)</span></p>
+<p>$${n\choose k}=\frac{n!}{k!(n-k)!}$$</p>
+<p>The expected value $E[X]=np$ and the variance is $Var[X]=np(1-p)$</p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell">
+<div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[13]:
 </div>
-<div class="input_area box-flex1">
+<div class="inner_cell">
+    <div class="input_area">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
 <span class="n">k</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">220</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">p</span><span class="p">,</span> <span class="n">color</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">([</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="mf">0.6</span><span class="p">,</span> <span class="mf">0.8</span><span class="p">],</span> <span class="n">colors</span><span class="p">):</span>
@@ -803,15 +819,16 @@ In&nbsp;[13]:
 
 </div>
 </div>
+</div>
 
 <div class="output_wrapper">
 <div class="output">
 
 
 <div class="output_area"><div class="prompt"></div>
-<div class="box-flex1 output_subarea output_display_data">
 
 
+<div class="output_png output_subarea ">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA2kAAAG7CAYAAABZ4d2rAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAIABJREFUeJzs3Xl8nWWd9/HvfZbse5OuaRugLJFCRQsIiBRHX7UMFMEN
 h02pI9MHBBRH5nkYsQyD4Cwq0kFQkbUWdBQBrXWEsezY2paW7knbNEm3JM3eJE1ycp4/7nMlTbds
@@ -1397,36 +1414,39 @@ HYorIiIiO2OTRkREtrd371587Wtfw1e/+lW8/fbb8Hg8uPXWW1WXRURENsXtjkREZHtlZWVYuXIl
 cnNz0d/fj+TkZNUlERGRjWmGYRiqiyAiIiIiIiKBK2lERERERERRhE0aERERERFRFGGTRkRERERE
 FEXYpBEREREREUURNmlERERERERRhE0aERERERFRFGGTRkREREREFEX+P15TFkdy9Ox1AAAAAElF
 TkSuQmCC
-">
+"
+>
+</div>
+
+</div>
 
 </div>
 </div>
 
 </div>
-</div>
-
-</div>
-<div class="input">
+<div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h4 id="example-binomial-distribution">Example Binomial distribution</h4>
-<p>Probability of 8 people getting a C or higher this year assuming we have 50 students in total. In this case <span class="math">\(p=0.75\)</span> and <span class="math">\(n=50\)</span>. If we assume uncorrelated events, then p(k=8; n=50, p=0.75)</p>
+<p>Probability of 8 people getting a C or higher this year assuming we have 50 students in total. In this case $p=0.75$ and $n=50$. If we assume uncorrelated events, then p(k=8; n=50, p=0.75)</p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell">
+<div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[14]:
 </div>
-<div class="input_area box-flex1">
+<div class="inner_cell">
+    <div class="input_area">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">binom</span><span class="o">.</span><span class="n">pmf</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">)</span>
 <span class="n">z</span><span class="o">=</span><span class="n">binom</span><span class="o">.</span><span class="n">rvs</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
 </pre></div>
 
+</div>
 </div>
 </div>
 
@@ -1436,22 +1456,22 @@ In&nbsp;[14]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[14]:</div>
-<div class="box-flex1 output_subarea output_pyout">
 
 
+<div class="output_text output_subarea output_pyout">
 <pre>
 (array([   1.,    7.,   45.,  106.,  174.,  264.,  241.,  128.,   30.,    4.]),
  array([ 27.,  29.,  31.,  33.,  35.,  37.,  39.,  41.,  43.,  45.,  47.]),
  &lt;a list of 10 Patch objects&gt;)
 </pre>
-
 </div>
+
 </div>
 
 <div class="output_area"><div class="prompt"></div>
-<div class="box-flex1 output_subarea output_display_data">
 
 
+<div class="output_png output_subarea ">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXgAAAEACAYAAAC57G0KAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAFRJJREFUeJzt3V9MW+f9x/HPYXATAS1pimF2JKNASpyQ2EpGetFOzgLk
 ogoiSsVG2sRayU22my6ZWFNpK+wiEK1alWSLFFXZxFYtjIsV0LRENF3ddZk0swymSVyQVmQ1xrYW
@@ -1549,16 +1569,17 @@ Z3rnnXfk8XhUX1+vzs5OSVJnZ2f8TdBkC62LLzqulD394sSJEwoGgxodHVVXV5e+9a1v6be//W1W
 U26hdXHo0KGs6xcP+uIj9yuvvJJ1/eKrYrFYfF20tLToX//6V1b1i2g0qn379km6NzrACy+8oLq6
 Ou3YsWNZ/YIfOgGAobhkHwAYioAHAEMR8ABgKAIeAAxFwAOAoQh4ADAUAQ8AhiLgAcBQ/weQWkAB
 oCREpAAAAABJRU5ErkJggg==
-">
+"
+>
+</div>
+
+</div>
 
 </div>
 </div>
 
 </div>
-</div>
-
-</div>
-<div class="input">
+<div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -1567,22 +1588,23 @@ oCREpAAAAABJRU5ErkJggg==
 </div>
 </div>
 </div>
-<div class="input">
+<div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Another discrete distribution, the Poisson distribution expresses the probability of a given number of events occurring in a fixed interval of time and/or space if these events occur with a known average rate and independently of the time since the last event. Defined for all the integer positive number as,</p>
-<p><span class="math">\[ P(X=k)= \frac{\lambda^k e^{-\lambda}}{k!}, \]</span></p>
+<p>Another discrete distribution, the Poisson distribution expresses the probability of a given number of events occurring in a fixed interval of time and/or space if these events occur with a known average rate and independently of the time since the last event.  Defined for all the integer positive number as,</p>
+<p>$$ P(X=k)= \frac{\lambda^k e^{-\lambda}}{k!}, $$</p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell">
+<div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[15]:
 </div>
-<div class="input_area box-flex1">
+<div class="inner_cell">
+    <div class="input_area">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">k</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
 <span class="n">colors</span> <span class="o">=</span> <span class="n">matplotlib</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s">&#39;axes.color_cycle&#39;</span><span class="p">]</span> 
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
@@ -1596,6 +1618,7 @@ In&nbsp;[15]:
 
 </div>
 </div>
+</div>
 
 <div class="output_wrapper">
 <div class="output">
@@ -1603,20 +1626,20 @@ In&nbsp;[15]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[15]:</div>
-<div class="box-flex1 output_subarea output_pyout">
 
 
+<div class="output_text output_subarea output_pyout">
 <pre>
 &lt;matplotlib.text.Text at 0x109f19210&gt;
 </pre>
-
 </div>
+
 </div>
 
 <div class="output_area"><div class="prompt"></div>
-<div class="box-flex1 output_subarea output_display_data">
 
 
+<div class="output_png output_subarea ">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAtkAAAH6CAYAAADSnVCbAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAIABJREFUeJzs3X90VPWd//HXTWYggYQkBAQyQbOQAGk1lE3AtRW+qQUR
 qylgbWOpx7JQqKfo0rp7qO1Bg3bb2m7Xiuk5RWulFERq2zW2QqRszcbSgykjGCuoQU1IguFHwpDJ
@@ -1899,21 +1922,23 @@ eHjI8vJyrq6usrKyUnsOwFgT2QAN8fT0lMFgkN3d3fT7/dpzAMbar9oDAPj7Pj4+kiS9Xi8TExPp
 dDqVFwGMN5EN0ACDwSDb29vZ3NzM5eVlJicns7W1VXsWwNhyXQSgAZ6fn7OxsZHZ2dl8fn5mamqq
 9iSAsdYaDofD2iMAAGCc+CYbAAAKE9kAAFCYyAYAgMJENgAAFCayAQCgMJENAACFiWwAACjsN7sq
 5CxsXfBwAAAAAElFTkSuQmCC
-">
+"
+>
+</div>
+
+</div>
 
 </div>
 </div>
 
 </div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell">
+<div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[16]:
 </div>
-<div class="input_area box-flex1">
+<div class="inner_cell">
+    <div class="input_area">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">k</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
 <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">lambda_</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">]):</span>
@@ -1927,6 +1952,7 @@ In&nbsp;[16]:
 
 </div>
 </div>
+</div>
 
 <div class="output_wrapper">
 <div class="output">
@@ -1934,20 +1960,20 @@ In&nbsp;[16]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[16]:</div>
-<div class="box-flex1 output_subarea output_pyout">
 
 
+<div class="output_text output_subarea output_pyout">
 <pre>
 &lt;matplotlib.text.Text at 0x109f1d9d0&gt;
 </pre>
-
 </div>
+
 </div>
 
 <div class="output_area"><div class="prompt"></div>
-<div class="box-flex1 output_subarea output_display_data">
 
 
+<div class="output_png output_subarea ">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAtsAAAH6CAYAAADWaICmAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAIABJREFUeJzs3Xt0VOW9//H3ZHKZ3CcXyB2GO1HkoiGILZ5ohagoAlZF
 0VMtXuoqoLY9P2s9FrRq1dbjEXBZ6tEqVZFaBdRoQMSIYksAgSByDSSEJEACgXALJJP8/oiJhCRk
@@ -2631,42 +2657,45 @@ zNGjRzl48CCLFi2irKws3eEIIcQ1zZbuAIQQQgwcv98PwPbt2zEMg4ULF6Y5IiGEuLZJsi2EEMPI
 wYMHmT9/PnPnzuXll1/G6XQyb968dIclhBDXLLmNRAghhpHjx48zc+ZMioqKaG9vJzs7O90hCSHE
 NU1prXW6gxBCCCGEEOJaJCPbQgghhBBCpIgk20IIIYQQQqSIJNtCCCGEEEKkiCTbQgghhBBCpIgk
 20IIIYQQQqSIJNtCCCGEEEKkiCTbQgghhBBCpMj/Azon1lOSHl8oAAAAAElFTkSuQmCC
-">
+"
+>
+</div>
+
+</div>
 
 </div>
 </div>
 
 </div>
-</div>
-
-</div>
-<div class="input">
+<div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="continous-variables">Continous variables</h2>
-<p>The difficulty with continuous random variables is that you can’t find the probability of the exact event. The problem is that every value of the random variate has length 0, but if you add enough values together you have something with positive length. The usual way around this difficulty, is to define probabilities for intervals.</p>
+<p>The difficulty with continuous random variables is that you can’t find the probability of the exact event. The problem is  that every value of the random variate has length 0, but if you add enough values together you have something with positive length. The usual way around this difficulty, is to define probabilities for intervals.</p>
 </div>
 </div>
 </div>
-<div class="input">
+<div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="normal-distribution">Normal Distribution</h3>
-<p>Probably the most important of all distributions is the normal distribution due to the Central Limit Theorem which states that, given certain conditions, the arithmetic mean of a sufficiently large number of iterates of independent random variables, each with a well-defined expected value and well-defined variance, will be approximately normally distributed. A normal distribution is:</p>
-<p><span class="math">\[ f(x, \mu, \sigma) = \frac{1}{\sigma\sqrt{2\pi}} e^{ -\frac{(x-\mu)^2}{2\sigma^2} } \]</span></p>
+<p>Probably the most important of all distributions is the normal distribution due to the Central Limit Theorem which
+states that, given certain conditions, the arithmetic mean of a sufficiently large number of iterates of independent random variables, each with a well-defined expected value and well-defined variance, will be approximately normally distributed. A normal distribution is:</p>
+<p>$$ f(x, \mu, \sigma) = \frac{1}{\sigma\sqrt{2\pi}} e^{ -\frac{(x-\mu)^2}{2\sigma^2} } $$</p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell">
+<div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[17]:
 </div>
-<div class="input_area box-flex1">
+<div class="inner_cell">
+    <div class="input_area">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">normal</span> <span class="o">=</span> <span class="n">scipy</span><span class="o">.</span><span class="n">stats</span><span class="o">.</span><span class="n">norm</span>
 <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span> <span class="n">num</span><span class="o">=</span><span class="mi">200</span><span class="p">)</span>
 
@@ -2685,6 +2714,7 @@ In&nbsp;[17]:
 
 </div>
 </div>
+</div>
 
 <div class="output_wrapper">
 <div class="output">
@@ -2692,20 +2722,20 @@ In&nbsp;[17]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[17]:</div>
-<div class="box-flex1 output_subarea output_pyout">
 
 
+<div class="output_text output_subarea output_pyout">
 <pre>
 &lt;matplotlib.text.Text at 0x10a473550&gt;
 </pre>
-
 </div>
+
 </div>
 
 <div class="output_area"><div class="prompt"></div>
-<div class="box-flex1 output_subarea output_display_data">
 
 
+<div class="output_png output_subarea ">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAuMAAAF/CAYAAADjMccBAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAIABJREFUeJzs3Xl41PW5///nzGRCyE5IQjYgJEEI+yqggjmCYORbNqXQ
 WrscjoKCP0+rpXJqK5a6UI/SothyEOuC4g6kReNKiiAS2YoCSgiQjQAJ2VeSyfz+CDMQE8jCTGaS
@@ -3404,45 +3434,49 @@ EREREQmJgnERERERkZAoGBcRERERCYmCcRERERGRkCgYFxEREREJiYJxEREREZGQuGFXQEREzh++
 1NTUsH379rCrJCJyQdM54yIiUrB161bKy8tZu3YtL7zwAtOnTw+7SiIiFzTLGGPCroSIiIiIyMVI
 p6mIiIiIiIREwbiIiIiISEgUjIuIiIiIhETBuIiIiIhISBSMi4iIiIiERMG4iIiIiEhIFIyLiIiI
 iIREwbiIiIiISEj+PwgtBH0SHlkyAAAAAElFTkSuQmCC
-">
+"
+>
+</div>
+
+</div>
 
 </div>
 </div>
 
 </div>
-</div>
-
-</div>
-<div class="input">
+<div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="alpha">Alpha</h3>
 <p>The Alpha distribution is defined as:</p>
-<p><span class="math">\[ p_{\alpha}(x,a)=\frac{1}{x^2 \Phi(a) \sqrt{2 \pi}} exp(−\frac{1}{2} (\frac{a−1}{x})^2), \rm{with} \,\,  x&gt;0, \, a&gt;0 \]</span></p>
+<p>$$ p_{\alpha}(x,a)=\frac{1}{x^2 \Phi(a) \sqrt{2 \pi}} exp(−\frac{1}{2} (\frac{a−1}{x})^2), \rm{with} \,\,  x&gt;0, \, a&gt;0 $$</p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell">
+<div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[17]:
 </div>
-<div class="input_area box-flex1">
+<div class="inner_cell">
+    <div class="input_area">
 <div class="highlight-ipynb"><pre class="ipynb">
 </pre></div>
 
 </div>
 </div>
+</div>
 
 </div>
-<div class="cell border-box-sizing code_cell">
+<div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[18]:
 </div>
-<div class="input_area box-flex1">
+<div class="inner_cell">
+    <div class="input_area">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
 <span class="n">alpha</span> <span class="o">=</span> <span class="n">scipy</span><span class="o">.</span><span class="n">stats</span><span class="o">.</span><span class="n">alpha</span>
 <span class="n">alphas</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
@@ -3464,15 +3498,16 @@ In&nbsp;[18]:
 
 </div>
 </div>
+</div>
 
 <div class="output_wrapper">
 <div class="output">
 
 
 <div class="output_area"><div class="prompt"></div>
-<div class="box-flex1 output_subarea output_display_data">
 
 
+<div class="output_png output_subarea ">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAs0AAAGJCAYAAABxbg5mAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAIABJREFUeJzs3Xl41OW9///nZ7asE8hKCCGERXYLKIuKaHCrCKLgUhFw
 r6dUv+3P9tTW9qhRWpfWtS7HqhUVF+hprVaF1rpEcV9YtAHZwyKbJCHrZJnl98fMBCIJWZj5zCfJ
@@ -3989,33 +4024,37 @@ vPEGy5YtY+fOnQt9SpIkSdc92aZZkiTpGrNjxw4ikQi33XYbv/jFL2hoaFjoU5IkSbruKUIIsdAn
 IUmSJEmSJEmLmWyeIUmSJEmSJEnTkKFZkiRJkiRJkqYhQ7MkSZIkSZIkTUOGZkmSJEmSJEmahgzN
 kiRJkiRJkjQNGZolSZIkSZIkaRoyNEuSJEmSJEnSNGRoliRJkiRJkqRp/F/5XgtgI/S/ZgAAAABJ
 RU5ErkJggg==
-">
+"
+>
+</div>
+
+</div>
 
 </div>
 </div>
 
 </div>
-</div>
-
-</div>
-<div class="input">
+<div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="beta-distribution">Beta distribution</h2>
-<p>The Beta distribution is defined for a variabile rangin between 0 and 1. The pdf is defined as:</p>
-<p><span class="math">\[f(x;\alpha,\beta)  = \frac{1}{B(\alpha, \beta)}\, x^{\alpha-1}(1-x)^{\beta-1} \]</span> with $ 0 x 1<span class="math">\(, \)</span>&gt;0$ and <span class="math">\(\beta &gt;0\)</span>.</p>
-<p>where <span class="math">\(B(\alpha, \beta)\)</span> is the Beta functions that serves as a normalization.</p>
+<p>The Beta distribution is defined for a variabile rangin between 0 and 1.
+The pdf is defined as:</p>
+<p>$$f(x;\alpha,\beta)  = \frac{1}{B(\alpha, \beta)}\, x^{\alpha-1}(1-x)^{\beta-1} $$
+with $ 0 \le x  \le 1$, $\alpha&gt;0$ and $\beta &gt;0$.</p>
+<p>where $B(\alpha, \beta)$ is the Beta functions that serves as a normalization.</p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell">
+<div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[19]:
 </div>
-<div class="input_area box-flex1">
+<div class="inner_cell">
+    <div class="input_area">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">beta</span> <span class="o">=</span> <span class="n">scipy</span><span class="o">.</span><span class="n">stats</span><span class="o">.</span><span class="n">beta</span>
 <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span> <span class="n">num</span><span class="o">=</span><span class="mi">200</span><span class="p">)</span>
 
@@ -4034,6 +4073,7 @@ In&nbsp;[19]:
 
 </div>
 </div>
+</div>
 
 <div class="output_wrapper">
 <div class="output">
@@ -4041,20 +4081,20 @@ In&nbsp;[19]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[19]:</div>
-<div class="box-flex1 output_subarea output_pyout">
 
 
+<div class="output_text output_subarea output_pyout">
 <pre>
 &lt;matplotlib.text.Text at 0x10a4ce110&gt;
 </pre>
-
 </div>
+
 </div>
 
 <div class="output_area"><div class="prompt"></div>
-<div class="box-flex1 output_subarea output_display_data">
 
 
+<div class="output_png output_subarea ">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAtQAAAF/CAYAAABpHl5AAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAIABJREFUeJzs3Xl4lNXd//H3TPZ9D0tkSwBlD4sSQCCCFCJVJKJQKWhr
 a8GntWIt+DxtH1H7gLhRrD9bymIV3HCBumClVGJkMUAACYmVEBZBAiRkn+zJ/P64zUAkgUwyyUzC
@@ -4686,34 +4726,42 @@ KytTZ2ennnjiCZWXl/tdGgBkLM5QA0AG6enp0d69e1VeXq5EIqH7779fy5Yt87ssAMhoBGoAyCAb
 NmxQdna2vv32WzU0NKihoUGRSMTvsgAgoxGoASCDdHV1aWBgQD/88INWrlypr776yu+SACDjcQ01
 AGSQtrY2FRcXa/PmzWppaVFhYaHfJQFAxrOMMcbvIgAAAICbFZd8AAAAAB4QqAEAAAAPCNQAAACA
 BwRqAAAAwAMCNQAAAOABgRoAAADwgEANAAAAeECgBgAAADz4D85ZUqviiVT5AAAAAElFTkSuQmCC
-">
+"
+>
+</div>
+
+</div>
 
 </div>
 </div>
 
 </div>
-</div>
-
-</div>
-<div class="input">
+<div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="exponential">Exponential</h2>
-<p>Exponential is the probability distribution that describes the time between events in a Poisson process The Exponantial probability function is <span class="math">\[f(x;\lambda) = \begin{cases}
+<p>Exponential is the probability distribution that describes the time between events in a Poisson process
+The Exponantial probability function is
+$$f(x;\lambda) = \begin{cases}
 \lambda e^{-\lambda x} &amp; x \ge 0, \\
 0 &amp; x &lt; 0.
-\end{cases}\]</span> Therefore, the random variable X has an exponential distribution with parameter <span class="math">\(\lambda\)</span>, we say <span class="math">\(X\)</span> is exponential and write $ X∼Exp()$ Given a specific <span class="math">\(\lambda\)</span>, the expected value of an exponential random variable is equal to the inverse of <span class="math">\(\lambda\)</span>, that is: <span class="math">\(E[X|\lambda]=\frac{1}{\lambda}\)</span></p>
+\end{cases}$$
+Therefore, the random variable X has an exponential distribution with parameter $\lambda$, we say $X$ is exponential and write
+$ X∼Exp(\lambda)$
+Given a specific $\lambda$, the expected value of an exponential random variable is equal to the inverse of $\lambda$, that is:
+$E[X|\lambda]=\frac{1}{\lambda}$</p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell">
+<div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[20]:
 </div>
-<div class="input_area box-flex1">
+<div class="inner_cell">
+    <div class="input_area">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
 <span class="n">expo</span> <span class="o">=</span> <span class="n">scipy</span><span class="o">.</span><span class="n">stats</span><span class="o">.</span><span class="n">expon</span>
 <span class="n">lambda_</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
@@ -4732,15 +4780,16 @@ In&nbsp;[20]:
 
 </div>
 </div>
+</div>
 
 <div class="output_wrapper">
 <div class="output">
 
 
 <div class="output_area"><div class="prompt"></div>
-<div class="box-flex1 output_subarea output_display_data">
 
 
+<div class="output_png output_subarea ">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAtcAAAEbCAYAAAARTKgPAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAIABJREFUeJzs3Xl4VNX9x/H3nex7AoQAYQ0gENZETQBFUGoVqoDiglgL
 itW6oFj3FqsoBcWtUluL/hSrSC1aq6CQVpCIoDGssikkbEkgBEL2PZm5vz+STAnZk8lk4fN6njzm
@@ -5190,16 +5239,17 @@ Gtq5JgiC2IWcOXMGd999Nw4cOADf9/H5z38evb29Wz0sgiCIXQ+Ja4IgiF3I8ePHoSgK/vrXv+K2
 C3nuuedQKBTwsY99DL/+9a+Rz+e3ekgEQRDXBBxjjG31IAiCIAiCIAhiN0DHQgiCIAiCIAiiTZC4
 JgiCIAiCIIg2QeKaIAiCIAiCINoEiWuCIAiCIAiCaBMkrgmCIAiCIAiiTZC4JgiCIAiCIIg2QeKa
 IAiCIAiCINoEiWuCIAiCIAiCaBP/HyVeuXVIJE/EAAAAAElFTkSuQmCC
-">
+"
+>
+</div>
+
+</div>
 
 </div>
 </div>
 
 </div>
-</div>
-
-</div>
-<div class="input">
+<div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -5208,16 +5258,18 @@ IAiCIAiCINoEiWuCIAiCIAiCaBP/HyVeuXVIJE/EAAAAAElFTkSuQmCC
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell">
+<div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[27]:
 </div>
-<div class="input_area box-flex1">
+<div class="inner_cell">
+    <div class="input_area">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">df</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s">&quot;./data/01_heights_weights_genders.csv&quot;</span><span class="p">)</span>
 <span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
+</div>
 </div>
 </div>
 
@@ -5227,9 +5279,8 @@ In&nbsp;[27]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[27]:</div>
-<div class="box-flex1 output_subarea output_pyout">
 
-<div class="output_html rendered_html">
+<div class="output_html rendered_html output_subarea output_pyout">
 <div style="max-height:1000px;max-width:1500px;overflow:auto;">
 <table border="1" class="dataframe">
   <thead>
@@ -5277,31 +5328,32 @@ In&nbsp;[27]:
 </div>
 
 </div>
-</div>
 
 </div>
 </div>
 
 </div>
-<div class="input">
+<div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="joint-marginal-and-conditional">Joint, marginal and conditional</h2>
-<p>The joint distribution is given by the 2D histogram as</p>
+<p>The joint distribution is given by the 2D histogram as </p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell">
+<div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[75]:
 </div>
-<div class="input_area box-flex1">
+<div class="inner_cell">
+    <div class="input_area">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">q</span><span class="p">,</span>  <span class="n">xedges</span><span class="p">,</span> <span class="n">yedges</span><span class="p">,</span> <span class="n">Image</span><span class="o">=</span><span class="n">plt</span><span class="o">.</span><span class="n">hist2d</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">Weight</span><span class="p">,</span> <span class="n">df</span><span class="o">.</span><span class="n">Height</span><span class="p">,</span> <span class="mi">30</span><span class="p">)</span>
 </pre></div>
 
+</div>
 </div>
 </div>
 
@@ -5310,9 +5362,9 @@ In&nbsp;[75]:
 
 
 <div class="output_area"><div class="prompt"></div>
-<div class="box-flex1 output_subarea output_display_data">
 
 
+<div class="output_png output_subarea ">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWwAAAD7CAYAAABOi672AAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAEzpJREFUeJzt3X9s1HWex/HXdwPJrfw6WftrGW6n11IoUEqBip4SMdiq
 5ECQYmgAu9CSDblDsEThEjmriUe9aBRqLscieEVPOOMtCBuLMGeKeEYKlh45dcHE9oI47YmlCGVv
@@ -5401,16 +5453,17 @@ iF6uY+d831dxcbHGjx+vNWvWRJ7nfrQT7To6cz/22q87HbBo0SI/JSXFHzx4sB8IBPzt27f73377
 rT9r1ix/zJgxfl5enn/u3LlI/XPPPeenpaX5Y8eO9ffv39+Lnfctf3odt23b5i9dutTPysryJ02a
 5D/00EN+Y2NjpJ7reKPDhw/7nuf52dnZ/uTJk/3Jkyf7VVVV3I+WOruO7777rjP3I29NBwBH8JII
 ADiCwAYARxDYAOAIAhsAHEFgA4AjCGwAcASBDQCOILABwBH/Dyu5KbiErU4SAAAAAElFTkSuQmCC
-">
+"
+>
+</div>
+
+</div>
 
 </div>
 </div>
 
 </div>
-</div>
-
-</div>
-<div class="input">
+<div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -5419,17 +5472,19 @@ ADiCwAYARxDYAOAIAhsAHEFgA4AjCGwAcASBDQCOILABwBH/Dyu5KbiErU4SAAAAAElFTkSuQmCC
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell">
+<div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[76]:
 </div>
-<div class="input_area box-flex1">
+<div class="inner_cell">
+    <div class="input_area">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">img</span><span class="o">=</span><span class="n">plt</span><span class="o">.</span><span class="n">contour</span><span class="p">(</span><span class="n">xedges</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">yedges</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">q</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">&#39;Weight&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">&#39;Height&#39;</span><span class="p">)</span>
 </pre></div>
 
+</div>
 </div>
 </div>
 
@@ -5439,20 +5494,20 @@ In&nbsp;[76]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[76]:</div>
-<div class="box-flex1 output_subarea output_pyout">
 
 
+<div class="output_text output_subarea output_pyout">
 <pre>
 &lt;matplotlib.text.Text at 0x10b5e6fd0&gt;
 </pre>
-
 </div>
+
 </div>
 
 <div class="output_area"><div class="prompt"></div>
-<div class="box-flex1 output_subarea output_display_data">
 
 
+<div class="output_png output_subarea ">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXsAAAEKCAYAAADzQPVvAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAIABJREFUeJzs3Xd4VMUax/Fv6CqI9BJ6B0FBEJUiAQsq9gqCiKKiCOJF
 FBuGqlRROggIClKlSBekiBTpJLQESAKEdNJ7svu7f5wYsmRTUELLfO6TBzjn7Nk5ea7vzs68846L
@@ -5875,16 +5930,17 @@ yeap4gDat29PnTp1cHR0ZP369UydOhUvLy+8vb3NJ3T/Uq1aNRYtWkTfvn3p1KkTtWvXxsHBAbA+
 o1O9evXo0qULnp6eeoJWVQgtcazUDcjMzKRGjRoAvPTSS3h4ePDKK69UcKuUsk6P7JW6AUuWLMHb
 25u2bduSlpbG2LFjK7pJSpVKj+yVUsoG6JG9UkrZAA17pZSyARr2SillAzTslVLKBmjYK6WUDdCw
 V0opG/D/W45eI4UpACMAAAAASUVORK5CYII=
-">
+"
+>
+</div>
+
+</div>
 
 </div>
 </div>
 
 </div>
-</div>
-
-</div>
-<div class="input">
+<div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -5893,16 +5949,18 @@ V0opG/D/W45eI4UpACMAAAAASUVORK5CYII=
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell">
+<div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[83]:
 </div>
-<div class="input_area box-flex1">
+<div class="inner_cell">
+    <div class="input_area">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">img</span><span class="o">=</span><span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">Weight</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">&#39;Weight&#39;</span><span class="p">)</span>
 </pre></div>
 
+</div>
 </div>
 </div>
 
@@ -5912,20 +5970,20 @@ In&nbsp;[83]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[83]:</div>
-<div class="box-flex1 output_subarea output_pyout">
 
 
+<div class="output_text output_subarea output_pyout">
 <pre>
 &lt;matplotlib.text.Text at 0x10c05e7d0&gt;
 </pre>
-
 </div>
+
 </div>
 
 <div class="output_area"><div class="prompt"></div>
-<div class="box-flex1 output_subarea output_display_data">
 
 
+<div class="output_png output_subarea ">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAYIAAAEPCAYAAABP1MOPAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAGRdJREFUeJzt3X9s1PXhx/HXx7X7LhsFkdFrveNrpT1oS4/2IjlUdDmC
 RWCTYTCEOqEILhu4CUIMm/vD8oe2LFMDaBc1mJAtUcyWtWSxTRe/u8n4ubGSmR6LnZStvf6IAh0H
@@ -6041,34 +6099,37 @@ rP3790u6fB/8/z6Y7DiOpk6dqqNHj+pf//qXJGnnzp29vhq6moyMDPdW68BIRhDACkVFRTp+/Lg7
 154dasKECZo1a5YCgQAHizGicRtq4DqdOXNG3/jGNyRJTz75pKZMmaK1a9emuFXA0LFHAFynN954
 Q8FgUNOmTdOpU6f0gx/8INVNAhKCPQIAsBx7BABgOYIAACxHEACA5QgCALAcQQAAliMIAMBy/w8E
 DQZ7jENSnQAAAABJRU5ErkJggg==
-">
+"
+>
+</div>
+
+</div>
 
 </div>
 </div>
 
 </div>
-</div>
-
-</div>
-<div class="input">
+<div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Finally how about conditional? Lets assume we want the probability distribution for Weight given Height= 65? As explained above with continous variables we should use intervals rather than exact values. Say we want the conditional given Height between 63 and 65.</p>
+<p>Finally how about conditional? Lets assume we want the probability distribution for Weight given Height= 65? As explained above with continous variables we should use intervals rather than exact values. Say we want the conditional given Height between 63 and 65. </p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell">
+<div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[93]:
 </div>
-<div class="input_area box-flex1">
+<div class="inner_cell">
+    <div class="input_area">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span> <span class="n">df</span><span class="o">.</span><span class="n">Weight</span><span class="p">[</span> <span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">Height</span><span class="o">&gt;</span> <span class="mi">63</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">Height</span><span class="o">&lt;</span><span class="mi">65</span><span class="p">)])</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">&#39;Weight&#39;</span><span class="p">)</span>
 </pre></div>
 
+</div>
 </div>
 </div>
 
@@ -6078,20 +6139,20 @@ In&nbsp;[93]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[93]:</div>
-<div class="box-flex1 output_subarea output_pyout">
 
 
+<div class="output_text output_subarea output_pyout">
 <pre>
 &lt;matplotlib.text.Text at 0x1095a5f50&gt;
 </pre>
-
 </div>
+
 </div>
 
 <div class="output_area"><div class="prompt"></div>
-<div class="box-flex1 output_subarea output_display_data">
 
 
+<div class="output_png output_subarea ">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXsAAAEPCAYAAACjjWTcAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAGMpJREFUeJzt3X9M1Pcdx/HXMTBNV/yFcuid7TkB4QSF1qLVdjuHh802
 iT8WUtzcbbplm1u22Uax3R/qkgrMNk7b0GSNrmRbqmZLgDSOkdZe21UddtpkkS7+GE444FoFBGst
@@ -6205,34 +6266,38 @@ f/4jSTpw4ECvwzi3Eh8fr87Ozgh3BgwNYY+okpGRoUuXLmnhwoWhaXPnztXEiRM1depU/elPf1JR
 UZGysrKUnZ0dOqH7qbvuuktlZWV69NFHNX/+fI0fP14TJkyQdPunBCUkJGjx4sXKzMzkBC1GLW5x
 DNzkww8/1Be/+EVJ0k9+8hOlpqbq5z//+QhXBQwNe/bATV588UVlZ2drzpw56ujo0A9/+MORLgkY
 MvbsAcAA7NkDgAEIewAwAGEPAAYg7AHAAIQ9ABiAsAcAA/wXgHNpXd4rt/MAAAAASUVORK5CYII=
-">
+"
+>
+</div>
+
+</div>
 
 </div>
 </div>
 
 </div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell">
+<div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[]:
 </div>
-<div class="input_area box-flex1">
+<div class="inner_cell">
+    <div class="input_area">
 <div class="highlight-ipynb"><pre class="ipynb">
 </pre></div>
 
 </div>
 </div>
+</div>
 
 </div>
-<div class="cell border-box-sizing code_cell">
+<div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[42]:
 </div>
-<div class="input_area box-flex1">
+<div class="inner_cell">
+    <div class="input_area">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="k">def</span> <span class="nf">scatter_by</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">scatterx</span><span class="p">,</span> <span class="n">scattery</span><span class="p">,</span> <span class="n">by</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">figure</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">axes</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">colorscale</span><span class="o">=</span><span class="n">dark2_cmap</span><span class="p">,</span> <span class="n">labeler</span><span class="o">=</span><span class="p">{},</span> <span class="n">mfunc</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">setupfunc</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">mms</span><span class="o">=</span><span class="mi">8</span><span class="p">):</span>
     <span class="n">cs</span><span class="o">=</span><span class="n">copy</span><span class="o">.</span><span class="n">deepcopy</span><span class="p">(</span><span class="n">colorscale</span><span class="p">)</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="n">figure</span><span class="p">:</span>
@@ -6376,19 +6441,22 @@ In&nbsp;[42]:
 
 </div>
 </div>
+</div>
 
 </div>
-<div class="cell border-box-sizing code_cell">
+<div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[50]:
 </div>
-<div class="input_area box-flex1">
+<div class="inner_cell">
+    <div class="input_area">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">ax</span><span class="o">=</span><span class="n">scatter_by</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="s">&#39;Height&#39;</span><span class="p">,</span> <span class="s">&#39;Weight&#39;</span><span class="p">,</span> <span class="n">by</span><span class="o">=</span><span class="s">&#39;Gender&#39;</span><span class="p">,</span> <span class="n">mfunc</span><span class="o">=</span><span class="n">make_rug</span><span class="p">,</span> <span class="n">mms</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="bp">False</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s">&#39;upper right&#39;</span><span class="p">);</span>
 </pre></div>
 
+</div>
 </div>
 </div>
 
@@ -6397,7 +6465,7 @@ In&nbsp;[50]:
 
 
 <div class="output_area"><div class="prompt"></div>
-<div class="box-flex1 output_subarea output_stream output_stdout">
+<div class="output_subarea output_stream output_stdout output_text">
 <pre>
 Male 58.4069049317
 Female 54.2631333251
@@ -6407,9 +6475,9 @@ Female 54.2631333251
 </div>
 
 <div class="output_area"><div class="prompt"></div>
-<div class="box-flex1 output_subarea output_display_data">
 
 
+<div class="output_png output_subarea ">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfcAAAHuCAYAAACCrEV0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAIABJREFUeJzs3XmMXWd9+P/3We++3zt37mwej53gOKtLv0CAttCyqKqK
 kFpCiaCgbyr9fpUqBEGqKBL8gpCglbqIVqLfiqUQIaB89VUJaopIaPotpUCSkgSy25nFnvXOnbtv
@@ -7879,26 +7947,29 @@ V199Fb/fv+Y5lzIvD2BZ1urPPp8P13WvTiGFEJdF5tyFEDz44IM899xzq7ffeOMNYO0XgHvuuYd/
 9tln+au/+iv27NnD+++/Tzwev+C1z/iN3/gNPvzhD8uCOiGuMznyVQhxSbrdLsFgEBj13P/hH/6B
 r3/962MulRBiPTLnLoS4JN/5znf4zd/8TZRSJJNJvvzlL4+7SEKIC5CeuxBCCDFhZM5dCCGEmDAS
 3IUQQogJI8FdCCGEmDAS3IUQQogJI8FdCCGEmDD/H+jdc2WL6uJ8AAAAAElFTkSuQmCC
-">
+"
+>
+</div>
+
+</div>
 
 </div>
 </div>
 
 </div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell">
+<div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[44]:
 </div>
-<div class="input_area box-flex1">
+<div class="inner_cell">
+    <div class="input_area">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">ax</span><span class="o">=</span><span class="n">scatter_by</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="s">&#39;Height&#39;</span><span class="p">,</span> <span class="s">&#39;Weight&#39;</span><span class="p">,</span> <span class="n">by</span><span class="o">=</span><span class="s">&#39;Gender&#39;</span><span class="p">,</span> <span class="n">setupfunc</span><span class="o">=</span><span class="n">setup_mhist</span><span class="p">,</span> <span class="n">mfunc</span><span class="o">=</span><span class="n">make_mhist</span><span class="p">,</span> <span class="n">mms</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="bp">False</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s">&#39;upper right&#39;</span><span class="p">);</span>
 </pre></div>
 
+</div>
 </div>
 </div>
 
@@ -7907,7 +7978,7 @@ In&nbsp;[44]:
 
 
 <div class="output_area"><div class="prompt"></div>
-<div class="box-flex1 output_subarea output_stream output_stdout">
+<div class="output_subarea output_stream output_stdout output_text">
 <pre>
 Male 58.4069049317
 Female 54.2631333251
@@ -7917,9 +7988,9 @@ Female 54.2631333251
 </div>
 
 <div class="output_area"><div class="prompt"></div>
-<div class="box-flex1 output_subarea output_display_data">
 
 
+<div class="output_png output_subarea ">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAf8AAAHpCAYAAACMfjU4AAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAIABJREFUeJzs3XmMpHd97/v3s9S+L91dvU7P5mW8jh2MCeTisPicI04I
 ugkmcCBw5fyDxEXgSBFCgmAhAfknKJwroihAwPJlScTJNYovFwhmgECwwQs2Hs/WMz3Ta3Xtez37
@@ -9185,16 +9256,17 @@ L7Bt2za2bNnCT3/60xNe8/DDD/OjH/2Iyy67jP379xOJRE762cd86Utf4vrrr5cJf0KIc0aO9BVi
 DZmmiWEYwHLL/7e//S1PP/10j6MSQgwaGfMXYg29+OKLfPnLX8Z1XWKxGE888USvQxJCDCBp+Qsh
 hBADRsb8hRBCiAEjyV8IIYQYMJL8hRBCiAEjyV8IIYQYMJL8hRBCiAHz/wFx171YKPryvwAAAABJ
 RU5ErkJggg==
-">
+"
+>
+</div>
+
+</div>
 
 </div>
 </div>
 
 </div>
-</div>
-
-</div>
-<div class="input">
+<div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -9203,7 +9275,7 @@ RU5ErkJggg==
 </div>
 </div>
 </div>
-<div class="input">
+<div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -9212,23 +9284,26 @@ RU5ErkJggg==
 </div>
 </div>
 </div>
-<div class="input">
+<div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Say we have measurement <span class="math">\(\bf{y}\)</span> where bold-face indicates that we are talking about a measurment vector, say of length <span class="math">\(N\)</span>. This measurement is a response to some inputs: <span class="math">\((x_1,x_2,...x_p)\)</span>. Each one of the <span class="math">\(x_i\)</span> vectors also has <span class="math">\(N\)</span> elements. Think of the <span class="math">\(X\)</span> as representing different input. A linear model assumes that the expected value of y given a specific input X can be expressed as a linear sum of the <span class="math">\(x_i\)</span>. In other words the expectation of Y given X, E(Y|X) is linear in the inputs. All this means is that in the noise-less case y is a function of the inputs, f(x), such that there exist <span class="math">\(\beta_i\)</span> which satisfy: <span class="math">\[f(x)=\beta_0+\beta_1 x_1+\beta_2 \, x_2+...+ \beta_p \, x_p \]</span></p>
-<p>Notice that bivariate linear regression, is simply a subset of this, with <span class="math">\(N=1\)</span>.</p>
+<p>Say we have measurement $\bf{y}$ where bold-face indicates that we are talking about a measurment vector, say of length $N$. This measurement is a response to some inputs: $(x_1,x_2,...x_p)$. Each one of the $x_i$ vectors also has $N$ elements. Think of the $X$ as representing different input. 
+A linear model assumes that the expected value of y given a specific input X can be expressed as a linear sum of the $x_i$. In other words the expectation of Y given X, E(Y|X) is linear in the inputs. All this means is that in the noise-less case y is a function of the inputs, f(x), such that there exist $\beta_i$ which satisfy:
+$$f(x)=\beta_0+\beta_1 x_1+\beta_2 \, x_2+...+ \beta_p \, x_p $$</p>
+<p>Notice that bivariate linear regression,  is simply a subset of this, with $N=1$.</p>
 <p>Lets look at this simple case</p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell">
+<div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[160]:
 </div>
-<div class="input_area box-flex1">
+<div class="inner_cell">
+    <div class="input_area">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="k">def</span> <span class="nf">linear_function</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot; </span>
 <span class="sd">    A linear function</span>
@@ -9249,14 +9324,16 @@ In&nbsp;[160]:
 
 </div>
 </div>
+</div>
 
 </div>
-<div class="cell border-box-sizing code_cell">
+<div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[161]:
 </div>
-<div class="input_area box-flex1">
+<div class="inner_cell">
+    <div class="input_area">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">N</span> <span class="o">=</span> <span class="mi">100</span>
 <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="n">N</span><span class="p">)</span>
 
@@ -9272,6 +9349,7 @@ In&nbsp;[161]:
 
 </div>
 </div>
+</div>
 
 <div class="output_wrapper">
 <div class="output">
@@ -9279,20 +9357,20 @@ In&nbsp;[161]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[161]:</div>
-<div class="box-flex1 output_subarea output_pyout">
 
 
+<div class="output_text output_subarea output_pyout">
 <pre>
 &lt;matplotlib.text.Text at 0x111757810&gt;
 </pre>
-
 </div>
+
 </div>
 
 <div class="output_area"><div class="prompt"></div>
-<div class="box-flex1 output_subarea output_display_data">
 
 
+<div class="output_png output_subarea ">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAYIAAAEOCAYAAACEiBAqAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAFxxJREFUeJzt3X1Mlffdx/EPrQjoOVoBszUlqRVNU5MJdrNREu3RlmKM
 M/i09AGSttx2NVmyrol3u+jo0cYh6RKXxSw3sFhKOk2hGjqFVI3rWUwbcJAh+IcxrU6kKU9d5cGp
@@ -9399,16 +9477,17 @@ CADA40gEAOBxJAJgis6ePauUlBRdvnxZL7/8snp6ekyHBEwJR0wA0/DWW2/pwoULOnTokObOnWs6
 HGBKSATANLS1tWnFihW6cOGCHnjgAdPhAFNCIgCm4Y9//KMSExPV1NSkP/zhD6bDAaaEHgEwRZWV
 lZo1a5aeffZZVVVV6cSJE6ZDAqaEigAAPI6KAAA8jkQAAB5HIgAAjyMRAIDHkQgAwONIBADgcSQC
 APC4/wXNwAzcoJX5uAAAAABJRU5ErkJggg==
-">
+"
+>
+</div>
+
+</div>
 
 </div>
 </div>
 
 </div>
-</div>
-
-</div>
-<div class="input">
+<div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -9417,12 +9496,13 @@ APC4/wXNwAzcoJX5uAAAAABJRU5ErkJggg==
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell">
+<div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[164]:
 </div>
-<div class="input_area box-flex1">
+<div class="inner_cell">
+    <div class="input_area">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="n">N</span><span class="p">)</span>
 <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
 
@@ -9441,6 +9521,7 @@ In&nbsp;[164]:
 
 </div>
 </div>
+</div>
 
 <div class="output_wrapper">
 <div class="output">
@@ -9448,20 +9529,20 @@ In&nbsp;[164]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[164]:</div>
-<div class="box-flex1 output_subarea output_pyout">
 
 
+<div class="output_text output_subarea output_pyout">
 <pre>
 &lt;matplotlib.text.Text at 0x11017fc10&gt;
 </pre>
-
 </div>
+
 </div>
 
 <div class="output_area"><div class="prompt"></div>
-<div class="box-flex1 output_subarea output_display_data">
 
 
+<div class="output_png output_subarea ">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXoAAAEACAYAAAC9Gb03AAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAIABJREFUeJzt3Xlc1NX+x/HXDMPOALK5i4q4oCzuu+KSlllZ2a1M69ri
 zVvZbbm3X8s1q1vaLW+ltlzN9jK1XLpSuSHuoqIgihsqoiIgKsKIbDPf3x8QZVkKDHNm+Twfjx4P
@@ -9673,15 +9754,16 @@ Vy1xcf78efbv3++yPxe7du0iMjKSsLAwJk6cyC233OKyxwJ+25sjRoyodW/YtOgnTJhAdnY2ixcv
 upWUlBSXPRbjx48nMTGRZcuWUVhYyNixY13uWOzcuZMzZ86wevXq3/TmhAkTat2lcsOUEEI4Oblh
 SgghnJwUvRBCODkpeiGEcHJS9EII4eSk6IUQwslJ0QshhJOTohdCCCcnRS+EEE7u/wH0Mhu3q0bT
 pwAAAABJRU5ErkJggg==
-">
-
+"
+>
 </div>
+
 </div>
 
 <div class="output_area"><div class="prompt"></div>
-<div class="box-flex1 output_subarea output_display_data">
 
 
+<div class="output_png output_subarea ">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXgAAAEACAYAAAC57G0KAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAFNhJREFUeJzt3X9sVfX9x/FXlVKYt+Bo61fTLmGpjQSnJYYt8FXHdWy9
 RpHBd10Uv+0fxh+RZH8t8UeMUewG8xuSmXzjHwr7wuYiECvKFqmCcdwZUZitqCVSG5hphwFGVbS3
@@ -9778,15 +9860,16 @@ UQp8c3Ozent71draquPHj6upqakYL2uM7du3a+3atbrpppu0cOFCDQwMOH09pAvxTElJiZqampy9
 Fg0NDUomk/rjH/+od955Rx0dHc5ei6amJv3lL3/Rrl27dObMGTU2Njp3Ldrb23X69Gm9/vrrY2pm
 c3NzTnWUG50AwFLc6AQAlqLAA4ClKPAAYCkKPABYigIPAJaiwAOApSjwAGApCjwAWOr/AeQu5aNK
 856RAAAAAElFTkSuQmCC
-">
-
+"
+>
 </div>
+
 </div>
 
 <div class="output_area"><div class="prompt"></div>
-<div class="box-flex1 output_subarea output_display_data">
 
 
+<div class="output_png output_subarea ">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAYUAAAEOCAYAAABmVAtTAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAFTxJREFUeJzt3X9sVfX9x/FXf7fYa4W2ji/tDFtT51fmigZY8ReX4Oym
 QJipUX40IW4j2x/fLXMB9DsDHYmRDc2ShaBgUjLmlmkjIRnU0cV5M9G1s3wFYaNjIGktgwJFSi+0
@@ -9885,31 +9968,33 @@ bK4dNAMA4o+kAACwkRQAADaSAgDARlIAANhICgAAG0kBAGAjKQAAbCQFAICNpADE6P3331dhYaE+
 6XCACSMpABOwZcsW5ebm6sCBA/rVr35lOhxgwpgpADF66623NGnSJD399NOqr6/X7t27TYcETBiV
 AgDARqUAALCRFAAANpICAMBGUgAA2EgKAAAbSQEAYCMpAABs/w+yXcLCzja/UQAAAABJRU5ErkJg
 gg==
-">
+"
+>
+</div>
+
+</div>
 
 </div>
 </div>
 
 </div>
-</div>
-
-</div>
-<div class="input">
+<div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="multi-linear-regression">Multi-linear regression:</h2>
-<p>This works the same if we have p inputs, where we choose p=5. For example, let's consider an output which is a linear combination of p sine waves. To account for <span class="math">\(\beta_0\)</span>, we make sure that the first column is all 1's:</p>
+<h2 id="multi-linear-regression-">Multi-linear regression:</h2>
+<p>This works the same if we have p inputs, where we choose p=5. For example, let&#39;s consider an output which is a linear combination of p sine waves. To account for $\beta_0$, we make sure that the first column is all 1&#39;s:</p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell">
+<div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[165]:
 </div>
-<div class="input_area box-flex1">
+<div class="inner_cell">
+    <div class="input_area">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">p</span> <span class="o">=</span> <span class="mi">5</span>  <span class="c"># Number of inputs</span>
 
 <span class="c"># Preallocate a matrix (make it a matrix of ones to account for beta_0):</span>
@@ -9920,14 +10005,16 @@ In&nbsp;[165]:
 
 </div>
 </div>
+</div>
 
 </div>
-<div class="cell border-box-sizing code_cell">
+<div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[166]:
 </div>
-<div class="input_area box-flex1">
+<div class="inner_cell">
+    <div class="input_area">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">ig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> 
 <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="n">X</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">([</span><span class="o">-</span><span class="mf">1.1</span><span class="p">,</span> <span class="mf">1.1</span><span class="p">])</span>
@@ -9938,6 +10025,7 @@ In&nbsp;[166]:
 
 </div>
 </div>
+</div>
 
 <div class="output_wrapper">
 <div class="output">
@@ -9945,20 +10033,20 @@ In&nbsp;[166]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[166]:</div>
-<div class="box-flex1 output_subarea output_pyout">
 
 
+<div class="output_text output_subarea output_pyout">
 <pre>
 &lt;matplotlib.text.Text at 0x11178ab50&gt;
 </pre>
-
 </div>
+
 </div>
 
 <div class="output_area"><div class="prompt"></div>
-<div class="box-flex1 output_subarea output_display_data">
 
 
+<div class="output_png output_subarea ">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAYIAAAEJCAYAAACZjSCSAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAIABJREFUeJzsvXeYJHd95/+q6uocpnty3Jy10u5Kq7TKQhFEEgaThOF8
 GAd+5mx8d/Y9GLA5DBeMzwdOB2ewOeOf0IGESAYF76KAsrQ578zO7uSZnukcq+r+qNA9Mx2qw2g1
@@ -10808,30 +10896,32 @@ jhACgUAgGOAIIRAIBIIBjhACgUAgGOAIIRAIAkRhYWFvL0Eg6BZCCASCAJCTk8MzzzzT28sQCLqF
 EAKBIADs3buXU6dOkZWV1dtLEQj8RgiBQBAAxo4dS3JyMjNmzOjtpQgEfiOEQCAIAKJll6AvI4RA
 IAgAWq1WDHgX9FmEEAgEASAtLY3c3Nx+09ZYMLAQbagFAoFggCMiAoFAIBjgCCEQCASCAY4QAoFA
 IBjgCCEQCASCAY4QAoFAIBjgCCEQCASCAY4QAoFAIBjg/H8/lgcszIUheQAAAABJRU5ErkJggg==
-">
+"
+>
+</div>
+
+</div>
 
 </div>
 </div>
 
 </div>
-</div>
-
-</div>
-<div class="input">
+<div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>And now <span class="math">\(f(x)\)</span> should include all coefficients</p>
+<p>And now $f(x)$ should include all coefficients</p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell">
+<div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[167]:
 </div>
-<div class="input_area box-flex1">
+<div class="inner_cell">
+    <div class="input_area">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="k">def</span> <span class="nf">linear_model</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">beta</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot; </span>
 <span class="sd">    The linear model</span>
@@ -10849,32 +10939,35 @@ In&nbsp;[167]:
 
 </div>
 </div>
+</div>
 
 </div>
-<div class="input">
+<div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Where np.dot is a matrix multiplication: <span class="math">\[\bf{X} \beta=\beta_0+\beta_1 x_1+\beta_2 x_2+...+\beta_p\, x_p\]</span></p>
+<p>Where np.dot is a matrix multiplication:
+$$\bf{X} \beta=\beta_0+\beta_1 x_1+\beta_2 x_2+...+\beta_p\, x_p$$</p>
 </div>
 </div>
 </div>
-<div class="input">
+<div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We choose a set of random <span class="math">\(\beta\)</span> coefficients and generate <span class="math">\(f(x)\)</span></p>
+<p>We choose a set of random $\beta$ coefficients and generate $f(x)$</p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell">
+<div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[168]:
 </div>
-<div class="input_area box-flex1">
+<div class="inner_cell">
+    <div class="input_area">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">beta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
 <span class="n">f</span> <span class="o">=</span> <span class="n">linear_model</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">beta</span><span class="p">)</span>
 <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
@@ -10884,6 +10977,7 @@ In&nbsp;[168]:
 
 </div>
 </div>
+</div>
 
 <div class="output_wrapper">
 <div class="output">
@@ -10891,20 +10985,20 @@ In&nbsp;[168]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[168]:</div>
-<div class="box-flex1 output_subarea output_pyout">
 
 
+<div class="output_text output_subarea output_pyout">
 <pre>
 (-3.141592653589793, 3.141592653589793)
 </pre>
-
 </div>
+
 </div>
 
 <div class="output_area"><div class="prompt"></div>
-<div class="box-flex1 output_subarea output_display_data">
 
 
+<div class="output_png output_subarea ">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWwAAAEACAYAAACXqUyYAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAIABJREFUeJzt3Xl8lNW9P/DPM0tmMpnsK9n3kAQIa1gUCCAE0YIbWqzU
 Kl209bbW/my9va2i7a1Yr723V29r1bbWXXBDBQVcoqwJYQuQkIWQfd/3SWbm+f0x80wCkmSWZ+ZZ
@@ -11171,25 +11265,28 @@ zWFv27YNDz/8MD788EPcd999sjgp+dRTT+GRRx7BokWLkJGRgZKSEqGnxIu9e/eip6cHJ05MfVGu
 mG3duhV1dXXYtWsXGhoacNdddwk9JV4UFxejvb0dBw4cEHoqvHnzzTdx//33Y9WqVcjKypLNfsP2
 7duxbds27N27Fxs2bEBwcLBD76eDM4QQIhF0cIYQQiSCAjYhhEgEBWxCCJEICtiEECIRFLAJIUQi
 KGATQohEUMAmhBCJoIBNCCES8f8BdpsIkX8RWWIAAAAASUVORK5CYII=
-">
+"
+>
+</div>
+
+</div>
 
 </div>
 </div>
 
 </div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell">
+<div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[169]:
 </div>
-<div class="input_area box-flex1">
+<div class="inner_cell">
+    <div class="input_area">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">X</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">y</span><span class="p">,</span> <span class="s">&#39;.&#39;</span><span class="p">)</span>
 </pre></div>
 
+</div>
 </div>
 </div>
 
@@ -11199,20 +11296,20 @@ In&nbsp;[169]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[169]:</div>
-<div class="box-flex1 output_subarea output_pyout">
 
 
+<div class="output_text output_subarea output_pyout">
 <pre>
 [&lt;matplotlib.lines.Line2D at 0x10b679190&gt;]
 </pre>
-
 </div>
+
 </div>
 
 <div class="output_area"><div class="prompt"></div>
-<div class="box-flex1 output_subarea output_display_data">
 
 
+<div class="output_png output_subarea ">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXYAAAEACAYAAACnJV25AAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAFUBJREFUeJzt3X9sVGW+x/FPKbSWtKK0GO7CbtjFul5/FQ0QWH8whF3H
 H0DYTY0LaxOT65LdP+4m/sEPrwZqEyPq3fgPWQWTkrB7NyqR8AdUaaI0XlGqEMS6UmuVgKKULVyx
@@ -11311,50 +11408,55 @@ rEz79+9Xc3Oz1q5dq8rKyqCbE2vz58/Xtm3bdPbsWfX29mrVqlVD97OiokK//OUvNWnSJGUyGT34
 tFz3ct68eVq8eLHOnz+vL774Qn/4wx9UXFwcdnMj7+DBg3ruued08803q6+vT4888oin1yUblADA
 Mnw0HgBYhsIOAJahsAOAZSjsAGAZCjsAWIbCDgCWobADgGUo7ABgmf8HGMQ8NjEAURcAAAAASUVO
 RK5CYII=
-">
+"
+>
+</div>
+
+</div>
 
 </div>
 </div>
 
 </div>
-</div>
-
-</div>
-<div class="input">
+<div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="noise">Noise</h2>
-<p>Lets now assume there is some noise such as <span class="math">\(\bf{y}=\bf{f(x)}+\epsilon\)</span> and lets assume the noise is normally distributed with zero mean.</p>
+<p>Lets now assume there is some noise such as $\bf{y}=\bf{f(x)}+\epsilon$ and lets assume the noise is normally distributed with zero mean. </p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell">
+<div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[170]:
 </div>
-<div class="input_area box-flex1">
+<div class="inner_cell">
+    <div class="input_area">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">y</span> <span class="o">=</span> <span class="n">f</span> <span class="o">+</span> <span class="mf">0.1</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="o">*</span><span class="n">f</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 </pre></div>
 
 </div>
 </div>
+</div>
 
 </div>
-<div class="cell border-box-sizing code_cell">
+<div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[171]:
 </div>
-<div class="input_area box-flex1">
+<div class="inner_cell">
+    <div class="input_area">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">&#39;f&#39;</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">&#39;y&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
 </pre></div>
 
+</div>
 </div>
 </div>
 
@@ -11364,20 +11466,20 @@ In&nbsp;[171]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[171]:</div>
-<div class="box-flex1 output_subarea output_pyout">
 
 
+<div class="output_text output_subarea output_pyout">
 <pre>
 &lt;matplotlib.legend.Legend at 0x10c02eb90&gt;
 </pre>
-
 </div>
+
 </div>
 
 <div class="output_area"><div class="prompt"></div>
-<div class="box-flex1 output_subarea output_display_data">
 
 
+<div class="output_png output_subarea ">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXMAAAEACAYAAABBDJb9AAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAIABJREFUeJzsnXd8W/W5/9/akmVb8pL3tuPsPSGUAAnQBMJIwy6jtAXa
 3sv4ddBb2gZ6uy+US1tugUvh0hYoUEZZJaxAAmTv7b33kCXL1jy/P44cAmR4SDqS/H2/XnoRHJ3v
@@ -11728,41 +11830,51 @@ s2fPJjMzk02bNqm2F/BsZiYnJ3uUG4qHeUZGBt3d3ZSUlHDr1i3S09OVPsSkVlRURHZ2NqtXryYh
 IYGhoSFV9wPcj1g0Gg3p6emq7UVycjIjIyMcP36curo6GhsbVduL9PR0qqurKS8vp7+/n61bt6qu
 Fw0NDdy9e5eqqqpnMjMjI8OjHJVBQ0IIEQBk0JAQQgQACXMhhAgAEuZCCBEAJMyFECIASJgLIUQA
 kDAXQogAIGEuhBABQMJcCCECwH8B31N1YzBjjz4AAAAASUVORK5CYII=
-">
+"
+>
+</div>
+
+</div>
 
 </div>
 </div>
 
 </div>
-</div>
-
-</div>
-<div class="input">
+<div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="solve-the-linear-model">Solve the linear model</h2>
-<p>This usually means finding an estimate of the <span class="math">\(\beta\)</span> coefficients that generated the data we observed. We are looking for a procedure to estimate the coefficients (all parameter estimates will be designated with a hat <span class="math">\(\hat{\beta}\)</span></p>
-<p>A 'good' estimate of these coefficients would produce an estimate of the output, <span class="math">\(\hat{y}\)</span>, which would be close to the measured data points. Where: <span class="math">\[\bf{\hat{y}=X \hat{\beta}}\]</span></p>
-<p>A way to define this is by requiring the residual sum of squares to be small, where the residuals are: <span class="math">\[ \bf{y−\hat{y}}\]</span> and the residual sum of squares (or RSS) is:</p>
-<p><span class="math">\[RSS=\sum^{N}_i (y_i−y_i)^2\]</span></p>
-<p>Since <span class="math">\(\hat{y}\)</span> is a function of <span class="math">\(\beta\)</span>, we can think of RSS as a function of <span class="math">\(\beta\)</span> and we want to optimize it with respect to a choice of the elements of <span class="math">\(\beta\)</span>. In other words to find a minimum of RSS with respect to <span class="math">\(\beta\)</span>. Mathematically speaking, we want to find a value of <span class="math">\(\hat{\beta}\)</span> for which the first derivative of RSS with respect to <span class="math">\(\beta\)</span> is 0</p>
+<p>This usually means finding an estimate of the $\beta$ coefficients that generated the data we observed. We are looking for a procedure to estimate the coefficients (all parameter estimates will be designated with a hat $\hat{\beta}$</p>
+<p>A &#39;good&#39; estimate of these coefficients would produce an estimate of the output, $\hat{y}$, which would be close to the measured data points.
+Where:
+$$\bf{\hat{y}=X \hat{\beta}}$$</p>
+<p>A way to define this is by requiring the residual sum of squares to be small, where the residuals are:
+$$ \bf{y−\hat{y}}$$
+and the residual sum of squares (or RSS) is:</p>
+<p>$$RSS=\sum^{N}_i (y_i−y_i)^2$$</p>
+<p>Since $\hat{y}$ is a function of $\beta$, we can think of RSS as a function of $\beta$ and we want to optimize it with respect to a choice of the elements of $\beta$. In other words to find a minimum of RSS with respect to $\beta$.
+Mathematically speaking, we want to find a value of $\hat{\beta}$ for which the first derivative of RSS with respect to $\beta$ is 0</p>
 <p>To find the derivative, we re-write RSS in the following way:</p>
-<p><span class="math">\[RSS(\beta)=(\bf{y−X} \beta)^T(\bf{y−X}\beta)\]</span></p>
-<p>The derivative of this function is <span class="math">\[ \frac{d \, RSS}{d \beta}=−2\bf{X^T(y−X} \beta)\]</span> Setting the first derivative to 0 and dividing both sides by 2, we obtain <span class="math">\[ \bf{X^T y= X^T X} \beta \]</span></p>
-<p>If <span class="math">\(\bf{X}\)</span> is 'full rank', then <span class="math">\(\bf{X^T X}\)</span> is positive definite and it can be inverted and</p>
-<p><span class="math">\[ \hat{\beta} = (\bf{X^T \, X)^{-1} X^T y} \]</span></p>
+<p>$$RSS(\beta)=(\bf{y−X} \beta)^T(\bf{y−X}\beta)$$</p>
+<p>The derivative of this function is 
+$$ \frac{d \, RSS}{d \beta}=−2\bf{X^T(y−X} \beta)$$
+Setting the first derivative to 0 and dividing both sides by 2, we obtain
+$$ \bf{X^T y= X^T X} \beta $$</p>
+<p>If $\bf{X}$ is &#39;full rank&#39;, then $\bf{X^T X}$ is positive definite and it can be inverted and </p>
+<p>$$ \hat{\beta} = (\bf{X^T \, X)^{-1} X^T y} $$</p>
 <p>which is also called ordinary least square</p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell">
+<div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[172]:
 </div>
-<div class="input_area box-flex1">
+<div class="inner_cell">
+    <div class="input_area">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="kn">import</span> <span class="nn">scipy.linalg</span> <span class="kn">as</span> <span class="nn">la</span>
 <span class="k">def</span> <span class="nf">ols</span><span class="p">(</span><span class="n">X</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
@@ -11773,36 +11885,40 @@ In&nbsp;[172]:
 
 </div>
 </div>
+</div>
 
 </div>
-<div class="input">
+<div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Compute <span class="math">\(\hat{\beta}\)</span> using the function above</p>
+<p>Compute $\hat{\beta}$ using the function above </p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell">
+<div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[173]:
 </div>
-<div class="input_area box-flex1">
+<div class="inner_cell">
+    <div class="input_area">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">beta_hat</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">ols</span><span class="p">(</span><span class="n">X</span><span class="p">),</span> <span class="n">y</span><span class="p">)</span>
 </pre></div>
 
 </div>
 </div>
+</div>
 
 </div>
-<div class="cell border-box-sizing code_cell">
+<div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[174]:
 </div>
-<div class="input_area box-flex1">
+<div class="inner_cell">
+    <div class="input_area">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="c"># estimated betas vs read betas</span>
 
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">beta</span><span class="p">,</span> <span class="n">beta_hat</span><span class="p">,</span> <span class="s">&#39;o&#39;</span><span class="p">)</span>
@@ -11812,6 +11928,7 @@ In&nbsp;[174]:
 
 </div>
 </div>
+</div>
 
 <div class="output_wrapper">
 <div class="output">
@@ -11819,20 +11936,20 @@ In&nbsp;[174]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[174]:</div>
-<div class="box-flex1 output_subarea output_pyout">
 
 
+<div class="output_text output_subarea output_pyout">
 <pre>
 &lt;matplotlib.text.Text at 0x1071aa750&gt;
 </pre>
-
 </div>
+
 </div>
 
 <div class="output_area"><div class="prompt"></div>
-<div class="box-flex1 output_subarea output_display_data">
 
 
+<div class="output_png output_subarea ">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAYcAAAEOCAYAAABiodtuAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAIABJREFUeJzt3XlYVfeBxvHvZdMo4CBgjFtwTxSF2Cw4KsG6lZpEMiKp
 cRKf9BkNTkxrk9aYmQ5BbGO0RjtJG5c8MQYfohZNiA12XKI0rogaWVwSMS5FAcFQCwoocuYP623o
@@ -12002,31 +12119,33 @@ dXU1Dz/8ML///e+JiIigoKCA3NxcLl26ZPpvMHnyZEaMGGF/HBISwtSpU/Hy8uL9999n586dVFZW
 cvz4cf71X/+VLVu28Oabb9KzZ0+OHDnCK6+8wrvvvsuoUaM4deqUWy9rLS2TLtktd6SsrCyWLl3K
 qlWrrI4i4pE0cpA70oEDBzh58iRnz561OoqIR9LIQURETDRyEBERE5WDiIiYqBxERMRE5SAiIiYq
 BxERMfl/bUbiGJmDa5wAAAAASUVORK5CYII=
-">
+"
+>
+</div>
+
+</div>
 
 </div>
 </div>
 
 </div>
-</div>
-
-</div>
-<div class="input">
+<div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>And using these estimates <span class="math">\(\hat{\beta}\)</span> we can now estimate the <span class="math">\(\bf{\hat{y}}\)</span></p>
-<p><span class="math">\[ \bf{\hat{y}=X \hat{\beta} }\]</span></p>
+<p>And using these estimates $\hat{\beta}$ we can now estimate the $\bf{\hat{y}}$</p>
+<p>$$ \bf{\hat{y}=X \hat{\beta} }$$</p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell">
+<div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[175]:
 </div>
-<div class="input_area box-flex1">
+<div class="inner_cell">
+    <div class="input_area">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">y_hat</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">beta_hat</span><span class="p">)</span>
 <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">&#39;$y$&#39;</span><span class="p">)</span>
@@ -12036,6 +12155,7 @@ In&nbsp;[175]:
 
 </div>
 </div>
+</div>
 
 <div class="output_wrapper">
 <div class="output">
@@ -12043,20 +12163,20 @@ In&nbsp;[175]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[175]:</div>
-<div class="box-flex1 output_subarea output_pyout">
 
 
+<div class="output_text output_subarea output_pyout">
 <pre>
 &lt;matplotlib.legend.Legend at 0x106a2ae90&gt;
 </pre>
-
 </div>
+
 </div>
 
 <div class="output_area"><div class="prompt"></div>
-<div class="box-flex1 output_subarea output_display_data">
 
 
+<div class="output_png output_subarea ">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXMAAAEACAYAAABBDJb9AAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAIABJREFUeJzs3Xd8m9W5wPHfq2XJli3Je884e+8QRiCEsDcUWmjpoEB7
 e0tLW+igpNBBb+e9pZO2QCmlQNmEFRIMCZC9h2PH8d7bkiVrvvePVw4BMjwkvZJ8vp+PP02Ddc4T
@@ -12408,16 +12528,17 @@ NOHh4Wzbto1NmzZpthfwYmYmJSW5lBuqh3lGRgYtLS2cOnWK+/fvk56ervYpxrX8/HyysrJYs2YN
 cXFx9Pb2arof4Jxi0el0pKena7YXSUlJDAwMcOLECa5cuUJVVZVme5Genk5ZWRlFRUV0dHSwZcsW
 zfWisrKShw8fUlpa+kJmZmRkuJSjsmhICCF8gCwaEkIIHyBhLoQQPkDCXAghfICEuRBC+AAJcyGE
 8AES5kII4QMkzIUQwgdImAshhA/4H7pEZXaTzgJ1AAAAAElFTkSuQmCC
-">
+"
+>
+</div>
+
+</div>
 
 </div>
 </div>
 
 </div>
-</div>
-
-</div>
-<div class="input">
+<div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -12426,12 +12547,13 @@ zfWisrKShw8fUlpa+kJmZmRkuJSjsmhICCF8gCwaEkIIHyBhLoQQPkDCXAghfICEuRBC+AAJcyGE
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell">
+<div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[132]:
 </div>
-<div class="input_area box-flex1">
+<div class="inner_cell">
+    <div class="input_area">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">H</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">ols</span><span class="p">(</span><span class="n">X</span><span class="p">))</span>
 <span class="n">H</span><span class="o">.</span><span class="n">shape</span>
 <span class="n">y_hat</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">H</span><span class="o">.</span><span class="n">T</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
@@ -12439,19 +12561,22 @@ In&nbsp;[132]:
 
 </div>
 </div>
+</div>
 
 </div>
-<div class="cell border-box-sizing code_cell">
+<div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[176]:
 </div>
-<div class="input_area box-flex1">
+<div class="inner_cell">
+    <div class="input_area">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">y_hat</span><span class="p">,</span> <span class="s">&#39;o&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">&#39;The original output&#39;</span><span class="p">)</span> 
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">&#39;Linear estimate of the output&#39;</span><span class="p">)</span>
 </pre></div>
 
+</div>
 </div>
 </div>
 
@@ -12461,20 +12586,20 @@ In&nbsp;[176]:
 
 <div class="output_area"><div class="prompt output_prompt">
     Out[176]:</div>
-<div class="box-flex1 output_subarea output_pyout">
 
 
+<div class="output_text output_subarea output_pyout">
 <pre>
 &lt;matplotlib.text.Text at 0x10c04a350&gt;
 </pre>
-
 </div>
+
 </div>
 
 <div class="output_area"><div class="prompt"></div>
-<div class="box-flex1 output_subarea output_display_data">
 
 
+<div class="output_png output_subarea ">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXwAAAEOCAYAAACKDawAAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAIABJREFUeJzt3XtY1GX6P/D3MMCAcpCDCgkaWrmeUDOMbyXLegBDClOp
 XdDc8vytvPq1VrS1hu2u62E7fM3yuGV5qS2IaTqWA9siWXlAVwFRNoQUEDTOJxkO8/n9QUwMc+AD
@@ -12681,24 +12806,27 @@ By8vLxQUFMDPzw8NDQ349NNPIZFI8MMPP+CTTz7Bd999hxdffLHbe4i6w/bIRGh/it6xYwfWrl0L
 ADh06BDmzZtnsXjS09OxY8cOHDhwwGIxkO3hpC0R2hdNKRQK5OfnY+zYsYiKirJoPBcuXMCPP/6I
 mzdv4q677rJoLGQ7+IRPRGQnOIZPRGQnmPCJiOwEEz4RkZ1gwicishNM+EREduL/A0nwEukj4SrM
 AAAAAElFTkSuQmCC
-">
+"
+>
+</div>
+
+</div>
 
 </div>
 </div>
 
 </div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell">
+<div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[]:
 </div>
-<div class="input_area box-flex1">
+<div class="inner_cell">
+    <div class="input_area">
 <div class="highlight-ipynb"><pre class="ipynb">
 </pre></div>
 
+</div>
 </div>
 </div>
 
@@ -12717,32 +12845,33 @@ In&nbsp;[]:
 
                 <li class="list-group-item"><h4><i class="icon-home icon-large"></i>Class Material</h4></li>
                     <li class="list-group-item">
-                       <a href="http://lxprior.github.io/classtmpl/tag/homeworks.html">
+                       <a href="/tag/homeworks.html">
                            <i class="icon-folder-open icon-large"></i>homeworks
                        </a>
                    </li>
                     <li class="list-group-item">
-                       <a href="http://lxprior.github.io/classtmpl/tag/labs.html">
+                       <a href="/tag/labs.html">
                            <i class="icon-folder-open icon-large"></i>labs
                        </a>
                    </li>
                     <li class="list-group-item">
-                       <a href="http://lxprior.github.io/classtmpl/tag/lectures.html">
+                       <a href="/tag/lectures.html">
                            <i class="icon-folder-open icon-large"></i>lectures
                        </a>
                    </li>
 
-            <!--li class="list-group-item"><a href="http://lxprior.github.io/classtmpl/tags.html"><h4><i class="icon-tags icon-large"></i>Tags</h4></a></li-->
+            <!--li class="list-group-item"><a href="/tags.html"><h4><i class="icon-tags icon-large"></i>Tags</h4></a></li-->
             <li class="list-group-item"><h4><i class="icon-external-link icon-large"></i>Class Links</h4></li>
-                <li class="list-group-item"><a href="https://piazza.com/harvard/spring2014/am207/home"><i class="icon-external-link"></i>Piazza</a></li>
-                <li class="list-group-item"><a href="http://cm.dce.harvard.edu/2014/02/24104/publicationListing.shtml"><i class="icon-external-link"></i>Videos</a></li>
-                <li class="list-group-item"><a href="http://isites.harvard.edu/icb/icb.do?keyword=k102129&login=yes"><i class="icon-external-link"></i>ISite</a></li>
+                <li class="list-group-item"><a href=" http://piazza.com/harvard/spring2015/ac297r"><i class="icon-external-link"></i>Piazza</a></li>
             <li class="list-group-item"><h4><i class="icon-external-link icon-large"></i>Other Links</h4></li>
                 <li class="list-group-item"><a href="http://docs.scipy.org/doc/numpy/reference/"><i class="icon-external-link"></i>Numpy</a></li>
                 <li class="list-group-item"><a href="http://docs.scipy.org/doc/scipy/reference/"><i class="icon-external-link"></i>Scipy</a></li>
                 <li class="list-group-item"><a href="http://pandas.pydata.org/pandas-docs/dev/"><i class="icon-external-link"></i>Pandas</a></li>
                 <li class="list-group-item"><a href="http://matplotlib.org/api/index.html"><i class="icon-external-link"></i>Matplotlib</a></li>
                 <li class="list-group-item"><a href="https://github.com/pymc-devs/pymc"><i class="icon-external-link"></i>PyMC3</a></li>
+                <li class="list-group-item"><a href="http://mc-stan.org/"><i class="icon-external-link"></i>Stan</a></li>
+                <li class="list-group-item"><a href="http://deeplearning.net/software/theano/"><i class="icon-external-link"></i>Theano</a></li>
+                <li class="list-group-item"><a href="http://caffe.berkeleyvision.org/"><i class="icon-external-link"></i>Caffe</a></li>
                 <li class="list-group-item"><a href="http://iacs.seas.harvard.edu"><i class="icon-external-link"></i>IACS</a></li>
         </ul>
     </section>
@@ -12751,9 +12880,9 @@ In&nbsp;[]:
 </div>
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="http://lxprior.github.io/classtmpl/theme/js/bootstrap.min.js"></script>
+<script src="/theme/js/bootstrap.min.js"></script>
 
 <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
-<script src="http://lxprior.github.io/classtmpl/theme/js/respond.min.js"></script>
+<script src="/theme/js/respond.min.js"></script>
 </body>
 </html>
