@@ -45,3 +45,8 @@ This is the tentative list of topics, in order, subject to change:
 #### Meeting Schedule
 
 To be determined, after teams are formed, with Professor and TF in B155, IACS.
+
+For Pavlos:
+
+* Tues: 8:30-10, 10-11:30, 1-2:30, 4-5:30
+* Wed: 11-12:30, 12:30-2, 2-3:30, 3:30-5

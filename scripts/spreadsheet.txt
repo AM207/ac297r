@@ -8,8 +8,8 @@ df=pd.read_csv(sys.argv[1])
 #df[['TITLE','PROJECT PRECIS']]
 #df[df.TITLE.notna()][['TITLE','PROJECT PRECIS']]
 #df[df.TITLE.notnull()][['TITLE','PROJECT PRECIS']]
-df2=df[df.TITLE.notnull()][['TITLE','PROJECT PRECIS']]
-df2.TEXT="\n###"+df2.TITLE+"\n\n"+df2['PROJECT PRECIS']+"\n"
+df2=df[df.TITLE.notnull()][['TITLE', 'CONTACT', 'PROJECT DESCRIPTION']]
+df2.TEXT="\n###"+df2.TITLE+"\n\n"+df2['CONTACT']+"\n\n"+df2['PROJECT DESCRIPTION']+"\n"
 #df2.TEXT
 #"".join(df2.TEXT)
 val = "".join(df2.TEXT)

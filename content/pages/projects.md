@@ -7,54 +7,91 @@ Author: Pavlos Protopapas
 
 ###Predicting passenger patterns on the T
 
-Using data from the MBTA’s fare collection system, you will develop predictive models of ridership patterns based on past travel. This will include both internal patterns and the influence of external events (i.e. events at the Garden or Fenway.). 
+Ginna Reeder, Dominick Tribo
+
+Using data from the MBTA’s fare collection system (which includes unique IDs for all cards and when and where the cards are used), students will develop predictive models of ridership patterns based on past travel. This will include both internal patterns (i.e. given the number of people boarding buses that feed into Forest Hills station, what can we expect for Orange Line ridership?) and the influence of external events (i.e. events at the Garden or Fenway, good vs. bad weather, etc.). Students will learn about the fundamentals of analyzing public transport data, regression modeling and factor analysis, and model calibration.
 
 ###Classifying everything on the sky
 
-Using the Pan Stars data we want to 
-Create a training set for all kind of objects known to astronomers. For this to happen we need to use known objects for other surveys and transfer learning. Transfer learning is when a training set is not available as such but machine learning methods have to be used to make one. We then want to create a probabilistic classification model that classifies everything and evaluate its accuracy. A possible extension would be to evaluate when follow-ups may be done.
+Edo Berger
 
+Using the PS1 data we want to 
+  a) Create time series catalogs (assuming this is easy and almost) for the MD fields 
+  b) Create a training set for all kind of objects known to astronomers. For this to happen we need to use known objects for other surveys and transfer learning. Transfer learning is when a training set is not available as such but machine learning methods have to be used to do so
+  c) Create a probabilistic classification model that classifies everything. Evaluate accuracy etc
+  d) Given the classification, create a predictive model that can be used to evaluate follow ups. This can include time of next observation, what filters, how many epochs etc. THIS IS THE KEY and we need to have a good idea what would be useful to astronomers
 
 
 ###Social Media Epidemiology
 
-Traditional clinical methods to track the incidence of diseases are essential to prevent outbreaks, they frequently take weeks to spot critical epidemiological events. Analysis of social media has given rise to multiple digital disease surveillance systems capable of providing timely epidemiological information to public health decision makers (two to three weeks) ahead of traditional reports.
+Mauricio Santillana
+
+Preventing outbreaks of communicable diseases is one of the top priorities of public health officials from all over the world. Although traditional clinical methods to track the incidence of diseases are essential to prevent outbreaks, they frequently take weeks to spot critical epidemiological events. This is mainly due to the multiple clinical steps needed to confirm the appearance and incidence of diseases. Recently, the real time analysis of big data sets coming from Google, Facebook, Twitter, and other media coverage websites, has enabled researchers to propose new ways to perform internet-based public health surveillance. These new ideas have given rise to multiple digital disease surveillance systems capable of providing timely epidemiological information to public health decision makers (two to three weeks) ahead of traditional reports.
 
 Challenges in the design and implementation of these digital disease tracking systems include finding, downloading, storing, analyzing, and visualizing enormous amounts of information continuously in time. 
 
 ###Assessing brain development for prematurely born babies.
+
+Dylan Tisdall 
 
 Assessing brain development for prematurely born babies.We have currently completed a prototype of a structural MRI processing pipeline that annotates various brain areas in acquistions of infants.
 The student would need to familiarize her-/himself with the tools, process a set of data from a prematurely born population and then modify and evaluate the accuracy of the pipeline. When completed, findings from this study would be compared to those from a population of full-terms. The student would be supervised one or two mentors experienced in MRI post-processing and image registration. Familiarity with C/C++, Matlab and basic scripting is a requirement.
 
 ###Detecting Topics and Understanding Citations
 
+Alberto Accomazzi
+
 Nearly every Physics, Astronomy, and Geophysics article refereed in the past 20 years is fully indexed and served by the ADS. 50,000 scientists and librarians use the ADS daily. The ADS’s bibliographic dataset currently consists of over ten million documents, and is growing at a rate of several thousand per month. There are multiple projects of interest, including:
 
 * Detect topics from a paper using NLP techniques for entity recognition (could be an ontology, thesaurus, or just controlled dictionary).  
 * Improve ADS’s reference resolving framework using state of the art techniques such as Conditional Random Fields (CRF).
-* Extract the context in which a citation is provided in a paper and characterize its use. The references in the text would then be coupled with the nearby (according to some proximity measure) subject matter tags to form an external view of the subject matter in the reference. 
+* Extract the context in which a citation is provided in a paper and characterize its use.  This could involve running an existing text mining/tagging system, such as ScienceWise over the document collection, using an existing thesaurus or ontology, such as the ScienceWise crowd-sourced ontology or the Unified Astronomy Thesaurus to automatically create a subject matter annotated body of text.  The references in the text would then be coupled with the nearby (according to some proximity measure) subject matter tags to form an external view of the subject matter in the reference.  These views (one for each time an article is referred to in the text) can be combined, both within a document (if the referring article refers to the reference more than once) and within the set of all referring documents.  These can then be compared with each other, with the ctual descriptors of the referred to document itself, and with other similar documents to form a powerful new technique for search and discovery, an extension of the existing anchor-text methodology.
 
 ###Exposing Dodgy Erotic massage parlors
 
-Polaris, an anti-human-trafficking organization, is interested in exploring how computational science can assist in identifying locations, businesses, and individuals participating in human trafficking operations. Anecdotal evidence from the National Human Trafficking Resource Center hotline and from human trafficking survivors indicates that the industry is highly networked and that women in the industry are often coerced.
+Craig Heckman
 
-You will focus specifically on the Erotic Massage parlor business. Since the erotic massage parlors operate as seemingly legitimate businesses, there is a significant amount of data and information about them on the web. Through computational methods, Polaris hopes to 
-identify establishments with a high probability of involvement in trafficking activities, find links between them and 
-identify the most influential individuals / businesses in the industry
+Polaris, an anti-human-trafficking organization, is interested in exploring how computational science can assist in identifying locations, businesses, and individuals participating in human trafficking operations.  Though human trafficking occurs in many industries, one industry that is especially interesting from a computational perspective is the erotic massage parlor industry.  Anecdotal evidence from the National Human Trafficking Resource Center hotline and from human trafficking survivors indicates that the industry is highly networked and that women in the industry are often coerced.
+
+Since the erotic massage parlors operate as seemingly legitimate businesses, there is a significant amount of data and information about them on the web (public business records, "Yelp"-style customer review sites, customer forums, classifieds websites, massage license data, criminal records, news articles, social media, etc.) Through computational methods, Polaris hopes to: 
+Better understand the erotic massage industry
+Identify establishments with a high probability of involvement in trafficking activities
+Establish probable links between establishments
+Identify the most influential individuals / businesses in the industry
 
 
 ###Conceptual Physics from Machine Learning
 
-We will apply powerful machine learning to gain conceptual understanding in physics. For example, we have used kernel SVMs and feed-forward neural networks to define the concept of a defect in disordered systems, which could not be done before. We are also working on using neural networks, with similar topology to recurrent networks in natural language processing, to find a good representation for atomic configurations in quantum mechanical calculations. 
+Tim Kaxiras, Dogus Ekin
+
+Generally, we apply powerful machine learning and stochastic optimization methods to condensed matter physics. These computational methods can be used as a curve-fitting and optimization tool; this approach has been gaining popularity in many chemistry and physics subfields. We also utilize machine learning  directly to gain conceptual understanding not achieved with conventional approaches in physics. For example, we have used kernel SVMs and feed-forward neural networks to define the concept of a defect in disordered systems, which could not be done before. We are also working on using neural networks, with similar topology to recurrent networks in natural language processing, to find a good representation for atomic configurations in quantum mechanical calculations. Future direction is to focus on unsupervised learning to find meaningful representations of physical systems.
 
 ###Market Beta
 
-The broad problem is how to best estimate, given information available today, a stock's "market beta", the relationship between the price of a stock and a market index in the future. It describes what percentage move in the stock we should expect given a one unit move up or down in the index. 
+Ross Levinsky, Matt Leffers
+
+The broad problem is how to best estimate, given information available today, the relationship between the price of a stock and a market index in the future. 
  
-The simplest solution to the problem is to regress the prices or returns of a stock on the index return or price.  However, below are some considerations that merit further research to refine the estimate, such as optimal backward-looking timescales for a week-forward prediction, corrections for thinly traded stocks, newly traded stocks (such as those from IPOs), significant company news, and changes in the macro environment. Does the stock shrink to the index, rendering a beta of 1?
+This relationship is commonly referred to as the equity’s “market beta” and describes what percentage move in the stock we should expect given a one unit move up or down in the index. 
+ 
+The simplest solution to the problem is to regress the prices or returns of a stock on the index return or price.  However, below are some considerations that merit further research to refine the estimate:
+·         Is there an optimal backward-looking time scale if we are interested in predicting the relationship over the next week?
+
+·         Are any corrections possible or optimal for stocks that are thinly-traded, and therefore may lag the more-liquid market index on a daily basis?  What about stocks listed and traded in the US, but with businesses abroad (e.g. ADRs)?
+
+·         How should we handle newly-traded names (e.g. IPOs, spin-offs, etc)?
+
+·         How should we handle a stock with recent large, idiosyncratic moves (e.g. those caused by significant company-specific news)?
+
+·         Is there merit to the concept of “shrinkage”, i.e. that the beta relationship regresses to one over time?
+
+·         How should we handle regime changes in the market (i.e. significant changes to the macro environment or other systematic factors which might bias our backward-looking estimate such as the market crash in 1987 or the global financial crisis of 2008)?
+
+ 
 
 ###Mortgage prepayment and Bitcoin
+
+Vasily Strela
 
 Value of mortgage prepayment option (Cheng Su):
 1.            Estimate empirically for a period of time (say the past 10 years) how much homeowners paid for the option cost in mortgages and how much they saved when prepay. (For this one I believe homeowners are better off because rate has been dropping for the past 10 years)
@@ -71,20 +108,42 @@ However, after several years, BTC gradually became accepted by lots of mainstrea
 
 ###Long-Short equity trading strategies.
 
+Apollo Wong 
+
 In this project students will be instructed to try to build an industrial strength Long-Short equity trading strategy using public domain data sources. Students will learn about the importance of factor selection, transaction cost, liquidity, proper usage of optimizer, and natural capacity constraints on strategies. They will learn about proper method of backtesting. If time permits, they could experiment with methods of improving the performance of various factors and solve real problems in real world trading. Students will also learn about the importance of computer science in financial industry.
 
 ###Deep Learning and the Brain Connectome.
 
-Deep learning methods for Connectomics: segmentation of individual neurons and their synapses is currently done using convolutional neural nets. Our goal is to explore other deep learning architectures to speed up the prediction without a significant loss in performance.
+Verena Kaynig-Fittkau 
 
-Higher level assembly of neuronal structures from error prone pre-segmentations based on biological models: Currently our automatic reconstructions need manual proofreading to correct for split and merge errors in the 3D geometry of the neurons. Goal is to build on top of the automatic reconstructions and correct split errors by looking at 3D segments and merging them into biological plausible neurons. A first idea to explore is to use deep learning to predict if segments should be merged, and then use biological constraints to identify biologically plausible groupings based on the deep learning results.
+Deep learning methods for Connectomics
+In the field of Connectomics, neuroanatomists are interested in the wiring diagram of the brain to learn more about its functional structure. To automatically build these diagrams from electron microscopy images using machine vision, we need to segment individual neurons and their synapses. Recent work has focused on deep learning methods for the detection of membranes in the images. While convolutional neural network so far yield the best results, they are inherently slow and cannot keep up with the data acquisition process. Goal of this master thesis is to explore other deep learning architectures to speed up the prediction without a significant loss in performance. Coding will be done in Python, using Theano and Pylearn2 as deep learning libraries. The data is already acquired and we have sufficient manual annotations for deep learning.
+Keywords: Deep learning, Python, Theano, Connectomics.
 
-Synapse detection for Connectomics: While state of the art methods for synapse detection using computer vision approaches use random forests and boosting on hand designed features to classify each pixel in the images, we want to explore deep learning methods for this purpose. 
+Higher level assembly of neuronal structures from error prone pre-segmentations based on biological models
+Our lab has developed a computer vision pipeline for the segmentation of neurons from electron microscopy images. The ultimate goal is to identify the wiring diagram of these neurons to gain insight into the functional structure of the brain. Currently our automatic reconstructions need manual proofreading to correct for split and merge errors in the 3D geometry of the neurons. Goal of this master thesis is to build on top of the automatic reconstructions and correct split errors by looking at 3D segments and merging them into biological plausible neurons. A first idea to explore is to use deep learning to predict if segments should be merged, and then use biological constraints to identify biologically plausible groupings based on the deep learning results. Coding will be done in Python, using Theano and Pylearn2 as deep learning libraries. The data is already acquired and we have sufficient manual annotations for deep learning.
+Keywords: Deep learning, Python, Theano, Connectomics.
+ 
+Synapse detection for Connectomics
+We are interested in using computer vision approaches to detect synapses in electron microscopy images of mammalian brain tissue. While neurons can be seen as the wires of the brain, synapses are the contacts that define the actual circuit, and thus are crucial in gaining insights into the functional structure of the brain. While state of the art methods for synapse detection use random forests and boosting on hand designed features to classify each pixel in the images, we want to explore deep learning methods for this purpose. Coding will be done in Python, using Theano and Pylearn2 as deep learning libraries. The data is already acquired and we have sufficient manual annotations for deep learning.
+Keywords: Deep learning, Python, Theano, Connectomics.
+ 
+ 
 
-The data is already acquired and we have sufficient manual annotations for deep learning.
+###Hotel Price Prediction and Sentiment Analysis
+
+Bryan Balin
+
+Hotel price prediction:We capture pricing data on thousands of hotels (and room types) each day, creating quite an extensive dataset.  With this data, we’d like to have a feature on Hotel Watchdog (http://www.airfarewatchdog.com/hotels/) that tells the customer the probability of whether the price for that hotel and room type is likely to go up or down over the next 7 days.  There is a great deal of seasonality and city-level effects on hotel data, so the big challenge here is being able to make predictions given hotel prices tend to move abruptly in a way that resembles a step function.  Students could either try to make predictions at the city level, hotel star level within a city, hotel level, or room level within the hotel, depending on the quality and quantity of the data.
+
+Sentiment analysis: We tend to favor surveys where users give free-form answers to questions, rather than channel users to a particular set of responses we expect out of them.  While it helps ward off response bias, we are often forced to just read a sample of the total results due to their sheer volume.  So, we would like students to text mine the responses (of which there are roughly 48,000 unique responses in our most recent survey) to five questions, and pull out simple binary information (was the response positive or negative?) as well as the themes of the response (was it about the quality of our customer service? Was it about the quality of the hotel? Was it about pricing?).  Part of the challenge here will be that you can have multiple themes per response, and each theme can be either positive or negative.  Extra kudos here would be given for a system that automatically determines which themes are in a response, rather than having us pre-set themes and make classifications on them. `
 
 ###Understanding subscription cues at the Boston Globe
 
+Meredith Kokos, Peter Doucette 
+Thomas Brown, Angus Durocher 
+
+
 The typical cyber-life of a  BostonGlobe user starts with anonymous visits- from casually visiting the site, to ultimately becoming a subscriber. The BostonGlobe would like to understand the idiosyncrasies and patterns of a subscriber and use that knowledge to increase subscriptions.  
-The goal of this project is to develop predictive models for the subscription process using web transaction data from the BostonGlobe.com and Boston.com. The data includes pages visited, click-throughs, time of visits, frequency of visits and other contextual information of these users as they pass through the sales conversion funnel.
-The final product will be a model and a post-mortem probabilistic characterization of the types of uses: the result will be a measure of the probability of becoming a subscriber at a given time. 
+The goals of this project is to develop predictive models for the subscription process using web transaction data from the BostonGlobe.com and Boston.com. The data includes pages visited, click-throughs, time of visits, frequency of visits and other contextual information of these users as they pass through the sales conversion funnel.
+Students will be given data for a set of users that have become subscribers and data on users that have remained anonymous. By extracting features from these longitudinal data and cross-correlating transaction events with other local or global events, students will develop models  and evaluate them on a subset of this dataset (testing subset). The final product will be a model and a post-mortem probabilistic characterization of the types of uses: the result will be a measure of the probability of becoming a subscriber at a given time. 
