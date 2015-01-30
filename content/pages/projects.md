@@ -5,6 +5,7 @@ Author: Pavlos Protopapas
 
 
 
+
 ###Predicting passenger patterns on the T
 
 Ginna Reeder, Dominick Tribo
@@ -32,7 +33,7 @@ Challenges in the design and implementation of these digital disease tracking sy
 
 ###Assessing brain development for prematurely born babies.
 
-Dylan Tisdall 
+  Lilla Zollei
 
 Assessing brain development for prematurely born babies.We have currently completed a prototype of a structural MRI processing pipeline that annotates various brain areas in acquistions of infants.
 The student would need to familiarize her-/himself with the tools, process a set of data from a prematurely born population and then modify and evaluate the accuracy of the pipeline. When completed, findings from this study would be compared to those from a population of full-terms. The student would be supervised one or two mentors experienced in MRI post-processing and image registration. Familiarity with C/C++, Matlab and basic scripting is a requirement.
@@ -100,9 +101,7 @@ Value of mortgage prepayment option (Cheng Su):
 * Q 3.            Calculate how much more mortgage rate needs to drop for homeowners to break even given the option cost they are paying now.
  
 Throughout this question we can look at 30Y fixed rate mortgages securitized by Freddie Mac since 2005 as sample data.
-
-MORE DETAILS: 
-
+ 
 * Q 1. In US most mortgages come with an embedded option: borrowers can pay back their loans any time (called prepayment).
 It is nice to have such an option because borrowers may not know exactly how long they will keep the property.
 However, this option does not come free, and borrowers are paying a higher coupon rate for this option.
