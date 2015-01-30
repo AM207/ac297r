@@ -94,11 +94,30 @@ The simplest solution to the problem is to regress the prices or returns of a st
 Vasily Strela
 
 Value of mortgage prepayment option (Cheng Su):
-1.            Estimate empirically for a period of time (say the past 10 years) how much homeowners paid for the option cost in mortgages and how much they saved when prepay. (For this one I believe homeowners are better off because rate has been dropping for the past 10 years)
-2.            Compare the current option cost being charged vs the historical mean.
-3.            Calculate how much more rate needs to drop for homeowners to break even given the option cost they are paying now.
+
+* Q 1.            Estimate empirically for a period of time (say the past 10 years) how much homeowners paid for the option cost in mortgages and how much they saved when prepay. (For this one I believe homeowners are better off because rate has been dropping for the past 10 years)Q
+* Q 2.            Compare the current option cost being charged vs the historical mean.
+* Q 3.            Calculate how much more mortgage rate needs to drop for homeowners to break even given the option cost they are paying now.
+ 
+Throughout this question we can look at 30Y fixed rate mortgages securitized by Freddie Mac since 2005 as sample data.
+
+MORE DETAILS: 
+
+* Q 1. In US most mortgages come with an embedded option: borrowers can pay back their loans any time (called prepayment).
+It is nice to have such an option because borrowers may not know exactly how long they will keep the property.
+However, this option does not come free, and borrowers are paying a higher coupon rate for this option.
+So the first question is to come up a method to measure overall how much extra premium borrowers paid to have the prepay option and apply this measure to the empirical data.
+ 
+When borrowers pay back their mortgages before the maturity data, they might save some money if the mortgage rates they have are higher than the prevailing mortgage rate.
+So the second question is how to measure how much money borrowers saved, and then apply this measure to empirical data.
+Then we can compare whether borrowers paid more option premium or saved more from prepayment.
+ 
+* Q 2. What is the option premium borrowers are paying today? How does it compare historically?
+ 
+* Q 3. Given the option premium borrowers are paying now, in what interest rate (hence mortgage rate) scenarios borrowers recover the premium they pay for the option through prepayment.
  
 Bitcoin (Alfred Yuan):
+
 Bitcoin (BTC), as you may hear about, is a digital currency. Unlike traditional currency whose credit is backed by government’s privilege of taxing, BTC is backed by a cryptology math algorithm. This nature makes BTC born in debate. Supporters claim this peer-to-peer (P2P) mode saves people from inflation hazard of traditional currencies; meanwhile, others argue once this algorithm is cracked by any party, BTC will become of 0 value.
 However, after several years, BTC gradually became accepted by lots of mainstream stores / websites / companies as an alternative payment method. Born in digital era, BTC’s data are all available online easy to access. The project may include analysis in the following directions:
 1.            Relationship between BTC and other global macro assets (including G10 currencies, Libor rates, oild prices and etc.)
@@ -142,7 +161,6 @@ Sentiment analysis: We tend to favor surveys where users give free-form answers 
 
 Meredith Kokos, Peter Doucette 
 Thomas Brown, Angus Durocher 
-
 
 The typical cyber-life of a  BostonGlobe user starts with anonymous visits- from casually visiting the site, to ultimately becoming a subscriber. The BostonGlobe would like to understand the idiosyncrasies and patterns of a subscriber and use that knowledge to increase subscriptions.  
 The goals of this project is to develop predictive models for the subscription process using web transaction data from the BostonGlobe.com and Boston.com. The data includes pages visited, click-throughs, time of visits, frequency of visits and other contextual information of these users as they pass through the sales conversion funnel.
