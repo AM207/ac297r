@@ -4,8 +4,6 @@ Author: Pavlos Protopapas
 >More Projects coming soon
 
 
-
-
 ###Predicting passenger patterns on the T
 
 Ginna Reeder, Dominick Tribo
@@ -30,6 +28,13 @@ Mauricio Santillana
 Preventing outbreaks of communicable diseases is one of the top priorities of public health officials from all over the world. Although traditional clinical methods to track the incidence of diseases are essential to prevent outbreaks, they frequently take weeks to spot critical epidemiological events. This is mainly due to the multiple clinical steps needed to confirm the appearance and incidence of diseases. Recently, the real time analysis of big data sets coming from Google, Facebook, Twitter, and other media coverage websites, has enabled researchers to propose new ways to perform internet-based public health surveillance. These new ideas have given rise to multiple digital disease surveillance systems capable of providing timely epidemiological information to public health decision makers (two to three weeks) ahead of traditional reports.
 
 Challenges in the design and implementation of these digital disease tracking systems include finding, downloading, storing, analyzing, and visualizing enormous amounts of information continuously in time. 
+
+###High-speed 3D volume registration for motion correction in magnetic resonance imaging
+
+Dylan Tisdall
+
+High-speed 3D volume registration for motion correction in magnetic resonance imaging
+Massachusetts General Hospital is a leader in the development of motion correction technology in magnetic resonance imaging (MRI). As part of our motion correction system for MRI, we acquire a series of low-resolution "navigator" volumes of a subject's head, and register the volumes (in approximately 20 ms) to estimate motion and dynamically update MRI scanning parameters in real time during scanning. We are seeking a Masters candidate to help implement and evaluate new algorithms for high-speed 3D volume registration, as we explore methods to improve the speed and accuracy of our motion correction system. Working with mentors experienced in MRI data and image registration, the candidate will implement candidate image-registration algorithms in C/C++, and subsequently profile, optimize, and evaluate the implementations using test data sets we have acquired from our MRI scanners.
 
 ###Assessing brain development for prematurely born babies.
 

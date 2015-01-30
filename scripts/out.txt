@@ -24,6 +24,13 @@ Preventing outbreaks of communicable diseases is one of the top priorities of pu
 
 Challenges in the design and implementation of these digital disease tracking systems include finding, downloading, storing, analyzing, and visualizing enormous amounts of information continuously in time. 
 
+###High-speed 3D volume registration for motion correction in magnetic resonance imaging
+
+Dylan Tisdall
+
+High-speed 3D volume registration for motion correction in magnetic resonance imaging
+Massachusetts General Hospital is a leader in the development of motion correction technology in magnetic resonance imaging (MRI). As part of our motion correction system for MRI, we acquire a series of low-resolution "navigator" volumes of a subject's head, and register the volumes (in approximately 20 ms) to estimate motion and dynamically update MRI scanning parameters in real time during scanning. We are seeking a Masters candidate to help implement and evaluate new algorithms for high-speed 3D volume registration, as we explore methods to improve the speed and accuracy of our motion correction system. Working with mentors experienced in MRI data and image registration, the candidate will implement candidate image-registration algorithms in C/C++, and subsequently profile, optimize, and evaluate the implementations using test data sets we have acquired from our MRI scanners.
+
 ###Assessing brain development for prematurely born babies.
 
   Lilla Zollei
