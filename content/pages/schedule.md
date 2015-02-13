@@ -29,18 +29,18 @@ There will be a tutorial every wednesday (except for spring break and reading pe
 
 This is the tentative list of topics, in order, subject to change:
 
-1. Numpy/scipy/matplotlib/seaborn/pandas
-1. Exploratory statistics, visualization, and data analysis; publish on github.
-1. Machine Learning using scikit-learn
-1. Feature and Model Selection in Machine Learning
-1. Bayes Theorem and Cost, Naive Bayes, documents as data.
-1. Model Averaging and Ensembles
-1. Scientific Writing and presentation
-1. Running large scale models on AWS or a cluster: machine learning devops
-1. The bayesian paradigm
-1. Bayesian prediction and inference using pymc
-1. Bayesian Model selection, and moving to neural nets
+1. Numpy/scipy/matplotlib/seaborn/pandas (DONE)
+1. Exploratory statistics, visualization, and data analysis; publish on github. (DONE)
+1. Software Development and Github.
+1. Machine Learning using scikit-learn 1
+1. Machine Learning using scikit-learn 2
 1. Deep Learning using Theano
+1. Scientific Writing and presentation
+1. The bayesian paradigm
+1. Scaling Algorithms 1
+1. Scaling Algorithms 2
+1. Bayesian prediction and inference using pymc
+1. Model Averaging and Ensembles
 
 #### Meeting Schedule
 
