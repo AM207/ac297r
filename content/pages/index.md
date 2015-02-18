@@ -6,11 +6,9 @@ Template: index
 <div class="row">
 
     <div class="col-lg-12">
-      <h3>FIRST MEETING</h3>
-      <p>The first day of class, is <b>WEDNESDAY 28th January 2015, TODAY, at 9-11</b> for 2 hours <b>at 60 Oxford St, Classroom 330</b>.</p>
-      <p>Open Office Hours with Pavlos, is <b>THURSDAY 29th January 2015, TOMORROW, at 9-11</b> for 2 hours <b>at Pavlos's office B-155 Northwest Building</b>.</p>
-      <h3>SUBMISSION FORM</h3>
-      <p> If you are considering this course you should sign up for your project <a class="btn btn-warning btn-sm" href="http://goo.gl/forms/02oMU2QBIX">on this form</a> by Sunday 4:00pm.</p>
+      <h3>NEXT TUTORIAL</h3>
+      <p>The next tutorial is <b>WEDNESDAY 25th February 2015,  at 9-11</b> for 2 hours <b>at 60 Oxford St, Classroom 330</b>, on Machine Learning.</p>
+      
       <!--p><a class="btn btn-default" href="{filename}/posts/labem.md" role="button">More &raquo;</a></p-->
     </div><!-- /.col-lg-4 -->
 </div>

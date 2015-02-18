@@ -6,17 +6,47 @@ Author: Pavlos Protopapas
 <!--iframe width="100%" height="500" src="https://docs.google.com/spreadsheets/d/1BTLIHmOBb3Puul_dw-VEv077iGvHdvi_QI6ik5Wc2YM/pubhtml?gid=1040785653&amp;single=true&amp;widget=true&amp;headers=false"></iframe-->
 
 <iframe width="100%" height="500" src="https://docs.google.com/spreadsheets/d/15y13XChxfoUkRqdWZxZ1KfVEmSXa1ZzjGvHZuHEtArg/pubhtml?widget=true&amp;headers=false"></iframe>
+
+Project Affiliation
+Mauricio Santillana, SEAS
+Mauricio Santillana, SEAS
+Mauricio Santillana, SEAS
+Boston Globe
+Boston Globe
+Boston Globe
+Morgan Stanley
+Morgan Stanley
+Morgan Stanley
+Verena Kaynig-Fittkau, SEAS
+Verena Kaynig-Fittkau, SEAS
+Verena Kaynig-Fittkau, SEAS
+Verena Kaynig-Fittkau, SEAS
+HBK
+HBK
+HBK
+MBTA
+MBTA
+MBTA
+MBTA
+SmarterTravel
+SmarterTravel
+SmarterTravel
+SmarterTravel
+USAID
+USAID
+
+
 ### Possible Projects
 
 ###Predicting passenger patterns on the T
 
-Ginna Reeder, Dominick Tribo
+Ginna Reeder, Dominick Tribo, *MBTA*
 
 Using data from the MBTA’s fare collection system (which includes unique IDs for all cards and when and where the cards are used), students will develop predictive models of ridership patterns based on past travel. This will include both internal patterns (i.e. given the number of people boarding buses that feed into Forest Hills station, what can we expect for Orange Line ridership?) and the influence of external events (i.e. events at the Garden or Fenway, good vs. bad weather, etc.). Students will learn about the fundamentals of analyzing public transport data, regression modeling and factor analysis, and model calibration.
 
 ###Classifying everything on the sky
 
-Edo Berger
+Edo Berger, *CfA*
 
 Using the PS1 data we want to 
   a) Create time series catalogs (assuming this is easy and almost) for the MD fields 
@@ -27,7 +57,7 @@ Using the PS1 data we want to
 
 ###Social Media Epidemiology
 
-Mauricio Santillana
+Mauricio Santillana, *SEAS*
 
 Preventing outbreaks of communicable diseases is one of the top priorities of public health officials from all over the world. Although traditional clinical methods to track the incidence of diseases are essential to prevent outbreaks, they frequently take weeks to spot critical epidemiological events. This is mainly due to the multiple clinical steps needed to confirm the appearance and incidence of diseases. Recently, the real time analysis of big data sets coming from Google, Facebook, Twitter, and other media coverage websites, has enabled researchers to propose new ways to perform internet-based public health surveillance. These new ideas have given rise to multiple digital disease surveillance systems capable of providing timely epidemiological information to public health decision makers (two to three weeks) ahead of traditional reports.
 
@@ -35,21 +65,21 @@ Challenges in the design and implementation of these digital disease tracking sy
 
 ###High-speed 3D volume registration for motion correction in magnetic resonance imaging
 
-Dylan Tisdall
+Dylan Tisdall, *SEAS*
 
 High-speed 3D volume registration for motion correction in magnetic resonance imaging
 Massachusetts General Hospital is a leader in the development of motion correction technology in magnetic resonance imaging (MRI). As part of our motion correction system for MRI, we acquire a series of low-resolution "navigator" volumes of a subject's head, and register the volumes (in approximately 20 ms) to estimate motion and dynamically update MRI scanning parameters in real time during scanning. We are seeking a Masters candidate to help implement and evaluate new algorithms for high-speed 3D volume registration, as we explore methods to improve the speed and accuracy of our motion correction system. Working with mentors experienced in MRI data and image registration, the candidate will implement candidate image-registration algorithms in C/C++, and subsequently profile, optimize, and evaluate the implementations using test data sets we have acquired from our MRI scanners.
 
 ###Assessing brain development for prematurely born babies.
 
-  Lilla Zollei
+Lilla Zollei, *SEAS*
 
 Assessing brain development for prematurely born babies.We have currently completed a prototype of a structural MRI processing pipeline that annotates various brain areas in acquistions of infants.
 The student would need to familiarize her-/himself with the tools, process a set of data from a prematurely born population and then modify and evaluate the accuracy of the pipeline. When completed, findings from this study would be compared to those from a population of full-terms. The student would be supervised one or two mentors experienced in MRI post-processing and image registration. Familiarity with C/C++, Matlab and basic scripting is a requirement.
 
 ###Detecting Topics and Understanding Citations
 
-Alberto Accomazzi
+Alberto Accomazzi, *CfA*
 
 Nearly every Physics, Astronomy, and Geophysics article refereed in the past 20 years is fully indexed and served by the ADS. 50,000 scientists and librarians use the ADS daily. The ADS’s bibliographic dataset currently consists of over ten million documents, and is growing at a rate of several thousand per month. There are multiple projects of interest, including:
 
@@ -59,7 +89,7 @@ Nearly every Physics, Astronomy, and Geophysics article refereed in the past 20 
 
 ### Identifying Establishments With High Human-Trafficking Potential
 
-Craig Heckman
+Craig Heckman, *Polaris*
 
 Polaris, an anti-human-trafficking organization, is interested in exploring how computational science can assist in identifying locations, businesses, and individuals participating in human trafficking operations.  Though human trafficking occurs in many industries, one industry that is especially interesting from a computational perspective is the erotic massage parlor industry.  Anecdotal evidence from the National Human Trafficking Resource Center hotline and from human trafficking survivors indicates that the industry is highly networked and that women in the industry are often coerced.
 
@@ -72,13 +102,13 @@ Identify the most influential individuals / businesses in the industry
 
 ###Conceptual Physics from Machine Learning
 
-Tim Kaxiras, Dogus Ekin
+Tim Kaxiras, Dogus Ekin, *SEAS*
 
 Generally, we apply powerful machine learning and stochastic optimization methods to condensed matter physics. These computational methods can be used as a curve-fitting and optimization tool; this approach has been gaining popularity in many chemistry and physics subfields. We also utilize machine learning  directly to gain conceptual understanding not achieved with conventional approaches in physics. For example, we have used kernel SVMs and feed-forward neural networks to define the concept of a defect in disordered systems, which could not be done before. We are also working on using neural networks, with similar topology to recurrent networks in natural language processing, to find a good representation for atomic configurations in quantum mechanical calculations. Future direction is to focus on unsupervised learning to find meaningful representations of physical systems.
 
 ###Market Beta
 
-Ross Levinsky, Matt Leffers
+Ross Levinsky, Matt Leffers, *HBK*
 
 The broad problem is how to best estimate, given information available today, the relationship between the price of a stock and a market index in the future. 
  
@@ -101,9 +131,9 @@ The simplest solution to the problem is to regress the prices or returns of a st
 
 ###Mortgage prepayment and Bitcoin
 
-Vasily Strela
+Vasily Strela, *Morgan Stanely*
 
-Value of mortgage prepayment option (Cheng Su):
+Value of mortgage prepayment option (Cheng Su, *Morgan Stanely*):
 
 * Q 1.            Estimate empirically for a period of time (say the past 10 years) how much homeowners paid for the option cost in mortgages and how much they saved when prepay. (For this one I believe homeowners are better off because rate has been dropping for the past 10 years)Q
 * Q 2.            Compare the current option cost being charged vs the historical mean.
@@ -124,7 +154,7 @@ Then we can compare whether borrowers paid more option premium or saved more fro
  
 * Q 3. Given the option premium borrowers are paying now, in what interest rate (hence mortgage rate) scenarios borrowers recover the premium they pay for the option through prepayment.
  
-Bitcoin (Alfred Yuan):
+Bitcoin (Alfred Yuan, *Morgan Stanely*):
 
 Bitcoin (BTC), as you may hear about, is a digital currency. Unlike traditional currency whose credit is backed by government’s privilege of taxing, BTC is backed by a cryptology math algorithm. This nature makes BTC born in debate. Supporters claim this peer-to-peer (P2P) mode saves people from inflation hazard of traditional currencies; meanwhile, others argue once this algorithm is cracked by any party, BTC will become of 0 value.
 However, after several years, BTC gradually became accepted by lots of mainstream stores / websites / companies as an alternative payment method. Born in digital era, BTC’s data are all available online easy to access. The project may include analysis in the following directions:
@@ -135,23 +165,27 @@ However, after several years, BTC gradually became accepted by lots of mainstrea
 
 ###Long-Short equity trading strategies.
 
-Apollo Wong 
+Apollo Wong, *Verition*
 
 In this project students will be instructed to try to build an industrial strength Long-Short equity trading strategy using public domain data sources. Students will learn about the importance of factor selection, transaction cost, liquidity, proper usage of optimizer, and natural capacity constraints on strategies. They will learn about proper method of backtesting. If time permits, they could experiment with methods of improving the performance of various factors and solve real problems in real world trading. Students will also learn about the importance of computer science in financial industry.
 
 ###Deep Learning and the Brain Connectome.
 
-Verena Kaynig-Fittkau 
+Verena Kaynig-Fittkau, *SEAS*
 
-Deep learning methods for Connectomics
+**Deep learning methods for Connectomics**:
+
 In the field of Connectomics, neuroanatomists are interested in the wiring diagram of the brain to learn more about its functional structure. To automatically build these diagrams from electron microscopy images using machine vision, we need to segment individual neurons and their synapses. Recent work has focused on deep learning methods for the detection of membranes in the images. While convolutional neural network so far yield the best results, they are inherently slow and cannot keep up with the data acquisition process. Goal of this master thesis is to explore other deep learning architectures to speed up the prediction without a significant loss in performance. Coding will be done in Python, using Theano and Pylearn2 as deep learning libraries. The data is already acquired and we have sufficient manual annotations for deep learning.
+
 Keywords: Deep learning, Python, Theano, Connectomics.
 
-Higher level assembly of neuronal structures from error prone pre-segmentations based on biological models
+**Higher level assembly of neuronal structures from error prone pre-segmentations based on biological models**:
+
 Our lab has developed a computer vision pipeline for the segmentation of neurons from electron microscopy images. The ultimate goal is to identify the wiring diagram of these neurons to gain insight into the functional structure of the brain. Currently our automatic reconstructions need manual proofreading to correct for split and merge errors in the 3D geometry of the neurons. Goal of this master thesis is to build on top of the automatic reconstructions and correct split errors by looking at 3D segments and merging them into biological plausible neurons. A first idea to explore is to use deep learning to predict if segments should be merged, and then use biological constraints to identify biologically plausible groupings based on the deep learning results. Coding will be done in Python, using Theano and Pylearn2 as deep learning libraries. The data is already acquired and we have sufficient manual annotations for deep learning.
 Keywords: Deep learning, Python, Theano, Connectomics.
  
-Synapse detection for Connectomics
+**Synapse detection for Connectomics**:
+
 We are interested in using computer vision approaches to detect synapses in electron microscopy images of mammalian brain tissue. While neurons can be seen as the wires of the brain, synapses are the contacts that define the actual circuit, and thus are crucial in gaining insights into the functional structure of the brain. While state of the art methods for synapse detection use random forests and boosting on hand designed features to classify each pixel in the images, we want to explore deep learning methods for this purpose. Coding will be done in Python, using Theano and Pylearn2 as deep learning libraries. The data is already acquired and we have sufficient manual annotations for deep learning.
 Keywords: Deep learning, Python, Theano, Connectomics.
  
@@ -159,7 +193,7 @@ Keywords: Deep learning, Python, Theano, Connectomics.
 
 ###Hotel Price Prediction and Sentiment Analysis
 
-Bryan Balin
+Bryan Balin, *SmarterTravel**
 
 Hotel price prediction:We capture pricing data on thousands of hotels (and room types) each day, creating quite an extensive dataset.  With this data, we’d like to have a feature on Hotel Watchdog (http://www.airfarewatchdog.com/hotels/) that tells the customer the probability of whether the price for that hotel and room type is likely to go up or down over the next 7 days.  There is a great deal of seasonality and city-level effects on hotel data, so the big challenge here is being able to make predictions given hotel prices tend to move abruptly in a way that resembles a step function.  Students could either try to make predictions at the city level, hotel star level within a city, hotel level, or room level within the hotel, depending on the quality and quantity of the data.
 
@@ -167,8 +201,7 @@ Sentiment analysis: We tend to favor surveys where users give free-form answers 
 
 ###Understanding subscription cues at the Boston Globe
 
-Meredith Kokos, Peter Doucette 
-Thomas Brown, Angus Durocher 
+Meredith Kokos, Peter Doucette , Thomas Brown, Angus Durocher; *Boston Globe*
 
 The typical cyber-life of a  BostonGlobe user starts with anonymous visits- from casually visiting the site, to ultimately becoming a subscriber. The BostonGlobe would like to understand the idiosyncrasies and patterns of a subscriber and use that knowledge to increase subscriptions.  
 The goals of this project is to develop predictive models for the subscription process using web transaction data from the BostonGlobe.com and Boston.com. The data includes pages visited, click-throughs, time of visits, frequency of visits and other contextual information of these users as they pass through the sales conversion funnel.
