@@ -206,3 +206,26 @@ Meredith Kokos, Peter Doucette , Thomas Brown, Angus Durocher; *Boston Globe*
 The typical cyber-life of a  BostonGlobe user starts with anonymous visits- from casually visiting the site, to ultimately becoming a subscriber. The BostonGlobe would like to understand the idiosyncrasies and patterns of a subscriber and use that knowledge to increase subscriptions.  
 The goals of this project is to develop predictive models for the subscription process using web transaction data from the BostonGlobe.com and Boston.com. The data includes pages visited, click-throughs, time of visits, frequency of visits and other contextual information of these users as they pass through the sales conversion funnel.
 Students will be given data for a set of users that have become subscribers and data on users that have remained anonymous. By extracting features from these longitudinal data and cross-correlating transaction events with other local or global events, students will develop models  and evaluate them on a subset of this dataset (testing subset). The final product will be a model and a post-mortem probabilistic characterization of the types of uses: the result will be a measure of the probability of becoming a subscriber at a given time. 
+
+####Query Based on Distances of 3D Objects in Large Volume Data
+
+Johanna Beyer, *SEAS*
+
+Problem:
+
+We have very large volume and segmentation data and would like to a) visualize it with interactive framerates and b) evaluate different kind of queries on the data, often based on distances or locations of objects in 3D
+
+Overall goal of interactive queries:
+
+We want to allow neuroscientists to analyze their connectomics data (extremely large EM data and their segmentation) at interactive rates. So that they can interactively explore the data, evaluate queries, and find patterns.
+
+Idea:
+
+We want to use an octree of min/max values for the EM (electron microscopy) data, which can be used for empty space skipping (to speed up rendering).
+We also want to use an octree of objectID histograms for the segmentation data, which can be used for empty space skipping as well as for interactively computing distance queries.
+For the segmentation data we probably need two different kinds of objectID histograms: 1) histograms that represents the objectIDs in each block of the octree (say each block in the octree is $32^3$, then the histogram of that block would contain $32^3$ entries) 2) a histogram, that is actually more like a complete list of segmentationIDs, that stores ALL object IDs that are in the spatial extent of the octree block (but in its highest resolution). So this will be a rather long list for lower resolutions.
+
+Work:
+
+For the final projectwe could focus on different octree traversal algorithms for computing the results of these queries interactively. Examples would be: 1) Which objects are in a certain spatial region of interest? (This one is already implemented for cubes, spheres and ellipsoids). 2) What is the minimum distance of 2 objects in the volume? 3) What are all objects that are in the vicinity of a certain object? etc.
+For the project, we will first focus on implementing the actual agorithm in our own framework, maybe with fake data, and then, if time allows, incorporate it into the actual framework.
