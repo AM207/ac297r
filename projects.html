@@ -286,6 +286,24 @@ For the segmentation data we probably need two different kinds of objectID histo
 <p>Work:</p>
 <p>For the final projectwe could focus on different octree traversal algorithms for computing the results of these queries interactively. Examples would be: 1) Which objects are in a certain spatial region of interest? (This one is already implemented for cubes, spheres and ellipsoids). 2) What is the minimum distance of 2 objects in the volume? 3) What are all objects that are in the vicinity of a certain object? etc.
 For the project, we will first focus on implementing the actual agorithm in our own framework, maybe with fake data, and then, if time allows, incorporate it into the actual framework.</p>
+<h4>Averaged Implicit SGD</h4>
+<p>Edoardo Airoldi, <em>Stats</em></p>
+<p>Stochastic gradient methods have increasingly become popular for large-scale
+optimization. However, they are often numerically unstable and statistically
+inefficient because of their sensitivity to the problem convexity and learning
+rate specification. We propose a new learning procedure, termed averaged
+implicit stochastic gradient descent (AI-SGD), which combines stability through
+proximal (implicit) updates and statistical efficiency through averaging of the
+iterates. In an asymptotic analysis we prove convergence of the procedure and
+show that it is statistically optimal, i.e., it achieves the Cramer-Rao lower
+variance bound. In a non-asymptotic analysis, we show that the apparent
+stability of AI-SGD is due to its robustness to misspecifications of the
+learning rate with respect to the convexity of the loss function. Our
+experiments demonstrate that AI-SGD performs on par with state-of-the-art
+learning methods. Furthermore, AI-SGD is more stable than averaging methods that
+do not utilize proximal updates, and it is simpler and computationally more
+efficient than methods that do employ proximal updates in an incremental
+fashion.</p>
         </div>
     </section>
         </div>
