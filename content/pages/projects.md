@@ -57,7 +57,7 @@ Nearly every Physics, Astronomy, and Geophysics article refereed in the past 20 
 * Improve ADS’s reference resolving framework using state of the art techniques such as Conditional Random Fields (CRF).
 * Extract the context in which a citation is provided in a paper and characterize its use.  This could involve running an existing text mining/tagging system, such as ScienceWise over the document collection, using an existing thesaurus or ontology, such as the ScienceWise crowd-sourced ontology or the Unified Astronomy Thesaurus to automatically create a subject matter annotated body of text.  The references in the text would then be coupled with the nearby (according to some proximity measure) subject matter tags to form an external view of the subject matter in the reference.  These views (one for each time an article is referred to in the text) can be combined, both within a document (if the referring article refers to the reference more than once) and within the set of all referring documents.  These can then be compared with each other, with the ctual descriptors of the referred to document itself, and with other similar documents to form a powerful new technique for search and discovery, an extension of the existing anchor-text methodology.
 
-###Exposing Dodgy Erotic massage parlors
+### Identifying Establishments With High Human-Trafficking Potential
 
 Craig Heckman
 
