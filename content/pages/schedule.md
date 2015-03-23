@@ -31,16 +31,16 @@ This is the tentative list of topics, in order, subject to change:
 
 1. Numpy/scipy/matplotlib/seaborn/pandas (DONE)
 1. Exploratory statistics, visualization, and data analysis; publish on github. (DONE)
-1. Software Development and Github.
-1. Machine Learning using scikit-learn 1
-1. Machine Learning using scikit-learn 2
-1. Deep Learning using Theano
-1. Scientific Writing and presentation
-1. The bayesian paradigm
-1. Scaling Algorithms 1
-1. Scaling Algorithms 2
-1. Bayesian prediction and inference using pymc
-1. Model Averaging and Ensembles
+1. Software Development and Github. (Bob Adams 2/18)
+1. Machine Learning using scikit-learn 1 (Rahul Dave 2/25)
+1. Machine Learning using scikit-learn 2 (Rahul Dave 3/4)
+1. Deep Learning using Theano (Ray Louis -- 3/11 to be rescheduled)
+1. Scientific Writing and presentation (Rosalind Reid -- 3/25)
+1. The bayesian paradigm (Pavlos Protopapas -- 4/1)
+1. Scaling Algorithms 1 (Patrick Ohiomoba -- 4/8 may be rescheduled)
+1. Scaling Algorithms 2 (Patrick Ohiomoba -- 4/15)
+1. Bayesian prediction and inference using pymc (Pavlos Protopapas -- 4/22)
+1. Model Averaging and Ensembles (Pavlos Protopapas -- 4/29)
 
 #### Meeting Schedule
 
