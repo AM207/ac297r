@@ -34,7 +34,7 @@ This is the tentative list of topics, in order, subject to change:
 1. Software Development and Github. (Bob Adams 2/18)
 1. Machine Learning using scikit-learn 1 (Rahul Dave 2/25)
 1. Machine Learning using scikit-learn 2 (Rahul Dave 3/4)
-1. Deep Learning using Theano (Ray Louis -- 3/11 to be rescheduled)
+1. Deep Learning using Theano (Ray Jones -- 3/11 to be rescheduled)
 1. Scientific Writing and presentation (Rosalind Reid -- 3/25)
 1. The bayesian paradigm (Pavlos Protopapas -- 4/1)
 1. Scaling Algorithms 1 (Patrick Ohiomoba -- 4/8 may be rescheduled)
