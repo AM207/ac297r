@@ -7,7 +7,7 @@ Template: index
 
     <div class="col-lg-12">
       <h3>NEXT TUTORIAL</h3>
-      <p>The next tutorial is <b>WEDNESDAY 25th February 2015,  at 9-11</b> for 2 hours <b>at 60 Oxford St, Classroom 330</b>, on Machine Learning.</p>
+      <p>The next tutorial is <b>WEDNESDAY 1st April 2015,  at 9-11</b> for 2 hours <b>at 60 Oxford St, Classroom 330</b>, on Deep Learning.</p>
       
       <!--p><a class="btn btn-default" href="{filename}/posts/labem.md" role="button">More &raquo;</a></p-->
     </div><!-- /.col-lg-4 -->
