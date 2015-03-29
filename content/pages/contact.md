@@ -8,6 +8,7 @@ The TF's (minions) for this course are:
 * Rahul Dave
 * Ray (Thouis) Jones
 * Robert Adolf
+* Patrick Ohiomoba
 
 You can contact us at [`ac297r at gmail.com`](mailto:ac297r@gmail.com).
 
