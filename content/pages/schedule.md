@@ -36,11 +36,12 @@ This is the tentative list of topics, in order, subject to change:
 1. Machine Learning using scikit-learn 2 (Rahul Dave 3/4)
 1. Deep Learning using Theano (Ray Jones -- 3/11 to be rescheduled)
 1. Scientific Writing and presentation (Rosalind Reid -- 3/25)
-1. The bayesian paradigm (Pavlos Protopapas -- 4/1)
-1. Scaling Algorithms 1 (Patrick Ohiomoba -- 4/8 may be rescheduled)
-1. Scaling Algorithms 2 (Patrick Ohiomoba -- 4/15)
-1. Bayesian prediction and inference using pymc (Pavlos Protopapas -- 4/22)
-1. Model Averaging and Ensembles (Pavlos Protopapas -- 4/29)
+1. Deep Learning using Theano (Ray Jones -- 4/1 to be rescheduled)
+1. The bayesian paradigm (Pavlos Protopapas -- 4/8)
+1. Scaling Algorithms 1 (Patrick Ohiomoba/Bob Adams -- 4/15)
+1. Scaling Algorithms 2 (Patrick Ohiomoba/Bob Adams -- 4/22)
+1. Bayesian prediction and inference using pymc (Pavlos Protopapas -- 4/29)
+1. Model Averaging and Ensembles (Pavlos Protopapas -- 5/6)
 
 #### Meeting Schedule
 
