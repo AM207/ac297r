@@ -43,6 +43,11 @@ This is the tentative list of topics, in order, subject to change:
 1. Bayesian prediction and inference using pymc (Pavlos Protopapas -- 4/29)
 1. Model Averaging and Ensembles (Pavlos Protopapas -- 5/6)
 
+#### Final Deliverables Schedule
+* 5/7/2015 5 - 7:30 pm IACS Poster Session			
+* 5/12/2015 Final Report Due			
+* 5/12/2015 9 am - 4:30 pm Final Project Presentation Sessions			
+
 #### Meeting Schedule
 
 To be determined, after teams are formed, with Professor and TF in B155, IACS.
