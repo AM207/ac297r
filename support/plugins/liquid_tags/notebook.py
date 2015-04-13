@@ -68,7 +68,7 @@ from pygments.formatters import HtmlFormatter
 from IPython.nbconvert.exporters import HTMLExporter
 from IPython.config import Config
 
-from IPython.nbformat import current as nbformat
+from IPython.nbformat import reads as nbformat_reads
 
 try:
     from IPython.nbconvert.preprocessors import Preprocessor
@@ -209,9 +209,8 @@ class SubCell(Preprocessor):
 
     def preprocess(self, nb, resources):
         nbc = deepcopy(nb)
-        for worksheet in nbc.worksheets:
-            cells = worksheet.cells[:]
-            worksheet.cells = cells[self.start:self.end]
+        cells = nbc.cells[:]
+        nbc.cells = cells[self.start:self.end]
         return nbc, resources
 
     call = preprocess # IPython < 2.0
@@ -295,9 +294,17 @@ def notebook(preprocessor, tag, markup):
     # read and parse the notebook
     with open(nb_path) as f:
         nb_text = f.read()
-    nb_json = nbformat.reads_json(nb_text)
-    (body, resources) = exporter.from_notebook_node(nb_json)
-
+        print "READ", nb_path
+    nb_json = nbformat_reads(nb_text, 4)
+    print "THERE", nb_json.keys()
+    import sys, traceback
+    try:
+        (body, resources) = exporter.from_notebook_node(nb_json)
+    except:
+        s=sys.exc_info()
+        print ">>>",s[0], s[1]
+        print traceback.print_tb(sys.exc_info()[2]), "\n<<<"
+    print "HERE"
     # if we haven't already saved the header, save it here.
     if not notebook.header_saved:
         print ("\n ** Writing styles to _nb_header.html: "

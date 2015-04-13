@@ -1,5 +1,5 @@
 PY?=python
-PELICAN?=pelican -v
+PELICAN?=pelican -v -D
 PELICANOPTS=
 
 BASEDIR=$(CURDIR)
@@ -113,6 +113,7 @@ tutorials:
 	@echo "==========LABS==========="
 	rsync  -P -rvz --include='*.md' --exclude='*' Tutorials/ content/posts/
 	rsync  -P -rvz  --include='*.ipynb' --exclude='*' Tutorials/ content/notebooks/
+	rsync  -P -rvz  --include='*.ipynb' --exclude='*' Tutorials/ notebooks/
 
 
 other:

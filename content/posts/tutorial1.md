@@ -6,4 +6,4 @@ Summary: The 1st tutorial is on python, pandas, and matplotlib.
 Install [instructions for the Anaconda stack]({filename}../posts/installpython.md).
 
 
-{% notebook Tutorial1.ipynb %}
+{% notebook ac297rtut1.ipynb %}
